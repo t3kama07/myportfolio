@@ -3,8 +3,7 @@ export const projects = [
     id: "dashboard-analytics",
     title: "MREngineering",
     stack: "Demo Website / Construction Industry",
-    description:
-      "Its demo site prepared for a construction industry company website.",
+    description: "Demo site prepared for a construction company website.",
     demoUrl: "https://mrengineeringdemo.vercel.app/",
     githubUrl: "https://github.com/t3kama07/mrengineering.git",
     thumbnailSrc: "/assets/mreng.png",
@@ -13,19 +12,22 @@ export const projects = [
   },
   {
     id: "ecommerce-platform",
-    title: "E-commerce Platform",
-    stack: "React / Tailwind CSS",
-    description: "A custom online store built with modern stack.",
-    demoUrl: "#",
+    title: "Community Pet Care Made Simple",
+    stack: "Community Platform / Pet Care Exchange",
+    description:
+      "An innovative project with a clear business model for trusted pet care exchange.",
+    demoUrl: "https://tassukaveri.fi/",
     githubUrl: "#",
-    thumbnailClass: "thumb-b",
+    thumbnailSrc: "/assets/tassu.png",
+    thumbnailAlt: "TassuKaveri project thumbnail",
+    thumbnailPosition: "top center",
   },
   {
     id: "kielibuddy",
     title: "KieliBuddy",
     stack: "Kotlin / Jetpack Compose / Firebase / Agora",
     description:
-      "A university group project connecting learners with Finnish-speaking partners through real-time chat and video calling.",
+      "University group project connecting learners with Finnish-speaking partners through real-time chat and video calling.",
     demoUrl: "https://youtu.be/D2KMUB4SReM",
     githubUrl: "https://github.com/jmadusanka/KieliBuddy",
     thumbnailSrc: "/assets/kielibuddy_thumbnail.png",

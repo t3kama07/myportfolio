@@ -18,6 +18,8 @@ function ProjectButton({ href, className, children }) {
 }
 
 export default function ProjectCard({ project }) {
+  const hasGithub = project.githubUrl && project.githubUrl !== "#";
+
   return (
     <article className="glass-card project-card">
       {project.thumbnailSrc ? (
@@ -33,14 +35,16 @@ export default function ProjectCard({ project }) {
 
       <h3>{project.title}</h3>
       <p className="tech">{project.stack}</p>
-      <p>{project.description}</p>
-      <div className="project-actions">
+      <p className="project-description">{project.description}</p>
+      <div className={`project-actions${hasGithub ? "" : " project-actions-single"}`}>
         <ProjectButton className="btn btn-primary" href={project.demoUrl}>
           Live Demo
         </ProjectButton>
-        <ProjectButton className="btn btn-secondary" href={project.githubUrl}>
-          GitHub
-        </ProjectButton>
+        {hasGithub ? (
+          <ProjectButton className="btn btn-secondary" href={project.githubUrl}>
+            GitHub
+          </ProjectButton>
+        ) : null}
       </div>
     </article>
   );

@@ -16,17 +16,6 @@ export default function HeroSection() {
           </a>
         </div>
       </div>
-
-      <div className="hero-right" aria-hidden="true">
-        <div className="hero-image-wrap">
-          <img
-            className="hero-image"
-            src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?auto=format&fit=crop&w=1200&q=80"
-            alt=""
-          />
-        </div>
-      </div>
     </section>
   );
 }
-
