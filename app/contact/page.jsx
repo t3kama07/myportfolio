@@ -1,11 +1,5 @@
-import ContactSection from "../components/ContactSection";
-import Navbar from "../components/Navbar";
+import { redirect } from "next/navigation";
 
 export default function ContactPage() {
-  return (
-    <main className="portfolio-page" id="top">
-      <Navbar />
-      <ContactSection />
-    </main>
-  );
+  redirect("/en/contact");
 }

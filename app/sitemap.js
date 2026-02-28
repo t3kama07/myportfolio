@@ -1,0 +1,43 @@
+export default function sitemap() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
+  const lastModified = new Date();
+
+  return [
+    {
+      url: `${siteUrl}/en`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: `${siteUrl}/en/projects`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${siteUrl}/en/contact`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/fi`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${siteUrl}/fi/projects`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/fi/contact`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+  ];
+}

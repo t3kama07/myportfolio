@@ -1,9 +1,9 @@
-export default function ServicesSection({ services }) {
+export default function ServicesSection({ services, title, ariaLabel }) {
   return (
     <section className="section shell" id="what-doing">
       <div className="glass-card doing-section">
-        <h2>What I&apos;m Doing</h2>
-        <div className="doing-pills" aria-label="What I am doing">
+        <h2>{title}</h2>
+        <div className="doing-pills" aria-label={ariaLabel}>
           {services.map((service) => (
             <span key={service}>{service}</span>
           ))}
@@ -12,4 +12,3 @@ export default function ServicesSection({ services }) {
     </section>
   );
 }
-

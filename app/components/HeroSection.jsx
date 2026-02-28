@@ -1,18 +1,16 @@
-export default function HeroSection() {
+export default function HeroSection({ locale, hero }) {
   return (
     <section className="hero shell" id="about">
       <div className="hero-left">
-        <h1>Hi, I&apos;m Manjula</h1>
-        <p className="hero-kicker">Web Developer</p>
-        <p className="hero-description">
-          I specialize in building user-friendly, performant web applications.
-        </p>
+        <h1>{hero.title}</h1>
+        <p className="hero-kicker">{hero.kicker}</p>
+        <p className="hero-description">{hero.description}</p>
         <div className="hero-cta">
-          <a className="btn btn-primary" href="#projects">
-            View My Work
+          <a className="btn btn-primary" href={`/${locale}/#projects`}>
+            {hero.viewWork}
           </a>
-          <a className="btn btn-secondary" href="#contact">
-            Contact Me
+          <a className="btn btn-secondary" href={`/${locale}/#contact`}>
+            {hero.contactMe}
           </a>
         </div>
       </div>

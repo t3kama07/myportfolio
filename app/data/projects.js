@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: "dashboard-analytics",
+    id: "MREngineering",
     title: "MREngineering",
     stack: "Demo Website / Construction Industry",
     description: "Demo site prepared for a construction company website.",
@@ -11,8 +11,8 @@ export const projects = [
     thumbnailPosition: "top center",
   },
   {
-    id: "ecommerce-platform",
-    title: "Community Pet Care Made Simple",
+    id: "TassuKaveri",
+    title: "TassuKaveri",
     stack: "Community Platform / Pet Care Exchange",
     description:
       "An innovative project with a clear business model for trusted pet care exchange.",

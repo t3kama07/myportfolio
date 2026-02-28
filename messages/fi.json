@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "homeTitle": "Manjula | Web-kehittajan portfolio",
+    "homeDescription": "Manjulan portfolio. Rakennan kayttajaystavallisia ja suorituskykyisia verkkosovelluksia.",
+    "projectsTitle": "Projektit",
+    "projectsDescription": "Manjulan valikoidut projektit verkko- ja mobiiliymparistoissa.",
+    "contactTitle": "Yhteys",
+    "contactDescription": "Ota yhteytta Manjulaan web-kehitysprojekteista ja yhteistyosta."
+  },
+  "nav": {
+    "projects": "Projektit",
+    "skills": "Taidot",
+    "contact": "Yhteys",
+    "requestCv": "Pyyda CV",
+    "languageSwitch": "Kielenvaihto"
+  },
+  "hero": {
+    "title": "Hei, olen Manjula",
+    "kicker": "Web-kehittaja",
+    "description": "Erikoistun kayttajaystavallisten ja suorituskykyisten verkkosovellusten rakentamiseen.",
+    "viewWork": "Katso tyoni",
+    "contactMe": "Ota yhteytta"
+  },
+  "services": {
+    "title": "Mita teen",
+    "aria": "Palvelut",
+    "items": [
+      "Web-kehitys",
+      "Mobiilisovelluskehitys",
+      "AI-avusteiset tuotevideot",
+      "SEO-optimointi",
+      "Digimarkkinointi"
+    ]
+  },
+  "skills": {
+    "aria": "Vieriva teknologiaosaamisen lista",
+    "items": [
+      "React",
+      "Next.js",
+      "React Native",
+      "TypeScript",
+      "Node.js",
+      "PHP",
+      "Python",
+      "MySQL",
+      "Firebase",
+      "AWS",
+      "Docker",
+      "Linux"
+    ]
+  },
+  "projects": {
+    "title": "Nostetut projektit",
+    "subtitle": "Osa viimeaikaisista toistani",
+    "liveDemo": "Live-demo",
+    "github": "GitHub",
+    "items": [
+      {
+        "id": "dashboard-analytics",
+        "title": "MREngineering",
+        "stack": "Demoverkkosivusto / Rakennusala",
+        "description": "Rakennusalan yritykselle valmisteltu demoverkkosivusto.",
+        "demoUrl": "https://mrengineeringdemo.vercel.app/",
+        "githubUrl": "https://github.com/t3kama07/mrengineering.git",
+        "thumbnailSrc": "/assets/mreng.png",
+        "thumbnailAlt": "MREngineering-verkkosivuston esikatselu",
+        "thumbnailPosition": "top center"
+      },
+      {
+        "id": "ecommerce-platform",
+        "title": "TassuKaveri",
+        "stack": "Yhteisopalvelu / Lemmikkihoidon vaihto",
+        "description": "Innovatiivinen projekti, jossa on selkea liiketoimintamalli luotettuun lemmikkihoidon vaihtoon.",
+        "demoUrl": "https://tassukaveri.fi/",
+        "githubUrl": "#",
+        "thumbnailSrc": "/assets/tassu.png",
+        "thumbnailAlt": "TassuKaveri-projektin esikatselu",
+        "thumbnailPosition": "top center"
+      },
+      {
+        "id": "kielibuddy",
+        "title": "KieliBuddy",
+        "stack": "Kotlin / Jetpack Compose / Firebase / Agora",
+        "description": "Yliopiston ryhmaprojekti, joka yhdistaa oppijat suomenkielisiin keskustelukumppaneihin reaaliaikaisen chatin ja videopuhelun avulla.",
+        "demoUrl": "https://youtu.be/D2KMUB4SReM",
+        "githubUrl": "https://github.com/jmadusanka/KieliBuddy",
+        "thumbnailSrc": "/assets/kielibuddy_thumbnail.png",
+        "thumbnailAlt": "KieliBuddy-mobiilisovelluksen esikatselu"
+      }
+    ]
+  },
+  "contactSection": {
+    "title": "Ota yhteytta",
+    "description": "Tehdaan yhdessa jotain merkityksellista.",
+    "form": {
+      "name": "Nimi",
+      "email": "Sahkoposti",
+      "message": "Viesti",
+      "send": "Laheta viesti"
+    }
+  },
+  "footer": {
+    "name": "Manjula",
+    "role": "Web-kehittaja",
+    "location": "Helsinki, Suomi",
+    "quickLinks": "Pikalinkit",
+    "projects": "Projektit",
+    "contact": "Yhteys",
+    "contactHeading": "Yhteys",
+    "requestCv": "Pyyda CV",
+    "builtWith": "Rakennettu Next.js:lla",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  }
+}

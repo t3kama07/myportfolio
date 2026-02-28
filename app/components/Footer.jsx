@@ -1,41 +1,41 @@
-export default function Footer() {
+export default function Footer({ locale, footer }) {
   const year = new Date().getFullYear();
 
   return (
     <div className="footer-panel">
       <div className="footer-grid">
         <div className="footer-col">
-          <h3>Manjula</h3>
-          <p>Web Developer</p>
-          <p>Helsinki, Finland</p>
+          <h3>{footer.name}</h3>
+          <p>{footer.role}</p>
+          <p>{footer.location}</p>
         </div>
 
         <div className="footer-col">
-          <h4>Quick Links</h4>
-          <a href="/#projects">Projects</a>
-          <a href="/cv.pdf">Download CV</a>
-          <a href="/#contact">Contact</a>
+          <h4>{footer.quickLinks}</h4>
+          <a href={`/${locale}/#projects`}>{footer.projects}</a>
+          <a href={`/${locale}/contact`}>{footer.requestCv}</a>
+          <a href={`/${locale}/#contact`}>{footer.contact}</a>
         </div>
 
         <div className="footer-col">
-          <h4>Contact</h4>
+          <h4>{footer.contactHeading}</h4>
           <a href="mailto:manjula.dev@gmail.com">manjula.dev@gmail.com</a>
           <a
             href="https://www.linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            {footer.linkedin}
           </a>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            GitHub
+            {footer.github}
           </a>
         </div>
       </div>
 
       <div className="footer-meta">
-        <span>© {year} Manjula</span>
-        <span>Built with Next.js</span>
+        <span>&copy; {year} Manjula</span>
+        <span>{footer.builtWith}</span>
       </div>
     </div>
   );

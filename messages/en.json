@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "homeTitle": "Manjula | Web Developer Portfolio",
+    "homeDescription": "Portfolio of Manjula, a web developer building user-friendly and performant web applications.",
+    "projectsTitle": "Projects",
+    "projectsDescription": "Featured projects built by Manjula across web and mobile experiences.",
+    "contactTitle": "Contact",
+    "contactDescription": "Contact Manjula to discuss web development projects and collaboration."
+  },
+  "nav": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "requestCv": "Request CV",
+    "languageSwitch": "Language switch"
+  },
+  "hero": {
+    "title": "Hi, I'm Manjula",
+    "kicker": "Web Developer",
+    "description": "I specialize in building user-friendly, performant web applications.",
+    "viewWork": "View My Work",
+    "contactMe": "Contact Me"
+  },
+  "services": {
+    "title": "What I'm Doing",
+    "aria": "What I am doing",
+    "items": [
+      "Web Development",
+      "Mobile App Development",
+      "AI-Assisted Product Videos",
+      "SEO Optimization",
+      "Digital Marketing"
+    ]
+  },
+  "skills": {
+    "aria": "Scrolling tech stack list",
+    "items": [
+      "React",
+      "Next.js",
+      "React Native",
+      "TypeScript",
+      "Node.js",
+      "PHP",
+      "Python",
+      "MySQL",
+      "Firebase",
+      "AWS",
+      "Docker",
+      "Linux"
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some of my recent work",
+    "liveDemo": "Live Demo",
+    "github": "GitHub",
+    "items": [
+      {
+        "id": "dashboard-analytics",
+        "title": "MREngineering",
+        "stack": "Demo Website / Construction Industry",
+        "description": "Demo site prepared for a construction company website.",
+        "demoUrl": "https://mrengineeringdemo.vercel.app/",
+        "githubUrl": "https://github.com/t3kama07/mrengineering.git",
+        "thumbnailSrc": "/assets/mreng.png",
+        "thumbnailAlt": "MREngineering website thumbnail",
+        "thumbnailPosition": "top center"
+      },
+      {
+        "id": "ecommerce-platform",
+        "title": "TassuKaveri",
+        "stack": "Community Platform / Pet Care Exchange",
+        "description": "An innovative project with a clear business model for trusted pet care exchange.",
+        "demoUrl": "https://tassukaveri.fi/",
+        "githubUrl": "#",
+        "thumbnailSrc": "/assets/tassu.png",
+        "thumbnailAlt": "TassuKaveri project thumbnail",
+        "thumbnailPosition": "top center"
+      },
+      {
+        "id": "kielibuddy",
+        "title": "KieliBuddy",
+        "stack": "Kotlin / Jetpack Compose / Firebase / Agora",
+        "description": "University group project connecting learners with Finnish-speaking partners through real-time chat and video calling.",
+        "demoUrl": "https://youtu.be/D2KMUB4SReM",
+        "githubUrl": "https://github.com/jmadusanka/KieliBuddy",
+        "thumbnailSrc": "/assets/kielibuddy_thumbnail.png",
+        "thumbnailAlt": "KieliBuddy mobile app demo thumbnail"
+      }
+    ]
+  },
+  "contactSection": {
+    "title": "Contact Me",
+    "description": "Let's collaborate and build something meaningful together.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "name": "Manjula",
+    "role": "Web Developer",
+    "location": "Helsinki, Finland",
+    "quickLinks": "Quick Links",
+    "projects": "Projects",
+    "contact": "Contact",
+    "contactHeading": "Contact",
+    "requestCv": "Request CV",
+    "builtWith": "Built with Next.js",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  }
+}
