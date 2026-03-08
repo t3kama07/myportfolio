@@ -16,8 +16,8 @@
   },
   "hero": {
     "title": "Hi, I'm Manjula",
-    "kicker": "Fullstack Developer",
-    "description": "I specialize in building user-friendly, performant web applications.",
+    "kicker": "Full-Stack Web & Mobile App Developer",
+    "description": "I design and build modern web and mobile applications that solve real world problems.",
     "viewWork": "View My Work",
     "contactMe": "Contact Me"
   },
@@ -87,7 +87,7 @@
       },
       {
         "id": "jobtracker-ai-video",
-        "title": "JobTracker AI Video",
+        "title": "Jobtacker",
         "stack": "AI-Assisted Product Video",
         "description": "A university group project focused on AI-powered job tracking and personalized feedback.",
         "demoUrl": "https://youtu.be/Ki9duAk2oEM",

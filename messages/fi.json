@@ -16,8 +16,8 @@
   },
   "hero": {
     "title": "Hei, olen Manjula",
-    "kicker": "Web-kehittaja",
-    "description": "Erikoistun kayttajaystavallisten ja suorituskykyisten verkkosovellusten rakentamiseen.",
+    "kicker": "Full-Stack web- ja mobiilisovelluskehittaja",
+    "description": "Suunnittelen ja rakennan moderneja web- ja mobiilisovelluksia, jotka ratkaisevat oikean maailman ongelmia.",
     "viewWork": "Katso tyoni",
     "contactMe": "Ota yhteytta"
   },
@@ -87,7 +87,7 @@
       },
       {
         "id": "jobtracker-ai-video",
-        "title": "JobTracker AI Video",
+        "title": "Jobtacker",
         "stack": "AI-avusteinen tuotevideo",
         "description": "Yliopiston ryhmaprojekti, joka keskittyy AI-pohjaiseen tyonhaun seurantaan ja personoituun palautteeseen.",
         "demoUrl": "https://youtu.be/Ki9duAk2oEM",
