@@ -19,7 +19,7 @@ export default function Footer({ locale, footer }) {
 
         <div className="footer-col">
           <h4>{footer.contactHeading}</h4>
-          <a href="mailto:manjula.dev@gmail.com">manjula.dev@gmail.com</a>
+          <a href="mailto:info@manjula.live">info@manjula.live</a>
           <a
             href="https://www.linkedin.com/in/kpmp/"
             target="_blank"
