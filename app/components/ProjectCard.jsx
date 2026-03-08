@@ -21,6 +21,7 @@ function ProjectButton({ href, className, children }) {
 
 export default function ProjectCard({ project, liveDemoLabel = "Live Demo", githubLabel = "GitHub" }) {
   const hasGithub = project.githubUrl && project.githubUrl !== "#";
+  const primaryLabel = project.demoLabel || liveDemoLabel;
 
   return (
     <article className="glass-card project-card">
@@ -43,7 +44,7 @@ export default function ProjectCard({ project, liveDemoLabel = "Live Demo", gith
       <p className="project-description">{project.description}</p>
       <div className={`project-actions${hasGithub ? "" : " project-actions-single"}`}>
         <ProjectButton className="btn btn-primary" href={project.demoUrl}>
-          {liveDemoLabel}
+          {primaryLabel}
         </ProjectButton>
         {hasGithub ? (
           <ProjectButton className="btn btn-secondary" href={project.githubUrl}>

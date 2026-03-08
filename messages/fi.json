@@ -43,10 +43,7 @@
       "PHP",
       "Python",
       "MySQL",
-      "Firebase",
-      "AWS",
-      "Docker",
-      "Linux"
+      "Firebase"
     ]
   },
   "projects": {
@@ -83,9 +80,22 @@
         "stack": "Kotlin / Jetpack Compose / Firebase / Agora",
         "description": "Yliopiston ryhmaprojekti, joka yhdistaa oppijat suomenkielisiin keskustelukumppaneihin reaaliaikaisen chatin ja videopuhelun avulla.",
         "demoUrl": "https://youtu.be/D2KMUB4SReM",
+        "demoLabel": "Demo Video",
         "githubUrl": "https://github.com/jmadusanka/KieliBuddy",
         "thumbnailSrc": "/assets/kielibuddy_thumbnail.png",
         "thumbnailAlt": "KieliBuddy-mobiilisovelluksen esikatselu"
+      },
+      {
+        "id": "jobtracker-ai-video",
+        "title": "JobTracker AI Video",
+        "stack": "AI-avusteinen tuotevideo",
+        "description": "Yliopiston ryhmaprojekti, joka keskittyy AI-pohjaiseen tyonhaun seurantaan ja personoituun palautteeseen.",
+        "demoUrl": "https://youtu.be/Ki9duAk2oEM",
+        "demoLabel": "Demo Video",
+        "githubUrl": "#",
+        "thumbnailSrc": "/assets/Jobtracker.webp",
+        "thumbnailAlt": "JobTracker AI-avusteisen videon esikatselu",
+        "thumbnailPosition": "top center"
       }
     ]
   },

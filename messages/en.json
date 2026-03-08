@@ -11,7 +11,7 @@
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact",
-    "requestCv": "Request CV",
+    "requestCv": "Download CV",
     "languageSwitch": "Language switch"
   },
   "hero": {
@@ -43,10 +43,7 @@
       "PHP",
       "Python",
       "MySQL",
-      "Firebase",
-      "AWS",
-      "Docker",
-      "Linux"
+      "Firebase"
     ]
   },
   "projects": {
@@ -83,9 +80,22 @@
         "stack": "Kotlin / Jetpack Compose / Firebase / Agora",
         "description": "University group project connecting learners with Finnish-speaking partners through real-time chat and video calling.",
         "demoUrl": "https://youtu.be/D2KMUB4SReM",
+        "demoLabel": "Demo Video",
         "githubUrl": "https://github.com/jmadusanka/KieliBuddy",
         "thumbnailSrc": "/assets/kielibuddy_thumbnail.png",
         "thumbnailAlt": "KieliBuddy mobile app demo thumbnail"
+      },
+      {
+        "id": "jobtracker-ai-video",
+        "title": "JobTracker AI Video",
+        "stack": "AI-Assisted Product Video",
+        "description": "A university group project focused on AI-powered job tracking and personalized feedback.",
+        "demoUrl": "https://youtu.be/Ki9duAk2oEM",
+        "demoLabel": "Demo Video",
+        "githubUrl": "#",
+        "thumbnailSrc": "/assets/Jobtracker.webp",
+        "thumbnailAlt": "JobTracker AI-assisted video thumbnail",
+        "thumbnailPosition": "top center"
       }
     ]
   },
@@ -107,7 +117,7 @@
     "projects": "Projects",
     "contact": "Contact",
     "contactHeading": "Contact",
-    "requestCv": "Request CV",
+    "requestCv": "Download CV",
     "builtWith": "Built with Next.js",
     "linkedin": "LinkedIn",
     "github": "GitHub"

@@ -8,8 +8,7 @@ export const skills = [
   "Python",
   "MySQL",
   "Firebase",
-  "AWS",
-  "Docker",
-  "Linux",
+  "wordpress",
+  "kotlin"
 ];
 
