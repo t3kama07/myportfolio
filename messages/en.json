@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "Manjula | Web Developer Portfolio",
+    "homeTitle": "Manjula | Fullstack Developer Portfolio",
     "homeDescription": "Portfolio of Manjula, a web developer building user-friendly and performant web applications.",
     "projectsTitle": "Projects",
     "projectsDescription": "Featured projects built by Manjula across web and mobile experiences.",
@@ -16,7 +16,7 @@
   },
   "hero": {
     "title": "Hi, I'm Manjula",
-    "kicker": "Web Developer",
+    "kicker": "Fullstack Developer",
     "description": "I specialize in building user-friendly, performant web applications.",
     "viewWork": "View My Work",
     "contactMe": "Contact Me"
@@ -96,6 +96,17 @@
         "thumbnailSrc": "/assets/Jobtracker.webp",
         "thumbnailAlt": "JobTracker AI-assisted video thumbnail",
         "thumbnailPosition": "top center"
+      },
+      {
+        "id": "pawtees",
+        "title": "Pawtees",
+        "stack": "Ecommerce Website / Pet Lovers Apparel",
+        "description": "An ecommerce website for pet lovers to explore and shop apparel products.",
+        "demoUrl": "https://pawtees.vercel.app/",
+        "githubUrl": "https://github.com/t3kama07/pawtee.git",
+        "thumbnailSrc": "/assets/pawtee.webp",
+        "thumbnailAlt": "Pawtees pet lovers apparel website thumbnail",
+        "thumbnailPosition": "top center"
       }
     ]
   },
@@ -111,8 +122,8 @@
   },
   "footer": {
     "name": "Manjula",
-    "role": "Web Developer",
-    "location": "Helsinki, Finland",
+    "role": "Fullstack Developer",
+    "location": "Oulu, Finland",
     "quickLinks": "Quick Links",
     "projects": "Projects",
     "contact": "Contact",

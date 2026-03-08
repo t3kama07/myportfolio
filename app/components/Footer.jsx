@@ -21,13 +21,13 @@ export default function Footer({ locale, footer }) {
           <h4>{footer.contactHeading}</h4>
           <a href="mailto:manjula.dev@gmail.com">manjula.dev@gmail.com</a>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/kpmp/"
             target="_blank"
             rel="noopener noreferrer"
           >
             {footer.linkedin}
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/t3kama07" target="_blank" rel="noopener noreferrer">
             {footer.github}
           </a>
         </div>

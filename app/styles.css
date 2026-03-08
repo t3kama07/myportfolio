@@ -265,11 +265,7 @@ a {
   flex: 0 0 auto;
   min-width: max-content;
   padding-right: 12px;
-  animation: skills-scroll 30s linear infinite;
-}
-
-.skills-marquee:hover .skills-track {
-  animation-play-state: paused;
+  animation: skills-scroll-ltr 24s linear infinite;
 }
 
 .skills-track li {
@@ -284,12 +280,16 @@ a {
   white-space: nowrap;
 }
 
-@keyframes skills-scroll {
+.skills-marquee:hover .skills-track {
+  animation-play-state: paused;
+}
+
+@keyframes skills-scroll-ltr {
   from {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
 }
 
@@ -657,14 +657,6 @@ a {
   .skills-marquee {
     overflow-x: auto;
     mask-image: none;
-  }
-
-  .skills-track {
-    animation: none;
-  }
-
-  .skills-marquee .skills-track:nth-child(2) {
-    display: none;
   }
 
   .project-marquee {

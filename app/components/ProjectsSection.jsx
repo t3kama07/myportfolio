@@ -3,6 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
+function isInteractiveTarget(target) {
+  return target instanceof Element && Boolean(target.closest("a, button, input, textarea, select, label"));
+}
+
 export default function ProjectsSection({
   projects,
   title = "Featured Projects",
@@ -29,9 +33,9 @@ export default function ProjectsSection({
       const shouldPause = dragRef.current.active;
 
       if (!shouldPause && canScroll) {
-        scrollPosRef.current += speed;
-        if (scrollPosRef.current >= trackWidth) {
-          scrollPosRef.current -= trackWidth;
+        scrollPosRef.current -= speed;
+        if (scrollPosRef.current < 0) {
+          scrollPosRef.current += trackWidth;
         }
         marquee.scrollLeft = scrollPosRef.current;
       }
@@ -44,6 +48,8 @@ export default function ProjectsSection({
   }, []);
 
   const handlePointerDown = (event) => {
+    if (isInteractiveTarget(event.target)) return;
+
     const marquee = marqueeRef.current;
     if (!marquee) return;
 

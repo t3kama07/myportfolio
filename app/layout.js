@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://example.com"),
   title: {
-    default: "Manjula | Web Developer Portfolio",
+    default: "Manjula | Fullstack Developer Portfolio",
     template: "%s | Manjula",
   },
   description:
@@ -34,7 +34,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "/",
-    title: "Manjula | Web Developer Portfolio",
+    title: "Manjula | Fullstack Developer Portfolio",
     description:
       "Portfolio of Manjula, a web developer building user-friendly and performant web applications.",
     images: [
@@ -48,7 +48,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Manjula | Web Developer Portfolio",
+    title: "Manjula | Fullstack Developer Portfolio",
     description:
       "Portfolio of Manjula, a web developer building user-friendly and performant web applications.",
     images: ["/assets/profileimage.jpeg"],
