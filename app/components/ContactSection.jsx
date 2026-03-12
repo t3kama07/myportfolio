@@ -10,7 +10,7 @@ export default function ContactSection({ locale, contactSection, footer }) {
           <p>{contactSection.description}</p>
           <ContactForm formText={contactSection.form} />
         </div>
-        <Footer locale={locale} footer={footer} />
+        <Footer locale={locale} footer={footer} withTopSpacing />
       </div>
     </footer>
   );

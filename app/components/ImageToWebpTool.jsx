@@ -403,7 +403,7 @@ export default function ImageToWebpTool({ text }) {
                     <figure className="webp-preview">
                       <img src={item.sourceUrl} alt={`${text.original}: ${item.file.name}`} loading="lazy" />
                       <figcaption>
-                        {text.original} · {formatBytes(item.sourceSize)}
+                        {text.original} - {formatBytes(item.sourceSize)}
                       </figcaption>
                     </figure>
 
@@ -414,7 +414,7 @@ export default function ImageToWebpTool({ text }) {
                         <div className="webp-preview-placeholder">{getStatusLabel(item.status, text)}</div>
                       )}
                       <figcaption>
-                        {text.converted} · {hasConverted ? formatBytes(item.convertedSize) : "--"}
+                        {text.converted} - {hasConverted ? formatBytes(item.convertedSize) : "--"}
                       </figcaption>
                     </figure>
                   </div>
@@ -451,3 +451,4 @@ export default function ImageToWebpTool({ text }) {
     </section>
   );
 }
+

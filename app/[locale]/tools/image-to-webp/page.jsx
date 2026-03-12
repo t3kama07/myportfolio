@@ -17,25 +17,37 @@ export async function generateMetadata({ params }) {
   const pagePath = `/${locale}/tools/image-to-webp`;
   const pageUrl = `${siteUrl}${pagePath}`;
   const ogImage = `${siteUrl}/assets/profileimage.jpeg`;
+  const seoTitle = locale === "fi" ? "PNG/JPG kuvat WebP-muotoon ilmaiseksi" : "Free PNG/JPG to WebP Converter";
   const keywords =
     locale === "fi"
       ? [
           "kuva webp muunnin",
-          "jpg webp",
           "png webp",
-          "ilmainen kuvatyokalu",
+          "jpg webp",
+          "jpeg webp",
+          "png to webp",
+          "jpg to webp",
+          "jpeg to webp",
+          "convert to webp",
+          "convert png to webp",
+          "ilmainen webp muunnin",
           "Manjula tyokalut",
         ]
       : [
           "image to webp converter",
           "jpg to webp",
           "png to webp",
-          "free image converter",
+          "jpeg to webp",
+          "convert to webp",
+          "convert png to webp",
+          "online webp converter",
+          "free webp converter",
+          "convert image to webp",
           "Manjula tools",
         ];
 
   return {
-    title: dict.meta.imageToWebpTitle,
+    title: seoTitle,
     description: dict.meta.imageToWebpDescription,
     keywords,
     alternates: {
@@ -93,6 +105,9 @@ export default async function LocalizedImageToWebpPage({ params }) {
   const dict = getDictionary(locale);
   const siteUrl = getSiteUrl();
   const pageUrl = `${siteUrl}/${locale}/tools/image-to-webp`;
+  const faqItems = Array.isArray(dict.imageToWebp?.faqItems)
+    ? dict.imageToWebp.faqItems.filter((item) => item?.question && item?.answer)
+    : [];
   const imageToWebpJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -109,6 +124,45 @@ export default async function LocalizedImageToWebpPage({ params }) {
       url: siteUrl,
     },
   };
+  const faqJsonLd =
+    faqItems.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqItems.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null;
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: locale === "fi" ? "Etusivu" : "Home",
+        item: `${siteUrl}/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: locale === "fi" ? "Tyokalut" : "Tools",
+        item: `${siteUrl}/${locale}/tools`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: dict.meta.imageToWebpTitle,
+        item: pageUrl,
+      },
+    ],
+  };
 
   return (
     <main className="portfolio-page" id="top" lang={locale}>
@@ -117,8 +171,31 @@ export default async function LocalizedImageToWebpPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(imageToWebpJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      {faqJsonLd ? (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      ) : null}
       <h1 className="sr-only">{dict.meta.imageToWebpTitle}</h1>
       <ImageToWebpTool text={dict.imageToWebp} />
+      {faqItems.length ? (
+        <section className="section shell" id="webp-faq">
+          <div className="glass-card webp-faq-wrap">
+            <h2>{dict.imageToWebp.faqTitle}</h2>
+            <p className="section-subtitle">{dict.imageToWebp.faqSubtitle}</p>
+            <div className="webp-faq-list">
+              {faqItems.map((item) => (
+                <article className="webp-faq-item" key={item.question}>
+                  <h3>{item.question}</h3>
+                  <p>{item.answer}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <footer className="contact-footer">
         <div className="shell">

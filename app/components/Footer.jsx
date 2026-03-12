@@ -1,8 +1,8 @@
-export default function Footer({ locale, footer }) {
+export default function Footer({ locale, footer, withTopSpacing = false }) {
   const year = new Date().getFullYear();
 
   return (
-    <div className="footer-panel">
+    <div className={`footer-panel${withTopSpacing ? " has-top-spacing" : ""}`}>
       <div className="footer-grid">
         <div className="footer-col">
           <h3>{footer.name}</h3>

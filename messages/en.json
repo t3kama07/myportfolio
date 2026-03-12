@@ -11,11 +11,11 @@
     "invoiceGeneratorTitle": "Invoice Generator",
     "invoiceGeneratorDescription": "Free online invoice generator with live preview, tax calculation, currency support, and instant PDF download.",
     "imageToWebpTitle": "Image to WebP Converter",
-    "imageToWebpDescription": "Convert JPG, JPEG, and PNG images to WebP directly in your browser with adjustable quality."
+    "imageToWebpDescription": "Free online image to WebP converter. Convert PNG to WebP, JPG to WebP, and JPEG to WebP in your browser with adjustable quality and no upload."
   },
   "nav": {
     "projects": "Projects",
-    "tools": "Tool",
+    "tools": "Tools",
     "skills": "Skills",
     "contact": "Contact",
     "requestCv": "Download CV",
@@ -254,7 +254,35 @@
     "emptyTitle": "No images selected yet.",
     "emptySubtitle": "Upload one or more files to start conversion.",
     "invalidType": "Only JPG, JPEG, and PNG files are supported.",
-    "failedMessage": "Could not convert this file. Please try another image."
+    "failedMessage": "Could not convert this file. Please try another image.",
+    "faqTitle": "Image to WebP FAQ",
+    "faqSubtitle": "Quick answers about converting PNG, JPG, and JPEG files to WebP.",
+    "faqItems": [
+      {
+        "question": "Is this image to WebP converter free?",
+        "answer": "Yes. You can use this tool for free to convert images and download WebP files."
+      },
+      {
+        "question": "Can I convert PNG to WebP?",
+        "answer": "Yes. Upload PNG files and convert them directly to WebP format."
+      },
+      {
+        "question": "Can I convert JPG and JPEG to WebP?",
+        "answer": "Yes. JPG and JPEG files are fully supported in this converter."
+      },
+      {
+        "question": "Will converting to WebP reduce image size?",
+        "answer": "Usually yes. WebP often gives smaller file size than JPG or PNG, and you can adjust quality to balance size and detail."
+      },
+      {
+        "question": "Are my files uploaded to a server?",
+        "answer": "No. Conversion runs in your browser, so files are not uploaded by this tool."
+      },
+      {
+        "question": "Can I convert multiple images at once?",
+        "answer": "Yes. You can upload multiple files, convert them together, and download them individually or all at once."
+      }
+    ]
   },
   "footer": {
     "name": "Manjula",

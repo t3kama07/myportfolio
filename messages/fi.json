@@ -11,7 +11,7 @@
     "invoiceGeneratorTitle": "Laskugeneraattori",
     "invoiceGeneratorDescription": "Ilmainen verkkolaskugeneraattori reaaliaikaisella esikatselulla, verolaskennalla, valuuttatuella ja heti ladattavalla PDF:lla.",
     "imageToWebpTitle": "Kuva WebP-muotoon",
-    "imageToWebpDescription": "Muunna JPG-, JPEG- ja PNG-kuvat WebP-muotoon suoraan selaimessa laatusaannolla."
+    "imageToWebpDescription": "Ilmainen kuva WebP-muunnin verkossa. Muunna PNG-, JPG- ja JPEG-kuvat WebP-muotoon selaimessa laadun saannolla ilman palvelimelle latausta."
   },
   "nav": {
     "projects": "Projektit",
@@ -254,7 +254,35 @@
     "emptyTitle": "Kuvia ei ole valittu viela.",
     "emptySubtitle": "Lataa yksi tai useampi tiedosto aloittaaksesi muunnoksen.",
     "invalidType": "Vain JPG-, JPEG- ja PNG-tiedostot ovat tuettuja.",
-    "failedMessage": "Tiedoston muunnos epaonnistui. Yrita toista kuvaa."
+    "failedMessage": "Tiedoston muunnos epaonnistui. Yrita toista kuvaa.",
+    "faqTitle": "Kuva WebP-muotoon UKK",
+    "faqSubtitle": "Nopeat vastaukset PNG-, JPG- ja JPEG-kuvien WebP-muunnoksesta.",
+    "faqItems": [
+      {
+        "question": "Onko tama kuva WebP-muunnin ilmainen?",
+        "answer": "Kylla. Voit kayttaa tata tyokalua ilmaiseksi kuvien muuntamiseen ja WebP-tiedostojen lataamiseen."
+      },
+      {
+        "question": "Voinko muuntaa PNG-kuvan WebP-muotoon?",
+        "answer": "Kylla. Lataa PNG-kuvat ja muunna ne suoraan WebP-muotoon."
+      },
+      {
+        "question": "Voinko muuntaa JPG- ja JPEG-kuvat WebP-muotoon?",
+        "answer": "Kylla. JPG- ja JPEG-tiedostot ovat tuettuja tassa muuntimessa."
+      },
+      {
+        "question": "Pieneneeko tiedostokoko, kun muunnan WebP-muotoon?",
+        "answer": "Usein kylla. WebP tuottaa yleensa pienemman tiedostokoon kuin JPG tai PNG, ja voit saataa laatua koon ja yksityiskohtien tasapainottamiseksi."
+      },
+      {
+        "question": "Ladataanko tiedostoni palvelimelle?",
+        "answer": "Ei. Muunnos tapahtuu selaimessa, eika tiedostoja ladata palvelimelle taman tyokalun kautta."
+      },
+      {
+        "question": "Voinko muuntaa useita kuvia kerralla?",
+        "answer": "Kylla. Voit ladata useita tiedostoja, muuntaa ne yhdessa ja ladata erikseen tai kaikki kerralla."
+      }
+    ]
   },
   "footer": {
     "name": "Manjula",

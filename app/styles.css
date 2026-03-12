@@ -30,8 +30,11 @@ a {
 }
 
 .portfolio-page {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  padding-bottom: 48px;
+  min-height: 100dvh;
+  padding-bottom: 0;
 }
 
 .shell {
@@ -421,6 +424,10 @@ a {
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
+.webp-dropzone span:last-child {
+  overflow-wrap: anywhere;
+}
+
 .webp-dropzone.is-dragging {
   border-color: rgba(127, 142, 246, 0.9);
   background: rgba(236, 244, 255, 0.92);
@@ -522,6 +529,7 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .webp-item-head h3 {
@@ -540,6 +548,7 @@ a {
   padding: 3px 10px;
   font-size: 0.75rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .webp-status.is-converting {
@@ -597,6 +606,7 @@ a {
   border-top: 1px solid rgba(149, 160, 216, 0.22);
   color: #667199;
   font-size: 0.82rem;
+  overflow-wrap: anywhere;
 }
 
 .webp-item-meta {
@@ -605,8 +615,13 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  flex-wrap: wrap;
   color: #6a7399;
   font-size: 0.83rem;
+}
+
+.webp-item-meta span {
+  overflow-wrap: anywhere;
 }
 
 .webp-size-delta {
@@ -632,8 +647,41 @@ a {
   margin-top: 10px;
 }
 
+.webp-item-actions .btn {
+  min-width: 130px;
+}
+
 .invoice-wrap {
   padding: 26px 20px;
+}
+
+.webp-faq-wrap {
+  padding: 24px 20px;
+}
+
+.webp-faq-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.webp-faq-item {
+  border-radius: 14px;
+  border: 1px solid rgba(145, 156, 212, 0.34);
+  background: rgba(255, 255, 255, 0.74);
+  padding: 14px;
+}
+
+.webp-faq-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #3b4676;
+}
+
+.webp-faq-item p {
+  margin: 8px 0 0;
+  color: var(--text-muted);
+  line-height: 1.5;
 }
 
 .invoice-faq-wrap {
@@ -1206,6 +1254,10 @@ a {
   border-top: 1px solid rgba(149, 160, 218, 0.3);
 }
 
+.portfolio-page > .contact-footer {
+  margin-top: auto;
+}
+
 .contact-card {
   padding: 24px 18px;
 }
@@ -1250,12 +1302,16 @@ a {
 }
 
 .footer-panel {
-  margin-top: 16px;
+  margin-top: 0;
   padding: 18px 18px 10px;
   border-top: 1px solid rgba(149, 160, 218, 0.28);
   border-radius: 22px 22px 0 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(243, 247, 255, 0.74));
   backdrop-filter: blur(4px);
+}
+
+.footer-panel.has-top-spacing {
+  margin-top: 16px;
 }
 
 .footer-grid {
@@ -1295,6 +1351,16 @@ a {
   gap: 10px;
   color: #7a82a7;
   font-size: 0.82rem;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid .footer-col:last-child {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1461,6 +1527,7 @@ a {
   .projects-wrap,
   .tools-wrap,
   .webp-wrap,
+  .webp-faq-wrap,
   .invoice-wrap,
   .invoice-faq-wrap,
   .doing-section,
@@ -1584,6 +1651,39 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .webp-tool-panel {
+    padding: 14px;
+  }
+
+  .webp-dropzone {
+    min-height: 100px;
+    padding: 12px;
+  }
+
+  .webp-drop-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .webp-item-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .webp-status {
+    align-self: flex-start;
+  }
+
+  .webp-item-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .webp-item-actions .btn {
+    width: 100%;
+  }
+
   .project-actions {
     grid-template-columns: 1fr;
   }
@@ -1605,6 +1705,10 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .footer-grid .footer-col:last-child {
+    grid-column: auto;
+  }
+
   .footer-meta {
     flex-direction: column;
     align-items: flex-start;
@@ -1612,6 +1716,23 @@ a {
 }
 
 @media (max-width: 560px) {
+  .webp-tool-panel {
+    padding: 12px;
+  }
+
+  .webp-quality-label {
+    font-size: 0.86rem;
+  }
+
+  .webp-item {
+    padding: 12px;
+  }
+
+  .webp-preview figcaption {
+    padding: 7px 8px;
+    font-size: 0.78rem;
+  }
+
   .invoice-form-grid {
     gap: 8px;
   }
@@ -1688,6 +1809,10 @@ a {
   .footer-panel {
     padding-left: 14px;
     padding-right: 14px;
+  }
+
+  .footer-panel {
+    border-radius: 18px 18px 0 0;
   }
 }
 
