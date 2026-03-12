@@ -65,6 +65,9 @@ export default function Navbar({ locale, nav, currentPath = "/" }) {
             <a href={`/${locale}/#projects`} onClick={closeMenu}>
               {nav.projects}
             </a>
+            <a href={`/${locale}/tools`} onClick={closeMenu}>
+              {nav.tools}
+            </a>
             <a href={`/${locale}/#skills`} onClick={closeMenu}>
               {nav.skills}
             </a>

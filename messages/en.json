@@ -5,10 +5,17 @@
     "projectsTitle": "Projects",
     "projectsDescription": "Featured projects built by Manjula across web and mobile experiences.",
     "contactTitle": "Contact",
-    "contactDescription": "Contact Manjula to discuss web development projects and collaboration."
+    "contactDescription": "Contact Manjula to discuss web development projects and collaboration.",
+    "toolsTitle": "Tools",
+    "toolsDescription": "Free web tools by Manjula, including practical utilities like QR and invoice generators.",
+    "invoiceGeneratorTitle": "Invoice Generator",
+    "invoiceGeneratorDescription": "Free online invoice generator with live preview, tax calculation, currency support, and instant PDF download.",
+    "imageToWebpTitle": "Image to WebP Converter",
+    "imageToWebpDescription": "Convert JPG, JPEG, and PNG images to WebP directly in your browser with adjustable quality."
   },
   "nav": {
     "projects": "Projects",
+    "tools": "Tool",
     "skills": "Skills",
     "contact": "Contact",
     "requestCv": "Download CV",
@@ -119,6 +126,135 @@
       "message": "Message",
       "send": "Send Message"
     }
+  },
+  "tools": {
+    "title": "Free Tools",
+    "subtitle": "Practical mini-tools I build and share for free.",
+    "open": "Open Tool",
+    "comingSoon": "Coming Soon",
+    "items": [
+      {
+        "id": "qr-generator",
+        "name": "QR Generator",
+        "description": "Generate QR codes quickly for URLs, contact info, or plain text.",
+        "href": "#"
+      },
+      {
+        "id": "invoice-generator",
+        "name": "Invoice Generator",
+        "description": "Create clean invoices with itemized rows and totals in seconds.",
+        "href": "#"
+      },
+      {
+        "id": "image-to-webp",
+        "name": "Image to WebP",
+        "description": "Convert JPG, JPEG, and PNG images into WebP with better web performance.",
+        "href": "#"
+      }
+    ]
+  },
+  "invoiceGenerator": {
+    "title": "Invoice Generator",
+    "subtitle": "Fill in details on the left. The preview on the right updates instantly.",
+    "invoiceTitle": "Invoice",
+    "livePreview": "Live Preview",
+    "from": "From",
+    "billTo": "Bill To",
+    "companySection": "Your Company Information",
+    "uploadLogo": "Drag and drop company logo or click to upload",
+    "removeLogo": "Remove Logo",
+    "clientSection": "Client Information",
+    "metaSection": "Invoice Meta",
+    "itemsSection": "Items",
+    "bankSection": "Bank Details",
+    "termsSection": "Terms & Conditions",
+    "companyName": "Company Name",
+    "companyEmail": "Company Email",
+    "companyPhone": "Company Phone",
+    "companyAddress": "Company Address",
+    "clientName": "Client Name",
+    "clientEmail": "Client Email",
+    "clientPhone": "Client Phone",
+    "clientAddress": "Client Address",
+    "invoiceNumber": "Invoice Number",
+    "issueDate": "Issue Date",
+    "dueDate": "Due Date",
+    "currencyLabel": "Currency",
+    "taxRate": "Tax Rate (%)",
+    "bankName": "Bank Name",
+    "bankAccountNumber": "Account Number",
+    "bankAccountName": "Account Name",
+    "itemDescription": "Description",
+    "itemQty": "Qty",
+    "itemPrice": "Price",
+    "addItem": "Add Item",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "tax": "Tax",
+    "total": "Total",
+    "amountInWords": "Amount in Words",
+    "terms": "Terms",
+    "termsPlaceholder": "Payment terms and additional notes",
+    "placeholderDescription": "Service or product",
+    "downloadPdf": "Download PDF",
+    "clear": "Clear Data",
+    "thankYou": "Thank you for your business.",
+    "footerNote": "",
+    "emptyClientName": "Client Name",
+    "currency": "EUR",
+    "faqTitle": "Invoice Generator FAQ",
+    "faqSubtitle": "Quick answers for common questions about using this free online invoice generator.",
+    "faqItems": [
+      {
+        "question": "Is this invoice generator free to use?",
+        "answer": "Yes. This is a free invoice generator and you can create and download invoices without any subscription."
+      },
+      {
+        "question": "Can I use this online invoice generator without sign-up?",
+        "answer": "Yes. No account is required. You can open the tool, fill the fields, and download your invoice PDF instantly."
+      },
+      {
+        "question": "Can I add tax and currency before generating the invoice?",
+        "answer": "Yes. You can set tax rate, choose currency, and check totals in real time before downloading."
+      },
+      {
+        "question": "Does this invoice generator create PDF invoices?",
+        "answer": "Yes. Click Download PDF and your invoice is generated automatically as a PDF file."
+      },
+      {
+        "question": "Can I upload my company logo in the invoice?",
+        "answer": "Yes. You can upload a company logo and it appears in both preview and PDF output."
+      },
+      {
+        "question": "Is my invoice data private?",
+        "answer": "Yes. Invoice editing and generation run in your browser, so your data is not sent to a server by this tool."
+      }
+    ]
+  },
+  "imageToWebp": {
+    "title": "Image to WebP Converter",
+    "subtitle": "Fast client-side conversion with no upload to server.",
+    "dropzone": "Drag and drop JPG, JPEG, or PNG files here, or click to upload",
+    "supported": "Supports JPG, JPEG, PNG",
+    "qualityLabel": "WebP Quality",
+    "qualityHint": "Higher quality keeps more detail but gives larger file size.",
+    "convert": "Convert to WebP",
+    "converting": "Converting...",
+    "clear": "Clear All",
+    "downloadAll": "Download All",
+    "original": "Original",
+    "converted": "Converted",
+    "saved": "Saved",
+    "largerBy": "Larger by",
+    "download": "Download",
+    "statusReady": "Ready",
+    "statusConverting": "Converting",
+    "statusDone": "Done",
+    "statusError": "Failed",
+    "emptyTitle": "No images selected yet.",
+    "emptySubtitle": "Upload one or more files to start conversion.",
+    "invalidType": "Only JPG, JPEG, and PNG files are supported.",
+    "failedMessage": "Could not convert this file. Please try another image."
   },
   "footer": {
     "name": "Manjula",

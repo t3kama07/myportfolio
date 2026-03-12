@@ -44,6 +44,11 @@ export const metadata = {
       },
     ],
   },
+  icons: {
+    icon: [{ url: "/assets/logo.webp", type: "image/webp" }],
+    shortcut: ["/assets/logo.webp"],
+    apple: [{ url: "/assets/logo.webp", type: "image/webp" }],
+  },
   twitter: {
     card: "summary_large_image",
     title: "Manjula | Fullstack Developer Portfolio",

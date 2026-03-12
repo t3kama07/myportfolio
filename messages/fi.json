@@ -5,10 +5,17 @@
     "projectsTitle": "Projektit",
     "projectsDescription": "Manjulan valikoidut projektit verkko- ja mobiiliymparistoissa.",
     "contactTitle": "Yhteys",
-    "contactDescription": "Ota yhteytta Manjulaan web-kehitysprojekteista ja yhteistyosta."
+    "contactDescription": "Ota yhteytta Manjulaan web-kehitysprojekteista ja yhteistyosta.",
+    "toolsTitle": "Tyokalut",
+    "toolsDescription": "Manjulan ilmaiset web-tyokalut, kuten QR- ja laskugeneraattori.",
+    "invoiceGeneratorTitle": "Laskugeneraattori",
+    "invoiceGeneratorDescription": "Ilmainen verkkolaskugeneraattori reaaliaikaisella esikatselulla, verolaskennalla, valuuttatuella ja heti ladattavalla PDF:lla.",
+    "imageToWebpTitle": "Kuva WebP-muotoon",
+    "imageToWebpDescription": "Muunna JPG-, JPEG- ja PNG-kuvat WebP-muotoon suoraan selaimessa laatusaannolla."
   },
   "nav": {
     "projects": "Projektit",
+    "tools": "Tyokalut",
     "skills": "Taidot",
     "contact": "Yhteys",
     "requestCv": "Pyyda CV",
@@ -120,6 +127,135 @@
       "send": "Laheta viesti"
     }
   },
+  "tools": {
+    "title": "Ilmaiset tyokalut",
+    "subtitle": "Kaytannollisia pienia tyokaluja, jotka jaan ilmaiseksi.",
+    "open": "Avaa tyokalu",
+    "comingSoon": "Tulossa pian",
+    "items": [
+      {
+        "id": "qr-generator",
+        "name": "QR-generaattori",
+        "description": "Luo QR-koodeja nopeasti linkeille, yhteystiedoille tai tekstille.",
+        "href": "#"
+      },
+      {
+        "id": "invoice-generator",
+        "name": "Laskugeneraattori",
+        "description": "Luo selkeita laskuja riveilla ja summilla muutamassa sekunnissa.",
+        "href": "#"
+      },
+      {
+        "id": "image-to-webp",
+        "name": "Kuva WebP-muotoon",
+        "description": "Muunna JPG-, JPEG- ja PNG-kuvat WebP-muotoon parempaa verkkosuorituskykya varten.",
+        "href": "#"
+      }
+    ]
+  },
+  "invoiceGenerator": {
+    "title": "Laskugeneraattori",
+    "subtitle": "Tayta tiedot vasemmalle. Esikatselu oikealla paivittyy heti.",
+    "invoiceTitle": "Lasku",
+    "livePreview": "Reaaliaikainen esikatselu",
+    "from": "Lahettaja",
+    "billTo": "Asiakas",
+    "companySection": "Yrityksen tiedot",
+    "uploadLogo": "Lataa yrityksen logo",
+    "removeLogo": "Poista logo",
+    "clientSection": "Asiakkaan tiedot",
+    "metaSection": "Laskun tiedot",
+    "itemsSection": "Rivit",
+    "bankSection": "Pankkitiedot",
+    "termsSection": "Ehdot",
+    "companyName": "Yrityksen nimi",
+    "companyEmail": "Yrityksen sahkoposti",
+    "companyPhone": "Yrityksen puhelin",
+    "companyAddress": "Yrityksen osoite",
+    "clientName": "Asiakkaan nimi",
+    "clientEmail": "Asiakkaan sahkoposti",
+    "clientPhone": "Asiakkaan puhelin",
+    "clientAddress": "Asiakkaan osoite",
+    "invoiceNumber": "Laskunumero",
+    "issueDate": "Paivays",
+    "dueDate": "Erapaiva",
+    "currencyLabel": "Valuutta",
+    "taxRate": "Vero (%)",
+    "bankName": "Pankin nimi",
+    "bankAccountNumber": "Tilinumero",
+    "bankAccountName": "Tilin nimi",
+    "itemDescription": "Kuvaus",
+    "itemQty": "Maara",
+    "itemPrice": "Hinta",
+    "addItem": "Lisaa rivi",
+    "remove": "Poista",
+    "subtotal": "Valisumma",
+    "tax": "Vero",
+    "total": "Yhteensa",
+    "amountInWords": "Summa sanoina",
+    "terms": "Lisatiedot",
+    "termsPlaceholder": "Maksuehdot ja muut huomiot",
+    "placeholderDescription": "Palvelu tai tuote",
+    "downloadPdf": "Lataa PDF",
+    "clear": "Tyhjenna tiedot",
+    "thankYou": "Kiitos luottamuksesta.",
+    "footerNote": "",
+    "emptyClientName": "Asiakkaan nimi",
+    "currency": "EUR",
+    "faqTitle": "Laskugeneraattorin UKK",
+    "faqSubtitle": "Nopeat vastaukset yleisimpiin kysymyksiin tasta ilmaisesta verkkolaskugeneraattorista.",
+        "faqItems": [
+      {
+        "question": "Onko taman laskugeneraattorin kaytto ilmaista?",
+        "answer": "Kylla. Tama on ilmainen laskugeneraattori ja voit luoda seka ladata laskuja ilman tilausta."
+      },
+      {
+        "question": "Voinko kayttaa verkkolaskugeneraattoria ilman rekisterointia?",
+        "answer": "Kylla. Tilia ei tarvita. Voit tayttaa tiedot ja ladata PDF-laskun heti."
+      },
+      {
+        "question": "Voinko lisata veron ja valita valuutan ennen laskun luontia?",
+        "answer": "Kylla. Voit asettaa veroprosentin, valita valuutan ja tarkistaa summat reaaliajassa."
+      },
+      {
+        "question": "Luoko taman laskugeneraattori PDF-laskuja?",
+        "answer": "Kylla. Kun painat Lataa PDF, lasku muodostetaan automaattisesti PDF-tiedostoksi."
+      },
+      {
+        "question": "Voinko lisata yrityksen logon laskuun?",
+        "answer": "Kylla. Voit ladata yrityksen logon, ja se nakyy esikatselussa seka PDF-tulosteessa."
+      },
+      {
+        "question": "Sailyyko laskudata yksityisena?",
+        "answer": "Kylla. Laskun muokkaus ja PDF-luonti tapahtuvat selaimessa, eika dataa laheteta palvelimelle taman tyokalun kautta."
+      }
+    ]
+  },
+  "imageToWebp": {
+    "title": "Kuva WebP-muotoon",
+    "subtitle": "Nopea selaimessa tehtava muunnos ilman palvelimelle latausta.",
+    "dropzone": "Vedaa JPG-, JPEG- tai PNG-kuvat tahan tai klikkaa ladataksesi",
+    "supported": "Tukee: JPG, JPEG, PNG",
+    "qualityLabel": "WebP-laatu",
+    "qualityHint": "Korkeampi laatu sailyttaa yksityiskohtia mutta kasvattaa tiedostokokoa.",
+    "convert": "Muunna WebP:ksi",
+    "converting": "Muunnetaan...",
+    "clear": "Tyhjenna kaikki",
+    "downloadAll": "Lataa kaikki",
+    "original": "Alkuperainen",
+    "converted": "Muunnettu",
+    "saved": "Saasto",
+    "largerBy": "Suurempi",
+    "download": "Lataa",
+    "statusReady": "Valmis",
+    "statusConverting": "Muunnetaan",
+    "statusDone": "Valmis",
+    "statusError": "Epaonnistui",
+    "emptyTitle": "Kuvia ei ole valittu viela.",
+    "emptySubtitle": "Lataa yksi tai useampi tiedosto aloittaaksesi muunnoksen.",
+    "invalidType": "Vain JPG-, JPEG- ja PNG-tiedostot ovat tuettuja.",
+    "failedMessage": "Tiedoston muunnos epaonnistui. Yrita toista kuvaa."
+  },
   "footer": {
     "name": "Manjula",
     "role": "Web-kehittaja",
@@ -134,3 +270,4 @@
     "github": "GitHub"
   }
 }
+

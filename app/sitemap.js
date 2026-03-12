@@ -24,6 +24,24 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
+      url: `${siteUrl}/en/tools`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/en/tools/invoice-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.6,
+    },
+    {
+      url: `${siteUrl}/en/tools/image-to-webp`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.6,
+    },
+    {
       url: `${siteUrl}/fi`,
       lastModified,
       changeFrequency: "weekly",
@@ -40,6 +58,24 @@ export default function sitemap() {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.6,
+    },
+    {
+      url: `${siteUrl}/fi/tools`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.6,
+    },
+    {
+      url: `${siteUrl}/fi/tools/invoice-generator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
+    {
+      url: `${siteUrl}/fi/tools/image-to-webp`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.5,
     },
   ];
 }
