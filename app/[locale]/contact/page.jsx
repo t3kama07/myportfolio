@@ -20,6 +20,7 @@ export async function generateMetadata({ params }) {
       languages: {
         en: "/en/contact",
         fi: "/fi/contact",
+        "x-default": "/en/contact",
       },
     },
     openGraph: {
@@ -42,6 +43,7 @@ export default async function LocalizedContactPage({ params }) {
   return (
     <main className="portfolio-page" id="top">
       <Navbar locale={locale} nav={dict.nav} currentPath="/contact" />
+      <h1 className="sr-only">{dict.meta.contactTitle}</h1>
       <ContactSection locale={locale} contactSection={dict.contactSection} footer={dict.footer} />
     </main>
   );

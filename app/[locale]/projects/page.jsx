@@ -21,6 +21,7 @@ export async function generateMetadata({ params }) {
       languages: {
         en: "/en/projects",
         fi: "/fi/projects",
+        "x-default": "/en/projects",
       },
     },
     openGraph: {
@@ -43,6 +44,7 @@ export default async function LocalizedProjectsPage({ params }) {
   return (
     <main className="portfolio-page" id="top">
       <Navbar locale={locale} nav={dict.nav} currentPath="/projects" />
+      <h1 className="sr-only">{dict.meta.projectsTitle}</h1>
       <ProjectsSection
         projects={dict.projects.items}
         title={dict.projects.title}
