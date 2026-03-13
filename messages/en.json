@@ -117,6 +117,32 @@
       }
     ]
   },
+  "homeFaq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Quick answers about working with me on web and mobile projects.",
+    "items": [
+      {
+        "question": "What services do you offer?",
+        "answer": "I build websites, web apps, mobile apps, landing pages, and selected AI-assisted product content depending on the project goals."
+      },
+      {
+        "question": "What technologies do you use?",
+        "answer": "I mainly work with React, Next.js, React Native, Node.js, Firebase, MySQL, and other modern web tools."
+      },
+      {
+        "question": "Do you work with clients remotely?",
+        "answer": "Yes. I work with clients remotely and communicate through email, chat, and video calls throughout the project."
+      },
+      {
+        "question": "Can you improve an existing website instead of building a new one?",
+        "answer": "Yes. I can redesign, optimize, fix, or extend an existing site when a full rebuild is not necessary."
+      },
+      {
+        "question": "How do we start a project?",
+        "answer": "Send me a message with your idea, goals, and timeline. I will review the scope and reply with the next steps."
+      }
+    ]
+  },
   "contactSection": {
     "title": "Contact Me",
     "description": "Let's collaborate and build something meaningful together.",

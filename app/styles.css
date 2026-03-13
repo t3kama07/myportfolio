@@ -655,6 +655,35 @@ a {
   padding: 26px 20px;
 }
 
+.faq-wrap {
+  padding: 24px 20px;
+}
+
+.faq-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.faq-item {
+  border-radius: 14px;
+  border: 1px solid rgba(145, 156, 212, 0.34);
+  background: rgba(255, 255, 255, 0.74);
+  padding: 14px;
+}
+
+.faq-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #3b4676;
+}
+
+.faq-item p {
+  margin: 8px 0 0;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 .webp-faq-wrap {
   padding: 24px 20px;
 }
@@ -1527,6 +1556,7 @@ a {
   .projects-wrap,
   .tools-wrap,
   .webp-wrap,
+  .faq-wrap,
   .webp-faq-wrap,
   .invoice-wrap,
   .invoice-faq-wrap,

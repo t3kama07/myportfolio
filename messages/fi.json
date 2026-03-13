@@ -117,6 +117,32 @@
       }
     ]
   },
+  "homeFaq": {
+    "title": "Usein kysytyt kysymykset",
+    "subtitle": "Nopeat vastaukset yhteistyoon web- ja mobiiliprojekteissa.",
+    "items": [
+      {
+        "question": "Mita palveluita tarjoat?",
+        "answer": "Rakennan verkkosivuja, web-sovelluksia, mobiilisovelluksia, laskeutumissivuja ja valikoidusti AI-avusteista tuotesisaltoa projektin tavoitteiden mukaan."
+      },
+      {
+        "question": "Mita teknologioita kaytat?",
+        "answer": "Tyoskentelen paasiassa Reactin, Next.js:n, React Nativen, Node.js:n, Firebasen, MySQL:n ja muiden modernien web-tyokalujen kanssa."
+      },
+      {
+        "question": "Toteutatko projekteja etana?",
+        "answer": "Kylla. Tyoskentelen asiakkaiden kanssa etana ja pidan yhteytta sahkopostilla, chatilla ja videopuheluilla koko projektin ajan."
+      },
+      {
+        "question": "Voitko parantaa olemassa olevaa verkkosivua uuden rakentamisen sijaan?",
+        "answer": "Kylla. Voin uudistaa, optimoida, korjata tai laajentaa olemassa olevaa sivustoa silloin kun taydellinen uudelleenrakennus ei ole tarpeen."
+      },
+      {
+        "question": "Miten projekti aloitetaan?",
+        "answer": "Laheta viesti, jossa kerrot ideastasi, tavoitteista ja aikataulusta. Kayn tarpeen lapi ja vastaan seuraavista askelista."
+      }
+    ]
+  },
   "contactSection": {
     "title": "Ota yhteytta",
     "description": "Tehdaan yhdessa jotain merkityksellista.",
