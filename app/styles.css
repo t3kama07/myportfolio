@@ -1131,6 +1131,61 @@ a {
   padding: 26px 20px;
 }
 
+.resume-wrap h1 {
+  margin: 0;
+}
+
+.resume-seo-wrap {
+  padding: 26px 20px;
+}
+
+.resume-seo-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.resume-seo-content {
+  display: grid;
+  gap: 14px;
+}
+
+.resume-seo-card,
+.resume-howto-panel {
+  border-radius: 22px;
+  border: 1px solid rgba(145, 156, 212, 0.34);
+  background: rgba(255, 255, 255, 0.72);
+  padding: 18px;
+}
+
+.resume-seo-card h3,
+.resume-howto-panel h3,
+.resume-howto-step h4 {
+  margin: 0;
+}
+
+.resume-seo-card p,
+.resume-howto-panel > p,
+.resume-howto-step p {
+  margin: 10px 0 0;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.resume-howto-list {
+  margin: 18px 0 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 14px;
+}
+
+.resume-howto-step::marker {
+  color: #5865a3;
+  font-weight: 700;
+}
+
 .resume-builder-grid {
   margin-top: 20px;
   display: grid;
@@ -1193,14 +1248,16 @@ a {
 }
 
 .resume-template-switcher {
-  margin-top: 14px;
+  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .resume-template-switcher .btn {
-  min-width: 150px;
+  min-width: 118px;
+  padding: 9px 16px;
+  font-size: 0.92rem;
 }
 
 .resume-photo-upload {
@@ -1273,6 +1330,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.resume-photo-actions .btn {
+  min-width: 0;
+  padding: 8px 14px;
+  font-size: 0.9rem;
 }
 
 .resume-form-grid,
@@ -1654,7 +1717,8 @@ a {
 }
 
 @media (max-width: 1120px) {
-  .resume-builder-grid {
+  .resume-builder-grid,
+  .resume-seo-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1701,7 +1765,9 @@ a {
 
 @media (max-width: 720px) {
   .resume-editor-panel,
-  .resume-preview-panel {
+  .resume-preview-panel,
+  .resume-seo-card,
+  .resume-howto-panel {
     padding: 14px;
   }
 
@@ -2229,6 +2295,8 @@ a {
   .webp-faq-wrap,
   .invoice-wrap,
   .invoice-faq-wrap,
+  .resume-wrap,
+  .resume-seo-wrap,
   .doing-section,
   .tech-stack-section {
     padding: 24px 16px;
@@ -2538,3 +2606,7 @@ a {
     display: none;
   }
 }
+
+
+
+

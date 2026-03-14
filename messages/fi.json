@@ -12,8 +12,8 @@
     "invoiceGeneratorDescription": "Ilmainen verkkolaskugeneraattori reaaliaikaisella esikatselulla, verolaskennalla, valuuttatuella ja heti ladattavalla PDF:lla.",
     "imageToWebpTitle": "Kuva WebP-muotoon",
     "imageToWebpDescription": "Ilmainen kuva WebP-muunnin verkossa. Muunna PNG-, JPG- ja JPEG-kuvat WebP-muotoon selaimessa laadun saannolla ilman palvelimelle latausta.",
-    "resumeBuilderTitle": "CV-tyokalu",
-    "resumeBuilderDescription": "Ilmainen CV-tyokalu reaaliaikaisella esikatselulla, mallin vaihdolla, paikallisella automaattitallennuksella ja PDF- tai DOCX-viennilla."
+    "resumeBuilderTitle": "Ilmainen CV-tyokalu",
+    "resumeBuilderDescription": "Ilmainen CV-tyokalu, jolla teet ATS-ystavallisen ansioluettelon verkossa reaaliaikaisella esikatselulla seka PDF- tai DOCX-viennilla ilman rekisterointia."
   },
   "nav": {
     "projects": "Projektit",
@@ -182,7 +182,7 @@
       {
         "id": "resume-builder",
         "name": "CV-tyokalu",
-        "description": "Rakenna ATS-ystavallinen ansioluettelo reaaliaikaisella esikatselulla ja PDF- tai DOCX-viennilla.",
+        "description": "Luo ATS-ystavallinen ansioluettelo verkossa malleilla, reaaliaikaisella esikatselulla ja PDF- tai DOCX-viennilla.",
         "href": "#"
       },
       {
@@ -344,8 +344,8 @@
     "github": "GitHub"
   },
   "resumeBuilder": {
-    "title": "CV-tyokalu",
-    "subtitle": "Rakenna siisti ansioluettelo selaimessa reaaliaikaisella esikatselulla, mallin vaihdolla ja nopeilla viennilla.",
+    "title": "Ilmainen CV-tyokalu",
+    "subtitle": "Luo ATS-ystavallinen ansioluettelo verkossa reaaliaikaisella esikatselulla, selkeilla malleilla ja nopealla PDF- tai DOCX-viennilla.",
     "resumeTitle": "Ansioluettelo",
     "defaultFileName": "ansioluettelo",
     "templateSection": "Malli ja paikallinen tallennus",
@@ -406,27 +406,39 @@
     "docxError": "DOCX-tiedoston luonti epaonnistui juuri nyt. Yrita uudelleen.",
     "clearConfirm": "Poistetaanko tallennettu CV-luonnos tahan selaimeen?",
     "faqTitle": "CV-tyokalun UKK",
-    "faqSubtitle": "Nopeat vastaukset CV:n luomisesta, tallennuksesta ja viennista tassa ilmaisessa tyokalussa.",
+    "faqSubtitle": "Nopeat vastaukset ansioluettelon rakenteesta, malleista, ATS-vinkeista ja viennista tassa ilmaisessa CV-tyokalussa.",
     "faqItems": [
       {
         "question": "Onko taman CV-tyokalun kaytto ilmaista?",
-        "answer": "Kylla. Voit luoda CV:n, vaihtaa mallia ja ladata tiedostot ilman maksua tai tilin luontia."
+        "answer": "Kylla. Voit luoda, muokata ja ladata ansioluettelosi ilmaiseksi ilman tilin luontia."
       },
       {
-        "question": "Voinko ladata CV:n PDF- ja DOCX-muodossa?",
-        "answer": "Kylla. Tyokalu tukee PDF-latausta jakamista varten ja DOCX-latausta muokattavaa Word-yhteensopivaa tiedostoa varten."
+        "question": "Voinko ladata ansioluettelon PDF- ja DOCX-muodossa?",
+        "answer": "Kylla. Voit vieda ansioluettelon PDF-muodossa hakemuksia varten tai DOCX-muodossa myohempaa muokkausta varten."
       },
       {
         "question": "Tallentuuko CV automaattisesti?",
-        "answer": "Kylla. Luonnos tallentuu automaattisesti selaimen local storageen, joten se sailyy samalla laitteella sivun paivityksen jalkeen."
+        "answer": "Kylla. Luonnos tallentuu paikallisesti selaimeen samalla laitteella, joten voit jatkaa muokkausta myohemmin."
       },
       {
         "question": "Onko tama CV-tyokalu yksityinen?",
-        "answer": "Kylla. Ensimmainen versio toimii kokonaan selaimessa, joten CV-dataa ei laheteta tietokantaan tai palvelimelle taman tyokalun kautta."
+        "answer": "Kylla. Tyokalu toimii selaimessa eika vaadi tilia tai tietokantaa, jotta voit aloittaa ansioluettelon rakentamisen."
       },
       {
         "question": "Sopivatko mallit ATS-kayttoon?",
-        "answer": "Mallit on suunniteltu selkeiksi ja tekstipainotteisiksi, joten ne ovat ATS-ystavallisempia kuin raskaasti graafiset asettelut."
+        "answer": "Kylla. Mallit on suunniteltu selkeiksi ja tekstipainotteisiksi, jolloin rekrytoijien ja ATS-jarjestelmien on helpompi lukea ne."
+      },
+      {
+        "question": "Mika ansioluettelon formaatti kannattaa valita?",
+        "answer": "Useimmille hakijoille kaanteinen kronologinen malli on turvallisin valinta, koska se nostaa uusimman kokemuksen ensin esiin ja on rekrytoijille tuttu."
+      },
+      {
+        "question": "Sisaltaako tyokalu ilmaisia CV-malleja?",
+        "answer": "Kylla. Voit vaihtaa ansioluettelomallia suoraan tyokalussa ja kayttaa malleja ilmaiseksi ennen PDF- tai DOCX-vientia."
+      },
+      {
+        "question": "Voinko kayttaa tata tyokalua, vaikka tyokokemusta on vahan?",
+        "answer": "Kylla. Aloita koulutuksesta, projekteista, taidoista, sertifikaateista, vapaaehtoistyoista tai harjoitteluista ja rakenna selkea yhden sivun CV."
       }
     ],
     "photoLabel": "Profiilikuva",
@@ -435,6 +447,52 @@
     "uploadPhoto": "Lataa kuva",
     "replacePhoto": "Vaihda kuva",
     "removePhoto": "Poista kuva",
-    "photoError": "Kuvan kasittely epaonnistui. Yrita toista kuvatiedostoa."
+    "photoError": "Kuvan kasittely epaonnistui. Yrita toista kuvatiedostoa.",
+    "seoSectionTitle": "CV-tyokalu, mallit ja formaattivinkit",
+    "seoSectionSubtitle": "Luo ammattimainen ansioluettelo verkossa, valitse sopiva rakenne ja lataa valmis tiedosto muutamassa minuutissa.",
+    "seoSections": [
+      {
+        "title": "Ilmainen CV-tyokalu ja ATS-ystavalliset mallit",
+        "body": "Talla ilmaisella CV-tyokalulla voit rakentaa ammattimaisen ansioluettelon verkossa ilman rekisterointia. Vaihda selkeiden mallien valilla, muokkaa jokaista osiota reaaliajassa ja lataa valmis tiedosto PDF- tai DOCX-muodossa."
+      },
+      {
+        "title": "Valitse ansioluettelon formaatti, joka toimii useimmissa hauissa",
+        "body": "Useimmille hakijoille kaanteinen kronologinen rakenne on paras lahtokohta, koska se korostaa uusinta kokemusta ensin. Tama tyokalu auttaa pitamaan rakenteen selkeana, helposti luettavana ja ATS-ystavallisena."
+      },
+      {
+        "title": "Kirjoita ansioluettelo nopeammin esimerkkien avulla",
+        "body": "Jos et ole varma, miten ansioluettelo kannattaa kirjoittaa, aloita lyhyesta otsikosta, tiiviista yhteenvedosta, taidoista ja saavutuksiin perustuvasta tyokokemuksesta. Reaaliaikainen esikatselu auttaa hahmottamaan lopputuloksen nopeasti."
+      },
+      {
+        "title": "Lataa, muokkaa ja kayta CV:ta uudelleen",
+        "body": "Vie ansioluettelo PDF-muodossa, kun tarvitset valmiin tiedoston hakemuksiin, tai valitse DOCX, jos haluat muokata sita myohemmin. Koska luonnos tallentuu selaimeen, voit paivittaa CV:ta helposti jokaista uutta hakua varten."
+      }
+    ],
+    "seoHowTo": {
+      "title": "Miten teet ansioluettelon verkossa",
+      "description": "Seuraa naita vaiheita, kun haluat luoda ansioluettelon nopeasti ilmaisella CV-tyokalulla.",
+      "steps": [
+        {
+          "id": "choose-template",
+          "title": "Valitse CV-malli",
+          "description": "Aloita klassisella tai korostetulla mallilla ja valitse rakenne, joka sopii tavoittelemaasi rooliin."
+        },
+        {
+          "id": "add-your-details",
+          "title": "Lisaa omat tiedot ja kokemus",
+          "description": "Tayta yhteystiedot, yhteenveto, taidot, tyokokemus, koulutus ja olennaiset linkit."
+        },
+        {
+          "id": "review-the-live-preview",
+          "title": "Tarkista reaaliaikainen esikatselu",
+          "description": "Tarkista sanamuodot, valit ja osioiden jarjestys samalla kun esikatselu paivittyy kirjoittaessasi."
+        },
+        {
+          "id": "download-your-resume",
+          "title": "Lataa ansioluettelo PDF- tai DOCX-muodossa",
+          "description": "Vie valmis tiedosto tyohakemuksia, jakamista tai myohempaa muokkausta varten."
+        }
+      ]
+    }
   }
 }

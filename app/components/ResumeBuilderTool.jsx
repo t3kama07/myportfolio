@@ -1850,20 +1850,12 @@ export default function ResumeBuilderTool({ locale, text }) {
   return (
     <section className="section shell" id="resume-builder">
       <div className="glass-card resume-wrap">
-        <h2>{text.title}</h2>
+        <h1>{text.title}</h1>
         <p className="section-subtitle">{text.subtitle}</p>
 
         <div className="resume-builder-grid">
           <div className="resume-editor-panel">
             <section className="resume-block">
-              <div className="resume-block-head">
-                <div>
-                  <h3>{text.templateSection}</h3>
-                  <p>{text.localSaveNote}</p>
-                </div>
-                <span className="resume-save-badge">{hasHydrated ? text.savedBadge : text.loadingBadge}</span>
-              </div>
-
               <div className="resume-template-switcher" role="tablist" aria-label={text.templateSection}>
                 <button
                   type="button"
@@ -2560,3 +2552,4 @@ export default function ResumeBuilderTool({ locale, text }) {
     </section>
   );
 }
+

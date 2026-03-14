@@ -12,8 +12,8 @@
     "invoiceGeneratorDescription": "Free online invoice generator with live preview, tax calculation, currency support, and instant PDF download.",
     "imageToWebpTitle": "Image to WebP Converter",
     "imageToWebpDescription": "Free online image to WebP converter. Convert PNG to WebP, JPG to WebP, and JPEG to WebP in your browser with adjustable quality and no upload.",
-    "resumeBuilderTitle": "Resume Builder",
-    "resumeBuilderDescription": "Free online resume builder with live preview, template switching, local autosave, and instant PDF or DOCX export."
+    "resumeBuilderTitle": "Free Resume Builder",
+    "resumeBuilderDescription": "Free resume builder with ATS-friendly resume templates, live preview, and instant PDF or DOCX download. Create a professional resume online with no sign-up."
   },
   "nav": {
     "projects": "Projects",
@@ -182,7 +182,7 @@
       {
         "id": "resume-builder",
         "name": "Resume Builder",
-        "description": "Build an ATS-friendly resume with live preview, templates, and PDF or DOCX export.",
+        "description": "Create an ATS-friendly resume online with templates, live preview, and PDF or DOCX export.",
         "href": "#"
       },
       {
@@ -344,8 +344,8 @@
     "github": "GitHub"
   },
   "resumeBuilder": {
-    "title": "Resume Builder",
-    "subtitle": "Build a polished resume in your browser with live preview, template switching, and instant exports.",
+    "title": "Free Resume Builder",
+    "subtitle": "Create a polished, ATS-friendly resume online with live preview, professional resume templates, and instant PDF or DOCX export.",
     "resumeTitle": "Resume",
     "defaultFileName": "resume",
     "templateSection": "Template & Local Save",
@@ -406,27 +406,39 @@
     "docxError": "Unable to generate the DOCX file right now. Please try again.",
     "clearConfirm": "Clear your saved resume draft from this browser?",
     "faqTitle": "Resume Builder FAQ",
-    "faqSubtitle": "Quick answers about creating, saving, and exporting your resume with this free tool.",
+    "faqSubtitle": "Quick answers about resume formats, resume templates, ATS tips, and exporting your resume with this free tool.",
     "faqItems": [
       {
         "question": "Is this resume builder free to use?",
-        "answer": "Yes. You can build your resume, switch templates, and export files without paying or creating an account."
+        "answer": "Yes. You can create, edit, and download your resume for free without making an account."
       },
       {
         "question": "Can I download my resume as PDF and DOCX?",
-        "answer": "Yes. The tool supports both PDF download for sharing and DOCX download for editable Word-compatible files."
+        "answer": "Yes. Export your resume as PDF for ready-to-send applications or DOCX for later editing."
       },
       {
         "question": "Does the resume auto-save?",
-        "answer": "Yes. Your draft is stored automatically in your browser using local storage, so it stays available when you refresh the page on the same device."
+        "answer": "Yes. Your draft is saved locally in your browser on the same device, so you can come back and keep editing."
       },
       {
         "question": "Is this resume builder private?",
-        "answer": "Yes. The first version works fully client-side, so your resume data is not sent to a database or backend from this tool."
+        "answer": "Yes. The tool works locally in your browser and does not require an account or database to start building your resume."
       },
       {
         "question": "Are the templates ATS-friendly?",
-        "answer": "The templates are designed to stay clean and text-focused, which makes them more ATS-friendly than heavy graphic layouts."
+        "answer": "Yes. The templates keep a clean, text-first structure that is easier for ATS software and recruiters to scan."
+      },
+      {
+        "question": "What resume format should I use?",
+        "answer": "For most job seekers, a reverse-chronological resume format is the best default because it shows your latest experience first and is widely accepted by recruiters."
+      },
+      {
+        "question": "Does this tool include free resume templates?",
+        "answer": "Yes. You can switch between resume templates inside the builder and use them for free before downloading PDF or DOCX files."
+      },
+      {
+        "question": "Can I use this resume builder if I have little or no experience?",
+        "answer": "Yes. Start with education, projects, skills, certifications, volunteer work, or internships and build a simple one-page resume for your target role."
       }
     ],
     "photoLabel": "Profile Photo",
@@ -435,6 +447,52 @@
     "uploadPhoto": "Upload Photo",
     "replacePhoto": "Replace Photo",
     "removePhoto": "Remove Photo",
-    "photoError": "Unable to process this image. Please try another photo file."
+    "photoError": "Unable to process this image. Please try another photo file.",
+    "seoSectionTitle": "Resume builder guide, templates, and format tips",
+    "seoSectionSubtitle": "Create a professional resume online, choose the right resume format, and download ready-to-send files in minutes.",
+    "seoSections": [
+      {
+        "title": "Free resume builder with ATS-friendly resume templates",
+        "body": "Use this free resume builder to create a professional resume online without sign-up. Switch between clean resume templates, edit every section in real time, and download a finished resume in PDF or DOCX format."
+      },
+      {
+        "title": "Choose a resume format that works for most jobs",
+        "body": "For most applicants, a reverse-chronological resume format is the safest choice because it highlights recent experience first. This builder keeps the layout clean, readable, and ATS-friendly so your resume format stays easy for recruiters and software to scan."
+      },
+      {
+        "title": "Use resume examples and prompts to write faster",
+        "body": "If you are unsure how to write a resume, start with a short headline, strong summary, focused skills list, and achievement-based work history. The live preview makes it easier to shape your content like polished resume examples while you write."
+      },
+      {
+        "title": "Download, edit, and reuse your resume",
+        "body": "Export your resume as PDF when you need a ready-to-send file, or choose DOCX if you want to edit it later. Because your draft saves locally in the browser, you can come back and update your resume for every new application."
+      }
+    ],
+    "seoHowTo": {
+      "title": "How to write a resume online",
+      "description": "Follow these steps to create a resume quickly with the free resume builder.",
+      "steps": [
+        {
+          "id": "choose-template",
+          "title": "Choose a resume template",
+          "description": "Start with the classic or split template and pick the resume format that fits your target role."
+        },
+        {
+          "id": "add-your-details",
+          "title": "Add your personal and work details",
+          "description": "Fill in your contact details, summary, skills, experience, education, and relevant links."
+        },
+        {
+          "id": "review-the-live-preview",
+          "title": "Review the live preview",
+          "description": "Check the wording, spacing, and section order while the preview updates instantly as you type."
+        },
+        {
+          "id": "download-your-resume",
+          "title": "Download your resume as PDF or DOCX",
+          "description": "Export a polished resume file for job applications, sharing, or later editing."
+        }
+      ]
+    }
   }
 }
