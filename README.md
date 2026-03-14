@@ -20,6 +20,21 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Contact Form Email Setup
+
+The contact form sends mail from the server with SMTP.
+
+1. Copy `.env.example` to `.env.local`.
+2. Fill in your SMTP credentials.
+3. Restart the dev server after saving the env file.
+
+For Zoho Mail, use an app password for `SMTP_PASS`.
+
+- EU data center example host: `smtp.zoho.eu`
+- US data center example host: `smtp.zoho.com`
+
+By default the form sends messages to `hello@manjula.live`, but you can override that with `CONTACT_TO_EMAIL`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

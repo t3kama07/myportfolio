@@ -7,11 +7,13 @@
     "contactTitle": "Contact",
     "contactDescription": "Contact Manjula to discuss web development projects and collaboration.",
     "toolsTitle": "Tools",
-    "toolsDescription": "Free web tools by Manjula, including practical utilities like QR and invoice generators.",
+    "toolsDescription": "Free web tools by Manjula, including resume, invoice, and image utilities.",
     "invoiceGeneratorTitle": "Invoice Generator",
     "invoiceGeneratorDescription": "Free online invoice generator with live preview, tax calculation, currency support, and instant PDF download.",
     "imageToWebpTitle": "Image to WebP Converter",
-    "imageToWebpDescription": "Free online image to WebP converter. Convert PNG to WebP, JPG to WebP, and JPEG to WebP in your browser with adjustable quality and no upload."
+    "imageToWebpDescription": "Free online image to WebP converter. Convert PNG to WebP, JPG to WebP, and JPEG to WebP in your browser with adjustable quality and no upload.",
+    "resumeBuilderTitle": "Resume Builder",
+    "resumeBuilderDescription": "Free online resume builder with live preview, template switching, local autosave, and instant PDF or DOCX export."
   },
   "nav": {
     "projects": "Projects",
@@ -150,7 +152,19 @@
       "name": "Name",
       "email": "Email",
       "message": "Message",
-      "send": "Send Message"
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Thanks. Your message has been sent.",
+      "configError": "The contact form is not configured yet. Please email hello@manjula.live directly.",
+      "submitError": "Something went wrong while sending your message. Please try again or email hello@manjula.live.",
+      "validation": {
+        "nameRequired": "Please enter your name.",
+        "nameTooLong": "Please keep your name under 120 characters.",
+        "emailRequired": "Please enter your email address.",
+        "emailInvalid": "Please enter a valid email address.",
+        "messageRequired": "Please enter a message.",
+        "messageTooLong": "Please keep your message under 5000 characters."
+      }
     }
   },
   "tools": {
@@ -163,6 +177,12 @@
         "id": "qr-generator",
         "name": "QR Generator",
         "description": "Generate QR codes quickly for URLs, contact info, or plain text.",
+        "href": "#"
+      },
+      {
+        "id": "resume-builder",
+        "name": "Resume Builder",
+        "description": "Build an ATS-friendly resume with live preview, templates, and PDF or DOCX export.",
         "href": "#"
       },
       {
@@ -322,5 +342,99 @@
     "builtWith": "Built with Next.js",
     "linkedin": "LinkedIn",
     "github": "GitHub"
+  },
+  "resumeBuilder": {
+    "title": "Resume Builder",
+    "subtitle": "Build a polished resume in your browser with live preview, template switching, and instant exports.",
+    "resumeTitle": "Resume",
+    "defaultFileName": "resume",
+    "templateSection": "Template & Local Save",
+    "templateClassic": "Classic",
+    "templateSplit": "Split Accent",
+    "savedBadge": "Autosave on",
+    "loadingBadge": "Loading...",
+    "localSaveNote": "Your draft is saved locally in this browser. No account or database needed.",
+    "personalSection": "Personal Information",
+    "contactSection": "Contact",
+    "summarySection": "Professional Summary",
+    "summaryLabel": "Summary",
+    "summaryPlaceholder": "Write a short summary about your strengths, experience, and the kind of role you are targeting.",
+    "skillsSection": "Skills",
+    "experienceSection": "Work Experience",
+    "educationSection": "Education",
+    "linksSection": "Links",
+    "fullName": "Full Name",
+    "role": "Role / Headline",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "website": "Website",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "jobTitle": "Job Title",
+    "company": "Company",
+    "degree": "Degree / Program",
+    "school": "School / University",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "currentRole": "Current role",
+    "present": "Present",
+    "description": "Highlights / Description",
+    "descriptionPlaceholder": "Add bullet-style highlights, one per line.",
+    "educationPlaceholder": "Add notable coursework, achievements, or focus areas.",
+    "skillPlaceholder": "Add a skill and press Enter",
+    "addSkill": "Add Skill",
+    "addExperience": "Add Experience",
+    "addEducation": "Add Education",
+    "addLink": "Add Link",
+    "linkLabel": "Link Label",
+    "linkUrl": "Link URL",
+    "remove": "Remove",
+    "downloadPdf": "Download PDF",
+    "downloadDocx": "Download DOCX",
+    "clear": "Clear Resume",
+    "livePreview": "Live Preview",
+    "emptySummary": "Add a short summary to introduce your profile.",
+    "emptySkills": "No skills added yet.",
+    "emptyExperience": "No work experience added yet.",
+    "emptyEducation": "No education details added yet.",
+    "emptyLinks": "No extra links added yet.",
+    "emptyContact": "Add contact details to show them here.",
+    "previewName": "Your Name",
+    "previewRole": "Your target role or professional headline",
+    "pdfError": "Unable to generate the PDF right now. Please try again.",
+    "docxError": "Unable to generate the DOCX file right now. Please try again.",
+    "clearConfirm": "Clear your saved resume draft from this browser?",
+    "faqTitle": "Resume Builder FAQ",
+    "faqSubtitle": "Quick answers about creating, saving, and exporting your resume with this free tool.",
+    "faqItems": [
+      {
+        "question": "Is this resume builder free to use?",
+        "answer": "Yes. You can build your resume, switch templates, and export files without paying or creating an account."
+      },
+      {
+        "question": "Can I download my resume as PDF and DOCX?",
+        "answer": "Yes. The tool supports both PDF download for sharing and DOCX download for editable Word-compatible files."
+      },
+      {
+        "question": "Does the resume auto-save?",
+        "answer": "Yes. Your draft is stored automatically in your browser using local storage, so it stays available when you refresh the page on the same device."
+      },
+      {
+        "question": "Is this resume builder private?",
+        "answer": "Yes. The first version works fully client-side, so your resume data is not sent to a database or backend from this tool."
+      },
+      {
+        "question": "Are the templates ATS-friendly?",
+        "answer": "The templates are designed to stay clean and text-focused, which makes them more ATS-friendly than heavy graphic layouts."
+      }
+    ],
+    "photoLabel": "Profile Photo",
+    "photoPlaceholder": "No photo",
+    "photoHint": "Upload a headshot to show it in the preview and exported resume files.",
+    "uploadPhoto": "Upload Photo",
+    "replacePhoto": "Replace Photo",
+    "removePhoto": "Remove Photo",
+    "photoError": "Unable to process this image. Please try another photo file."
   }
 }

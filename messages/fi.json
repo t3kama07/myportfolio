@@ -7,11 +7,13 @@
     "contactTitle": "Yhteys",
     "contactDescription": "Ota yhteytta Manjulaan web-kehitysprojekteista ja yhteistyosta.",
     "toolsTitle": "Tyokalut",
-    "toolsDescription": "Manjulan ilmaiset web-tyokalut, kuten QR- ja laskugeneraattori.",
+    "toolsDescription": "Manjulan ilmaiset web-tyokalut, kuten CV-tyokalu, laskugeneraattori ja kuva-apurit.",
     "invoiceGeneratorTitle": "Laskugeneraattori",
     "invoiceGeneratorDescription": "Ilmainen verkkolaskugeneraattori reaaliaikaisella esikatselulla, verolaskennalla, valuuttatuella ja heti ladattavalla PDF:lla.",
     "imageToWebpTitle": "Kuva WebP-muotoon",
-    "imageToWebpDescription": "Ilmainen kuva WebP-muunnin verkossa. Muunna PNG-, JPG- ja JPEG-kuvat WebP-muotoon selaimessa laadun saannolla ilman palvelimelle latausta."
+    "imageToWebpDescription": "Ilmainen kuva WebP-muunnin verkossa. Muunna PNG-, JPG- ja JPEG-kuvat WebP-muotoon selaimessa laadun saannolla ilman palvelimelle latausta.",
+    "resumeBuilderTitle": "CV-tyokalu",
+    "resumeBuilderDescription": "Ilmainen CV-tyokalu reaaliaikaisella esikatselulla, mallin vaihdolla, paikallisella automaattitallennuksella ja PDF- tai DOCX-viennilla."
   },
   "nav": {
     "projects": "Projektit",
@@ -150,7 +152,19 @@
       "name": "Nimi",
       "email": "Sahkoposti",
       "message": "Viesti",
-      "send": "Laheta viesti"
+      "send": "Laheta viesti",
+      "sending": "Lahetetaan...",
+      "success": "Kiitos. Viestisi on lahetetty.",
+      "configError": "Yhteyslomake ei ole viela kaytossa. Laheta sahkopostia suoraan osoitteeseen hello@manjula.live.",
+      "submitError": "Viestin lahetys epaonnistui. Yrita uudelleen tai laheta sahkopostia osoitteeseen hello@manjula.live.",
+      "validation": {
+        "nameRequired": "Kirjoita nimesi.",
+        "nameTooLong": "Nimen tulee olla alle 120 merkkiä.",
+        "emailRequired": "Kirjoita sahkopostiosoitteesi.",
+        "emailInvalid": "Kirjoita kelvollinen sahkopostiosoite.",
+        "messageRequired": "Kirjoita viesti.",
+        "messageTooLong": "Viestin tulee olla alle 5000 merkkiä."
+      }
     }
   },
   "tools": {
@@ -163,6 +177,12 @@
         "id": "qr-generator",
         "name": "QR-generaattori",
         "description": "Luo QR-koodeja nopeasti linkeille, yhteystiedoille tai tekstille.",
+        "href": "#"
+      },
+      {
+        "id": "resume-builder",
+        "name": "CV-tyokalu",
+        "description": "Rakenna ATS-ystavallinen ansioluettelo reaaliaikaisella esikatselulla ja PDF- tai DOCX-viennilla.",
         "href": "#"
       },
       {
@@ -230,7 +250,7 @@
     "currency": "EUR",
     "faqTitle": "Laskugeneraattorin UKK",
     "faqSubtitle": "Nopeat vastaukset yleisimpiin kysymyksiin tasta ilmaisesta verkkolaskugeneraattorista.",
-        "faqItems": [
+    "faqItems": [
       {
         "question": "Onko taman laskugeneraattorin kaytto ilmaista?",
         "answer": "Kylla. Tama on ilmainen laskugeneraattori ja voit luoda seka ladata laskuja ilman tilausta."
@@ -322,6 +342,99 @@
     "builtWith": "Rakennettu Next.js:lla",
     "linkedin": "LinkedIn",
     "github": "GitHub"
+  },
+  "resumeBuilder": {
+    "title": "CV-tyokalu",
+    "subtitle": "Rakenna siisti ansioluettelo selaimessa reaaliaikaisella esikatselulla, mallin vaihdolla ja nopeilla viennilla.",
+    "resumeTitle": "Ansioluettelo",
+    "defaultFileName": "ansioluettelo",
+    "templateSection": "Malli ja paikallinen tallennus",
+    "templateClassic": "Klassinen",
+    "templateSplit": "Korostettu",
+    "savedBadge": "Tallennus paalla",
+    "loadingBadge": "Ladataan...",
+    "localSaveNote": "Luonnos tallentuu automaattisesti tahan selaimeen. Tilia tai tietokantaa ei tarvita.",
+    "personalSection": "Henkilotiedot",
+    "contactSection": "Yhteystiedot",
+    "summarySection": "Tiivistelma",
+    "summaryLabel": "Tiivistelma",
+    "summaryPlaceholder": "Kirjoita lyhyt yhteenveto vahvuuksista, kokemuksesta ja tavoitellusta roolista.",
+    "skillsSection": "Taidot",
+    "experienceSection": "Tyokokemus",
+    "educationSection": "Koulutus",
+    "linksSection": "Linkit",
+    "fullName": "Koko nimi",
+    "role": "Rooli / otsikko",
+    "email": "Sahkoposti",
+    "phone": "Puhelin",
+    "location": "Sijainti",
+    "website": "Verkkosivu",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "jobTitle": "Tehtavanimike",
+    "company": "Yritys",
+    "degree": "Tutkinto / ohjelma",
+    "school": "Oppilaitos",
+    "startDate": "Alkupaiva",
+    "endDate": "Loppupaiva",
+    "currentRole": "Nykyinen rooli",
+    "present": "Nykyinen",
+    "description": "Kuvaus / kohokohdat",
+    "descriptionPlaceholder": "Lisaa saavutuksia tai tehtavia yksi rivi kerrallaan.",
+    "educationPlaceholder": "Lisaa esimerkiksi painotuksia, kursseja tai saavutuksia.",
+    "skillPlaceholder": "Lisaa taito ja paina Enter",
+    "addSkill": "Lisaa taito",
+    "addExperience": "Lisaa tyokokemus",
+    "addEducation": "Lisaa koulutus",
+    "addLink": "Lisaa linkki",
+    "linkLabel": "Linkin nimi",
+    "linkUrl": "Linkin osoite",
+    "remove": "Poista",
+    "downloadPdf": "Lataa PDF",
+    "downloadDocx": "Lataa DOCX",
+    "clear": "Tyhjenna CV",
+    "livePreview": "Reaaliaikainen esikatselu",
+    "emptySummary": "Lisaa lyhyt tiivistelma profiilistasi.",
+    "emptySkills": "Taitoja ei ole lisatty viela.",
+    "emptyExperience": "Tyokokemusta ei ole lisatty viela.",
+    "emptyEducation": "Koulutusta ei ole lisatty viela.",
+    "emptyLinks": "Linkkeja ei ole lisatty viela.",
+    "emptyContact": "Lisaa yhteystiedot, jotta ne nakyvat tassa.",
+    "previewName": "Oma nimi",
+    "previewRole": "Tavoiteltu rooli tai ammatillinen otsikko",
+    "pdfError": "PDF-tiedoston luonti epaonnistui juuri nyt. Yrita uudelleen.",
+    "docxError": "DOCX-tiedoston luonti epaonnistui juuri nyt. Yrita uudelleen.",
+    "clearConfirm": "Poistetaanko tallennettu CV-luonnos tahan selaimeen?",
+    "faqTitle": "CV-tyokalun UKK",
+    "faqSubtitle": "Nopeat vastaukset CV:n luomisesta, tallennuksesta ja viennista tassa ilmaisessa tyokalussa.",
+    "faqItems": [
+      {
+        "question": "Onko taman CV-tyokalun kaytto ilmaista?",
+        "answer": "Kylla. Voit luoda CV:n, vaihtaa mallia ja ladata tiedostot ilman maksua tai tilin luontia."
+      },
+      {
+        "question": "Voinko ladata CV:n PDF- ja DOCX-muodossa?",
+        "answer": "Kylla. Tyokalu tukee PDF-latausta jakamista varten ja DOCX-latausta muokattavaa Word-yhteensopivaa tiedostoa varten."
+      },
+      {
+        "question": "Tallentuuko CV automaattisesti?",
+        "answer": "Kylla. Luonnos tallentuu automaattisesti selaimen local storageen, joten se sailyy samalla laitteella sivun paivityksen jalkeen."
+      },
+      {
+        "question": "Onko tama CV-tyokalu yksityinen?",
+        "answer": "Kylla. Ensimmainen versio toimii kokonaan selaimessa, joten CV-dataa ei laheteta tietokantaan tai palvelimelle taman tyokalun kautta."
+      },
+      {
+        "question": "Sopivatko mallit ATS-kayttoon?",
+        "answer": "Mallit on suunniteltu selkeiksi ja tekstipainotteisiksi, joten ne ovat ATS-ystavallisempia kuin raskaasti graafiset asettelut."
+      }
+    ],
+    "photoLabel": "Profiilikuva",
+    "photoPlaceholder": "Ei kuvaa",
+    "photoHint": "Lataa kasvokuva, niin se nakyy esikatselussa ja viedyissa CV-tiedostoissa.",
+    "uploadPhoto": "Lataa kuva",
+    "replacePhoto": "Vaihda kuva",
+    "removePhoto": "Poista kuva",
+    "photoError": "Kuvan kasittely epaonnistui. Yrita toista kuvatiedostoa."
   }
 }
-

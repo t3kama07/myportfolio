@@ -30,6 +30,12 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
+      url: `${siteUrl}/en/tools/resume-builder`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.6,
+    },
+    {
       url: `${siteUrl}/en/tools/invoice-generator`,
       lastModified,
       changeFrequency: "weekly",
@@ -64,6 +70,12 @@ export default function sitemap() {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.6,
+    },
+    {
+      url: `${siteUrl}/fi/tools/resume-builder`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.5,
     },
     {
       url: `${siteUrl}/fi/tools/invoice-generator`,

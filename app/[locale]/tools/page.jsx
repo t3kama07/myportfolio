@@ -42,6 +42,7 @@ export default async function LocalizedToolsPage({ params }) {
   const internalToolPaths = {
     "invoice-generator": `/${locale}/tools/invoice-generator`,
     "image-to-webp": `/${locale}/tools/image-to-webp`,
+    "resume-builder": `/${locale}/tools/resume-builder`,
   };
 
   return (

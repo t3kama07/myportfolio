@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "docx": "^9.6.1",
     "jspdf": "^4.2.0",
     "jspdf-autotable": "^5.0.7",
     "next": "16.1.6",
+    "nodemailer": "^8.0.2",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   }
