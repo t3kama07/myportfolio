@@ -48,6 +48,12 @@ export default function sitemap() {
       priority: 0.6,
     },
     {
+      url: `${siteUrl}/en/tools/avif-to-jpg`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.65,
+    },
+    {
       url: `${siteUrl}/fi`,
       lastModified,
       changeFrequency: "weekly",
@@ -88,6 +94,12 @@ export default function sitemap() {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.5,
+    },
+    {
+      url: `${siteUrl}/fi/tools/avif-to-jpg`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.55,
     },
   ];
 }

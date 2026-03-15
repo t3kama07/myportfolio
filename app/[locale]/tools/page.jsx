@@ -40,6 +40,7 @@ export default async function LocalizedToolsPage({ params }) {
 
   const dict = getDictionary(locale);
   const internalToolPaths = {
+    "avif-to-jpg": `/${locale}/tools/avif-to-jpg`,
     "invoice-generator": `/${locale}/tools/invoice-generator`,
     "image-to-webp": `/${locale}/tools/image-to-webp`,
     "resume-builder": `/${locale}/tools/resume-builder`,

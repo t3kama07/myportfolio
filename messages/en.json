@@ -11,7 +11,9 @@
     "invoiceGeneratorTitle": "Invoice Generator",
     "invoiceGeneratorDescription": "Free online invoice generator with live preview, tax calculation, currency support, and instant PDF download.",
     "imageToWebpTitle": "Image to WebP Converter",
-    "imageToWebpDescription": "Free online image to WebP converter. Convert PNG to WebP, JPG to WebP, and JPEG to WebP in your browser with adjustable quality and no upload.",
+    "imageToWebpDescription": "Convert JPG, JPEG, and PNG to WebP online for free. Adjust quality, batch-convert images, and download web-ready files directly in your browser.",
+    "avifToJpgTitle": "AVIF to JPG Converter",
+    "avifToJpgDescription": "Convert AVIF to JPG or JPEG online for free. Adjust quality, choose a background color for transparency, batch-convert files, and download the result in your browser.",
     "resumeBuilderTitle": "Free Resume Builder",
     "resumeBuilderDescription": "Free resume builder with ATS-friendly resume templates, live preview, and instant PDF or DOCX download. Create a professional resume online with no sign-up."
   },
@@ -196,6 +198,12 @@
         "name": "Image to WebP",
         "description": "Convert JPG, JPEG, and PNG images into WebP with better web performance.",
         "href": "#"
+      },
+      {
+        "id": "avif-to-jpg",
+        "name": "AVIF to JPG",
+        "description": "Convert AVIF files into widely supported JPG images with no upload and adjustable quality.",
+        "href": "/tools/avif-to-jpg"
       }
     ]
   },
@@ -279,7 +287,24 @@
   },
   "imageToWebp": {
     "title": "Image to WebP Converter",
-    "subtitle": "Fast client-side conversion with no upload to server.",
+    "subtitle": "Upload JPG, JPEG, or PNG files, adjust WebP quality, and download the result.",
+    "heroKicker": "Free image converter",
+    "heroTitle": "Image to WebP Converter Online",
+    "introParagraphs": [
+      "Use this free Image to WebP converter when you want smaller, web-ready images without leaving the browser. It helps you convert JPG, JPEG, and PNG files to WebP quickly for websites, blogs, landing pages, and online stores."
+    ],
+    "heroPoints": [
+      "Convert JPG, JPEG, and PNG to WebP directly in your browser.",
+      "Batch-convert multiple images in one session.",
+      "Adjust WebP quality to balance file size and image detail."
+    ],
+    "jumpStart": "Start converting",
+    "jumpHowTo": "How to convert",
+    "jumpFaq": "Read FAQ",
+    "relatedTitle": "Related tools",
+    "relatedBrowseLabel": "Browse all tools",
+    "relatedBrowseDescription": "See the rest of the free converter and utility pages on the site.",
+    "relatedAvifDescription": "Need wider compatibility instead? Convert AVIF images into JPG files.",
     "dropzone": "Drag and drop JPG, JPEG, or PNG files here, or click to upload",
     "supported": "Supports JPG, JPEG, PNG",
     "qualityLabel": "WebP Quality",
@@ -309,6 +334,10 @@
         "answer": "Yes. You can use this tool for free to convert images and download WebP files."
       },
       {
+        "question": "What is a WebP file?",
+        "answer": "WebP is a modern image format designed for the web. It often gives smaller file sizes than JPG or PNG while keeping good visual quality."
+      },
+      {
         "question": "Can I convert PNG to WebP?",
         "answer": "Yes. Upload PNG files and convert them directly to WebP format."
       },
@@ -328,7 +357,186 @@
         "question": "Can I convert multiple images at once?",
         "answer": "Yes. You can upload multiple files, convert them together, and download them individually or all at once."
       }
-    ]
+    ],
+    "seoSectionTitle": "Image to WebP guide and format tips",
+    "seoSectionSubtitle": "Learn when WebP is useful, how quality affects file size, and what to expect when converting JPG or PNG images.",
+    "seoSections": [
+      {
+        "title": "Why convert images to WebP?",
+        "body": "WebP is useful when you want smaller web-ready images for websites, blogs, product pages, and landing pages. Smaller image files can help pages load faster, especially when you are optimizing several assets at once."
+      },
+      {
+        "title": "Can WebP reduce image size?",
+        "body": "Often yes. WebP usually compresses images more efficiently than JPG or PNG, although the exact result depends on the source image and the quality setting you choose."
+      },
+      {
+        "title": "Converting JPG and PNG to WebP",
+        "body": "JPG, JPEG, and PNG files are all supported in this converter. JPG images often shrink well in WebP format, while PNG images can also benefit, especially when you need better compression for website graphics."
+      },
+      {
+        "title": "Adjust quality before you download",
+        "body": "Use the WebP quality slider to balance image detail and file size. Higher quality keeps more detail, while lower quality can reduce weight further for web delivery."
+      }
+    ],
+    "seoHowTo": {
+      "title": "How to convert images to WebP online",
+      "description": "Follow these steps to convert JPG, JPEG, and PNG images into WebP files.",
+      "steps": [
+        {
+          "id": "upload-images",
+          "title": "Upload your images",
+          "description": "Drag JPG, JPEG, or PNG files into the tool or choose them from your device."
+        },
+        {
+          "id": "set-webp-quality",
+          "title": "Choose the WebP quality",
+          "description": "Move the quality slider to decide how much detail and compression you want."
+        },
+        {
+          "id": "convert-images",
+          "title": "Convert the files",
+          "description": "Start the conversion and wait for the WebP previews to finish processing."
+        },
+        {
+          "id": "download-webp",
+          "title": "Download your WebP files",
+          "description": "Download each converted WebP image individually or save all finished files together."
+        }
+      ]
+    }
+  },
+  "avifToJpg": {
+    "title": "AVIF to JPG Converter",
+    "subtitle": "Upload AVIF files, set JPG quality, choose a background color, and download the result.",
+    "heroKicker": "Free image converter",
+    "heroTitle": "AVIF to JPG Converter Online",
+    "introParagraphs": [
+      "Use this free AVIF to JPG converter when you need wider compatibility for uploads, sharing, websites, or email. AVIF can be efficient, but many tools still work better with JPG, so this page helps you convert the file and download the result in seconds."
+    ],
+    "heroPoints": [
+      "Convert AVIF to JPG or JPEG directly in your browser.",
+      "Batch-convert multiple AVIF files in one session.",
+      "Choose JPG quality and a background color for transparent AVIF images."
+    ],
+    "jumpStart": "Start converting",
+    "jumpHowTo": "How to convert",
+    "jumpFaq": "Read FAQ",
+    "relatedTitle": "Related tools",
+    "relatedBrowseLabel": "Browse all tools",
+    "relatedBrowseDescription": "See the rest of the free converter and utility pages on the site.",
+    "relatedWebpDescription": "Need web optimization instead? Convert JPG, JPEG, and PNG images to WebP.",
+    "highlightsLabel": "AVIF to JPG converter highlights",
+    "highlights": [
+      "No upload",
+      "Batch convert",
+      "Custom background"
+    ],
+    "dropzone": "Drag and drop AVIF files here, or click to upload",
+    "supported": "Supports AVIF image files",
+    "qualityLabel": "JPG Quality",
+    "qualityHint": "Higher quality keeps more detail but creates larger JPG files.",
+    "backgroundLabel": "Background Color",
+    "backgroundHint": "Transparent AVIF areas are flattened onto this background before export.",
+    "transparencyNote": "JPG does not support transparency, so transparent pixels are replaced with the selected background color.",
+    "convert": "Convert to JPG",
+    "converting": "Converting...",
+    "clear": "Clear All",
+    "downloadAll": "Download All",
+    "original": "Original AVIF",
+    "converted": "JPG Output",
+    "saved": "Saved",
+    "largerBy": "Larger by",
+    "download": "Download JPG",
+    "statusReady": "Ready",
+    "statusConverting": "Converting",
+    "statusDone": "Done",
+    "statusError": "Failed",
+    "emptyTitle": "No AVIF images selected yet.",
+    "emptySubtitle": "Upload one or more AVIF files to start conversion.",
+    "invalidType": "Only AVIF files are supported.",
+    "failedMessage": "Could not convert this AVIF file. Please try another image or browser.",
+    "faqTitle": "AVIF to JPG FAQ",
+    "faqSubtitle": "Quick answers about converting AVIF files to JPG or JPEG online.",
+    "faqItems": [
+      {
+        "question": "Is this AVIF to JPG converter free?",
+        "answer": "Yes. You can convert AVIF images to JPG for free and download the results without creating an account."
+      },
+      {
+        "question": "Can I convert AVIF to JPEG in this tool?",
+        "answer": "Yes. JPG and JPEG usually refer to the same format, and this tool exports standard JPG image files."
+      },
+      {
+        "question": "Are my AVIF files uploaded to a server?",
+        "answer": "No. Conversion runs in your browser, so your AVIF files are not uploaded by this tool."
+      },
+      {
+        "question": "Can I convert multiple AVIF files at once?",
+        "answer": "Yes. You can upload multiple AVIF files, convert them in one session, and download each JPG file individually or all together."
+      },
+      {
+        "question": "What happens to transparency when converting AVIF to JPG?",
+        "answer": "JPG does not support transparency, so transparent areas are flattened onto the background color you choose before export."
+      },
+      {
+        "question": "Will the JPG file always be smaller than the AVIF file?",
+        "answer": "Not always. AVIF is often more compressed than JPG, so some converted JPG files may be larger depending on image content and quality settings."
+      },
+      {
+        "question": "What is an AVIF file?",
+        "answer": "AVIF is a modern image format known for strong compression and good quality. It can be efficient for the web, but some apps and upload systems still work better with JPG, which is why converting AVIF to JPG is often useful."
+      }
+    ],
+    "seoSectionTitle": "AVIF to JPG guide and format tips",
+    "seoSectionSubtitle": "Learn when JPG is the better choice, what AVIF means, and what to expect with transparency and file size.",
+    "seoSections": [
+      {
+        "title": "When JPG is the safer format for compatibility",
+        "body": "Use this AVIF to JPG converter when you need an image format that works almost everywhere. JPG is still widely supported in older apps, upload forms, CMS tools, messaging platforms, and document tools where AVIF is not always accepted."
+      },
+      {
+        "title": "Batch-convert multiple AVIF files in one workflow",
+        "body": "If you have more than one AVIF image to convert, you can add several files, run the conversion once, and download each JPG file individually or all at once. This makes the tool useful for quick batches instead of one-off exports."
+      },
+      {
+        "title": "What is an AVIF file?",
+        "body": "AVIF is a newer image format that can compress images very efficiently. The tradeoff is that AVIF is not supported equally in every app or workflow, so converting an AVIF file to JPG is often the easiest way to improve compatibility."
+      },
+      {
+        "title": "How transparency works when exporting to JPG",
+        "body": "Choose the JPG quality that fits your use case before exporting. If your AVIF file contains transparent areas, the converter flattens them onto a background color because JPG and JPEG do not support transparency."
+      },
+      {
+        "title": "Why can the JPG file be larger than the AVIF file?",
+        "body": "AVIF is often more compressed than JPG, so a converted JPG can sometimes be larger than the original AVIF. If file size matters, lower the JPG quality slightly and compare the output before keeping the final version."
+      }
+    ],
+    "seoHowTo": {
+      "title": "How to convert AVIF to JPG online",
+      "description": "Follow these steps to convert AVIF files into JPG images in your browser.",
+      "steps": [
+        {
+          "id": "upload-avif",
+          "title": "Upload your AVIF files",
+          "description": "Drag AVIF images into the drop area or choose them from your device."
+        },
+        {
+          "id": "choose-jpg-quality",
+          "title": "Set the JPG quality",
+          "description": "Move the quality slider to balance image detail and file size for your JPG export."
+        },
+        {
+          "id": "set-background-color",
+          "title": "Pick a background color for transparent areas",
+          "description": "Choose the color that should replace transparency before the AVIF image is saved as JPG."
+        },
+        {
+          "id": "download-jpg-files",
+          "title": "Convert and download your JPG files",
+          "description": "Start the conversion, review the output previews, and download each JPG file or all of them together."
+        }
+      ]
+    }
   },
   "footer": {
     "name": "Manjula",

@@ -11,7 +11,9 @@
     "invoiceGeneratorTitle": "Laskugeneraattori",
     "invoiceGeneratorDescription": "Ilmainen verkkolaskugeneraattori reaaliaikaisella esikatselulla, verolaskennalla, valuuttatuella ja heti ladattavalla PDF:lla.",
     "imageToWebpTitle": "Kuva WebP-muotoon",
-    "imageToWebpDescription": "Ilmainen kuva WebP-muunnin verkossa. Muunna PNG-, JPG- ja JPEG-kuvat WebP-muotoon selaimessa laadun saannolla ilman palvelimelle latausta.",
+    "imageToWebpDescription": "Muunna JPG-, JPEG- ja PNG-kuvat WebP-muotoon ilmaiseksi verkossa. Saada laatua, kasittele useita kuvia ja lataa web-kayttoon sopivat tiedostot suoraan selaimessa.",
+    "avifToJpgTitle": "AVIF JPG-muotoon",
+    "avifToJpgDescription": "Muunna AVIF JPG- tai JPEG-muotoon ilmaiseksi verkossa. Saada laatua, valitse taustavari lapiakyville alueille, kasittele useita tiedostoja ja lataa tulos selaimessa.",
     "resumeBuilderTitle": "Ilmainen CV-tyokalu",
     "resumeBuilderDescription": "Ilmainen CV-tyokalu, jolla teet ATS-ystavallisen ansioluettelon verkossa reaaliaikaisella esikatselulla seka PDF- tai DOCX-viennilla ilman rekisterointia."
   },
@@ -196,6 +198,12 @@
         "name": "Kuva WebP-muotoon",
         "description": "Muunna JPG-, JPEG- ja PNG-kuvat WebP-muotoon parempaa verkkosuorituskykya varten.",
         "href": "#"
+      },
+      {
+        "id": "avif-to-jpg",
+        "name": "AVIF JPG-muotoon",
+        "description": "Muunna AVIF-tiedostot laajasti tuetuiksi JPG-kuviksi ilman latausta palvelimelle.",
+        "href": "/tools/avif-to-jpg"
       }
     ]
   },
@@ -279,7 +287,24 @@
   },
   "imageToWebp": {
     "title": "Kuva WebP-muotoon",
-    "subtitle": "Nopea selaimessa tehtava muunnos ilman palvelimelle latausta.",
+    "subtitle": "Lataa JPG-, JPEG- tai PNG-kuvat, saata WebP-laatua ja lataa valmis tulos.",
+    "heroKicker": "Ilmainen kuvamuunnin",
+    "heroTitle": "Kuva WebP-muotoon verkossa",
+    "introParagraphs": [
+      "Kayta tata ilmaista Image to WebP -muunninta, kun haluat pienempia verkkoon sopivia kuvia suoraan selaimessa. Tyokalu auttaa muuntamaan JPG-, JPEG- ja PNG-kuvat WebP-muotoon nopeasti verkkosivuja, blogeja, laskeutumissivuja ja verkkokauppoja varten."
+    ],
+    "heroPoints": [
+      "Muunna JPG-, JPEG- ja PNG-kuvat WebP-muotoon suoraan selaimessa.",
+      "Kasittele useita kuvia samalla kertaa.",
+      "Saada WebP-laatua tiedostokoon ja kuvan yksityiskohtien tasapainottamiseksi."
+    ],
+    "jumpStart": "Aloita muunnos",
+    "jumpHowTo": "Miten muuntaa",
+    "jumpFaq": "Lue UKK",
+    "relatedTitle": "Liittyvat tyokalut",
+    "relatedBrowseLabel": "Selaa kaikkia tyokaluja",
+    "relatedBrowseDescription": "Katso muut ilmaiset muuntimet ja apurityokalut sivustolla.",
+    "relatedAvifDescription": "Tarvitsetko laajempaa yhteensopivuutta? Muunna AVIF-kuvat JPG-tiedostoiksi.",
     "dropzone": "Vedaa JPG-, JPEG- tai PNG-kuvat tahan tai klikkaa ladataksesi",
     "supported": "Tukee: JPG, JPEG, PNG",
     "qualityLabel": "WebP-laatu",
@@ -309,6 +334,10 @@
         "answer": "Kylla. Voit kayttaa tata tyokalua ilmaiseksi kuvien muuntamiseen ja WebP-tiedostojen lataamiseen."
       },
       {
+        "question": "Mika on WebP-tiedosto?",
+        "answer": "WebP on moderni kuvamuoto, joka on suunniteltu verkkoa varten. Se tuottaa usein pienempia tiedostokokoja kuin JPG tai PNG samalla kun kuvanlaatu pysyy hyvana."
+      },
+      {
         "question": "Voinko muuntaa PNG-kuvan WebP-muotoon?",
         "answer": "Kylla. Lataa PNG-kuvat ja muunna ne suoraan WebP-muotoon."
       },
@@ -328,7 +357,186 @@
         "question": "Voinko muuntaa useita kuvia kerralla?",
         "answer": "Kylla. Voit ladata useita tiedostoja, muuntaa ne yhdessa ja ladata erikseen tai kaikki kerralla."
       }
-    ]
+    ],
+    "seoSectionTitle": "Image to WebP -opas ja vinkit",
+    "seoSectionSubtitle": "Lue milloin WebP on hyodyllinen, miten laatu vaikuttaa tiedostokokoon, ja mita JPG- tai PNG-kuvien muunnoksesta kannattaa tietaa.",
+    "seoSections": [
+      {
+        "title": "Miksi kuvia kannattaa muuntaa WebP-muotoon?",
+        "body": "WebP on hyodyllinen, kun haluat pienempia verkkoon sopivia kuvia verkkosivuille, blogeihin, tuotesivuille ja laskeutumissivuille. Pienemmat kuvat voivat auttaa sivuja latautumaan nopeammin erityisesti silloin, kun optimoit useita kuvatiedostoja."
+      },
+      {
+        "title": "Voiko WebP pienentaa tiedostokokoa?",
+        "body": "Usein kylla. WebP pakkaa kuvia tavallisesti tehokkaammin kuin JPG tai PNG, vaikka lopputulos riippuu alkuperaisesta kuvasta ja valitsemastasi laatuasetuksesta."
+      },
+      {
+        "title": "JPG- ja PNG-kuvien muuntaminen WebP-muotoon",
+        "body": "Tama muunnin tukee JPG-, JPEG- ja PNG-tiedostoja. JPG-kuvat pienenevat usein hyvin WebP-muodossa, ja myos PNG-kuvat voivat hyotya erityisesti silloin, kun haluat parempaa pakkausta verkkografiikalle."
+      },
+      {
+        "title": "Saada laatua ennen lataamista",
+        "body": "Kayta WebP-laatuliukua tiedostokoon ja kuvan yksityiskohtien tasapainottamiseen. Korkeampi laatu sailyttaa enemman yksityiskohtia, kun taas matalampi laatu voi pienentaa tiedostoa enemman verkkoa varten."
+      }
+    ],
+    "seoHowTo": {
+      "title": "Miten muunnat kuvia WebP-muotoon verkossa",
+      "description": "Seuraa naita vaiheita, kun haluat muuntaa JPG-, JPEG- ja PNG-kuvat WebP-tiedostoiksi.",
+      "steps": [
+        {
+          "id": "upload-images",
+          "title": "Lataa kuvat",
+          "description": "Vedaa JPG-, JPEG- tai PNG-kuvat tyokaluun tai valitse ne laitteeltasi."
+        },
+        {
+          "id": "set-webp-quality",
+          "title": "Valitse WebP-laatu",
+          "description": "Saada laatuliukua paattaaksesi kuinka paljon yksityiskohtia ja pakkausta haluat."
+        },
+        {
+          "id": "convert-images",
+          "title": "Muunna tiedostot",
+          "description": "Kaynnista muunnos ja odota, kunnes WebP-esikatselut valmistuvat."
+        },
+        {
+          "id": "download-webp",
+          "title": "Lataa WebP-tiedostot",
+          "description": "Lataa jokainen muunnettu WebP-kuva erikseen tai tallenna kaikki valmiit tiedostot yhdessa."
+        }
+      ]
+    }
+  },
+  "avifToJpg": {
+    "title": "AVIF JPG-muotoon",
+    "subtitle": "Lataa AVIF-tiedostot, valitse JPG-laatu ja taustavari, ja lataa valmis tulos.",
+    "heroKicker": "Ilmainen kuvamuunnin",
+    "heroTitle": "AVIF JPG-muotoon verkossa",
+    "introParagraphs": [
+      "Kayta tata ilmaista AVIF JPG-muunninta, kun tarvitset paremman yhteensopivuuden latauksiin, jakamiseen, verkkosivuille tai sahkopostiin. AVIF voi olla tehokas formaatti, mutta monet tyokalut toimivat edelleen paremmin JPG-kuvien kanssa, joten talla sivulla muunnat tiedoston ja lataat tuloksen nopeasti."
+    ],
+    "heroPoints": [
+      "Muunna AVIF JPG- tai JPEG-muotoon verkossa ilman latausta palvelimelle.",
+      "Kasittele useita AVIF-tiedostoja samalla kertaa.",
+      "Valitse JPG-laatu ja taustavari lapiakyville AVIF-kuville."
+    ],
+    "jumpStart": "Aloita muunnos",
+    "jumpHowTo": "Miten se toimii",
+    "jumpFaq": "Lue UKK",
+    "relatedTitle": "Liittyvat tyokalut",
+    "relatedBrowseLabel": "Selaa kaikkia tyokaluja",
+    "relatedBrowseDescription": "Katso muut ilmaiset muuntimet ja apurityokalut sivustolla.",
+    "relatedWebpDescription": "Tarvitsetko web-optimointia? Muunna JPG-, JPEG- ja PNG-kuvat WebP-muotoon.",
+    "highlightsLabel": "AVIF JPG-muuntimen kohokohdat",
+    "highlights": [
+      "Ei latausta",
+      "Eraajona",
+      "Taustavari"
+    ],
+    "dropzone": "Vedaa AVIF-tiedostot tahan tai klikkaa ladataksesi",
+    "supported": "Tukee AVIF-kuvatiedostoja",
+    "qualityLabel": "JPG-laatu",
+    "qualityHint": "Korkeampi laatu sailyttaa enemman yksityiskohtia mutta kasvattaa JPG-tiedoston kokoa.",
+    "backgroundLabel": "Taustavari",
+    "backgroundHint": "Lapiakyvat AVIF-alueet tasoitetaan tahan taustavariin ennen vientia.",
+    "transparencyNote": "JPG ei tue lapiakyvyytta, joten lapiakyvat pikselit korvataan valitulla taustavarilla.",
+    "convert": "Muunna JPG:ksi",
+    "converting": "Muunnetaan...",
+    "clear": "Tyhjenna kaikki",
+    "downloadAll": "Lataa kaikki",
+    "original": "Alkuperainen AVIF",
+    "converted": "JPG-tulos",
+    "saved": "Saasto",
+    "largerBy": "Suurempi",
+    "download": "Lataa JPG",
+    "statusReady": "Valmis",
+    "statusConverting": "Muunnetaan",
+    "statusDone": "Valmis",
+    "statusError": "Epaonnistui",
+    "emptyTitle": "AVIF-kuvia ei ole valittu viela.",
+    "emptySubtitle": "Lataa yksi tai useampi AVIF-tiedosto aloittaaksesi muunnoksen.",
+    "invalidType": "Vain AVIF-tiedostot ovat tuettuja.",
+    "failedMessage": "Taman AVIF-tiedoston muunnos epaonnistui. Yrita toista kuvaa tai selainta.",
+    "faqTitle": "AVIF JPG-muotoon UKK",
+    "faqSubtitle": "Nopeat vastaukset AVIF-tiedostojen muuntamisesta JPG- tai JPEG-muotoon verkossa.",
+    "faqItems": [
+      {
+        "question": "Onko taman AVIF JPG-muuntimen kaytto ilmaista?",
+        "answer": "Kylla. Voit muuntaa AVIF-kuvat JPG-muotoon ilmaiseksi ja ladata tulokset ilman tilin luontia."
+      },
+      {
+        "question": "Voinko muuntaa AVIF-tiedoston JPEG-muotoon tassa tyokalussa?",
+        "answer": "Kylla. JPG ja JPEG tarkoittavat kaytannossa samaa formaattia, ja tama tyokalu vie tavallisia JPG-kuvatiedostoja."
+      },
+      {
+        "question": "Ladataanko AVIF-tiedostoni palvelimelle?",
+        "answer": "Ei. Muunnos tapahtuu selaimessa, joten AVIF-tiedostoja ei ladata palvelimelle taman tyokalun kautta."
+      },
+      {
+        "question": "Voinko muuntaa useita AVIF-tiedostoja kerralla?",
+        "answer": "Kylla. Voit ladata useita AVIF-tiedostoja, muuntaa ne saman session aikana ja ladata JPG-tiedostot yksittain tai kaikki yhdessa."
+      },
+      {
+        "question": "Mita lapiakyvyydelle tapahtuu, kun muunnan AVIF-kuvan JPG-muotoon?",
+        "answer": "JPG ei tue lapiakyvyytta, joten lapiakyvat alueet tasoitetaan valitsemaasi taustavariin ennen vientia."
+      },
+      {
+        "question": "Onko JPG aina pienempi kuin alkuperainen AVIF-tiedosto?",
+        "answer": "Ei aina. AVIF pakkaa usein tehokkaammin kuin JPG, joten osa muunnetuista JPG-tiedostoista voi olla suurempia kuvan sisallosta ja laatuasetuksesta riippuen."
+      },
+      {
+        "question": "Mika on AVIF-tiedosto?",
+        "answer": "AVIF on moderni kuvatiedostomuoto, joka tunnetaan tehokkaasta pakkauksesta ja hyvasta kuvanlaadusta. Se sopii hyvin verkkoon, mutta kaikki sovellukset ja latausjarjestelmat eivat tue sita yhta hyvin kuin JPG-muotoa."
+      }
+    ],
+    "seoSectionTitle": "AVIF JPG-muotoon opas ja vinkit",
+    "seoSectionSubtitle": "Lue milloin JPG on parempi valinta, mita AVIF tarkoittaa, ja mita lapiakyvyydelta tai tiedostokoolta kannattaa odottaa.",
+    "seoSections": [
+      {
+        "title": "Milloin JPG on turvallisempi formaatti yhteensopivuuden kannalta",
+        "body": "Kayta tata AVIF JPG-muunninta silloin, kun tarvitset kuvalle formaatin, joka toimii laajasti eri palveluissa. JPG on edelleen turvallinen valinta vanhemmissa sovelluksissa, lomakkeissa, CMS-tyokaluissa, viestipalveluissa ja dokumenttityokaluissa, jotka eivat aina tue AVIF-muotoa."
+      },
+      {
+        "title": "Muunna useita AVIF-tiedostoja samalla kertaa",
+        "body": "Jos sinulla on useampi kuin yksi AVIF-kuva, voit lisata useita tiedostoja, kaynnistaa muunnoksen kerran ja ladata JPG-tiedostot yksittain tai kaikki kerralla. Tama tekee tyokalusta kaytannollisen myos pieneen erakasittelyyn."
+      },
+      {
+        "title": "Mika on AVIF-tiedosto?",
+        "body": "AVIF on uudempi kuvamuoto, joka voi pakata kuvia hyvin tehokkaasti. Haittapuolena on, etta AVIF ei toimi yhta tasaisesti kaikissa sovelluksissa ja tyonkuluissa, joten AVIF-tiedoston muuntaminen JPG-muotoon on usein helpoin tapa parantaa yhteensopivuutta."
+      },
+      {
+        "title": "Miten lapiakyvyys kasitellaan JPG-viennissa",
+        "body": "Valitse JPG-laatu kayttotarkoituksen mukaan ennen vientia. Jos AVIF-kuvassa on lapiakyvia alueita, muunnin tasoittaa ne valitsemaasi taustavariin, koska JPG ja JPEG eivat tue lapiakyvyytta."
+      },
+      {
+        "title": "Miksi JPG voi olla suurempi kuin AVIF?",
+        "body": "AVIF pakkaa kuvia usein tehokkaammin kuin JPG, joten muunnettu JPG voi joskus olla alkuperaista AVIF-tiedostoa suurempi. Jos tiedostokoko on tarkea, laske JPG-laatua hieman ja vertaa lopputulosta ennen kuin pidat version."
+      }
+    ],
+    "seoHowTo": {
+      "title": "Miten muunnat AVIF-kuvan JPG-muotoon verkossa",
+      "description": "Seuraa naita vaiheita, kun haluat muuntaa AVIF-tiedostot JPG-kuviksi selaimessa.",
+      "steps": [
+        {
+          "id": "upload-avif",
+          "title": "Lataa AVIF-tiedostot",
+          "description": "Vedaa AVIF-kuvat pudotusalueelle tai valitse ne laitteeltasi."
+        },
+        {
+          "id": "choose-jpg-quality",
+          "title": "Aseta JPG-laatu",
+          "description": "Saada laatuliukua niin, etta saat sopivan tasapainon kuvan yksityiskohtien ja tiedostokoon valille."
+        },
+        {
+          "id": "set-background-color",
+          "title": "Valitse taustavari lapiakyville alueille",
+          "description": "Maarita vari, joka korvaa lapiakyvyyden ennen kuin AVIF-kuva tallennetaan JPG-muotoon."
+        },
+        {
+          "id": "download-jpg-files",
+          "title": "Muunna ja lataa JPG-tiedostot",
+          "description": "Kaynnista muunnos, tarkista esikatselut ja lataa JPG-tiedostot yksittain tai kaikki yhdessa."
+        }
+      ]
+    }
   },
   "footer": {
     "name": "Manjula",
