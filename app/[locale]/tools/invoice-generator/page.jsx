@@ -114,6 +114,12 @@ export default async function LocalizedInvoiceGeneratorPage({ params }) {
   const faqItems = Array.isArray(dict.invoiceGenerator?.faqItems)
     ? dict.invoiceGenerator.faqItems.filter((item) => item?.question && item?.answer)
     : [];
+  const seoSections = Array.isArray(dict.invoiceGenerator?.seoSections)
+    ? dict.invoiceGenerator.seoSections.filter((item) => item?.title && item?.body)
+    : [];
+  const howToSteps = Array.isArray(dict.invoiceGenerator?.seoHowTo?.steps)
+    ? dict.invoiceGenerator.seoHowTo.steps.filter((item) => item?.id && item?.title && item?.description)
+    : [];
   const invoiceToolJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -142,6 +148,23 @@ export default async function LocalizedInvoiceGeneratorPage({ params }) {
               "@type": "Answer",
               text: item.answer,
             },
+          })),
+        }
+      : null;
+  const howToJsonLd =
+    howToSteps.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: dict.invoiceGenerator.seoHowTo.title,
+          description: dict.invoiceGenerator.seoHowTo.description,
+          totalTime: "PT10M",
+          step: howToSteps.map((item, index) => ({
+            "@type": "HowToStep",
+            position: index + 1,
+            name: item.title,
+            text: item.description,
+            url: `${pageUrl}#${item.id}`,
           })),
         }
       : null;
@@ -181,11 +204,50 @@ export default async function LocalizedInvoiceGeneratorPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {howToJsonLd ? (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
+      ) : null}
       {faqJsonLd ? (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       ) : null}
       <h1 className="sr-only">{dict.meta.invoiceGeneratorTitle}</h1>
       <InvoiceGeneratorTool locale={locale} text={dict.invoiceGenerator} />
+      {seoSections.length || howToSteps.length ? (
+        <section className="section shell" id="invoice-generator-guide">
+          <div className="glass-card tool-guide-wrap">
+            <h2>{dict.invoiceGenerator?.seoSectionTitle}</h2>
+            <p className="section-subtitle">{dict.invoiceGenerator?.seoSectionSubtitle}</p>
+
+            <div className="tool-guide-grid">
+              {seoSections.length ? (
+                <div className="tool-guide-content">
+                  {seoSections.map((item) => (
+                    <article className="tool-guide-card" key={item.title}>
+                      <h3>{item.title}</h3>
+                      <p>{item.body}</p>
+                    </article>
+                  ))}
+                </div>
+              ) : null}
+
+              {howToSteps.length ? (
+                <div className="tool-howto-panel">
+                  <h3>{dict.invoiceGenerator?.seoHowTo?.title}</h3>
+                  <p>{dict.invoiceGenerator?.seoHowTo?.description}</p>
+                  <ol className="tool-howto-list">
+                    {howToSteps.map((item) => (
+                      <li className="tool-howto-step" id={item.id} key={item.id}>
+                        <h4>{item.title}</h4>
+                        <p>{item.description}</p>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              ) : null}
+            </div>
+          </div>
+        </section>
+      ) : null}
       {faqItems.length ? (
         <section className="section shell" id="invoice-faq">
           <div className="glass-card invoice-faq-wrap">

@@ -283,7 +283,53 @@
         "question": "Is my invoice data private?",
         "answer": "Yes. Invoice editing and generation run in your browser, so your data is not sent to a server by this tool."
       }
-    ]
+    ],
+    "seoSectionTitle": "Invoice generator guide and online invoicing tips",
+    "seoSectionSubtitle": "Create a professional invoice online, review key billing details, and download a ready-to-send PDF in minutes.",
+    "seoSections": [
+      {
+        "title": "Free online invoice generator for quick client billing",
+        "body": "Use this free online invoice generator to create clear, professional invoices without signing up. Add company details, client information, line items, tax, and payment terms while the preview updates instantly."
+      },
+      {
+        "title": "Build invoices with the details clients expect",
+        "body": "A strong invoice should include your business name, invoice number, issue date, due date, itemized charges, tax, totals, and payment details. This invoice maker keeps those fields organized so your invoice is easier to review and send."
+      },
+      {
+        "title": "Download invoice PDFs that are ready to share",
+        "body": "Once your invoice looks right, download it as a PDF for email, record keeping, or direct client delivery. You can also add your company logo to give the finished invoice a more polished look."
+      },
+      {
+        "title": "Keep invoice data private in the browser",
+        "body": "The invoice editor and PDF generation run in your browser, which helps keep sensitive billing details on your device while you prepare the final file."
+      }
+    ],
+    "seoHowTo": {
+      "title": "How to create an invoice online",
+      "description": "Follow these steps to make a client-ready invoice with the free invoice generator.",
+      "steps": [
+        {
+          "id": "add-business-details",
+          "title": "Add your business details",
+          "description": "Enter your company name, email, phone number, address, and optional logo so the invoice clearly shows who it is from."
+        },
+        {
+          "id": "fill-client-and-invoice-info",
+          "title": "Fill in client and invoice information",
+          "description": "Add the client details, invoice number, issue date, due date, currency, and tax rate before reviewing totals."
+        },
+        {
+          "id": "list-items-and-payment-details",
+          "title": "List items and payment details",
+          "description": "Add each product or service line, include quantities and prices, then enter bank details and payment terms if needed."
+        },
+        {
+          "id": "review-and-download-pdf",
+          "title": "Review the preview and download the PDF",
+          "description": "Check the layout, totals, and wording in the live preview, then download the finished invoice as a PDF file."
+        }
+      ]
+    }
   },
   "imageToWebp": {
     "title": "Image to WebP Converter",

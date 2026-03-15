@@ -162,6 +162,22 @@ export default async function LocalizedAvifToJpgPage({ params }) {
     ],
   };
 
+  const faqJsonLd =
+    faqItems.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqItems.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null;
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -198,6 +214,9 @@ export default async function LocalizedAvifToJpgPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd ? (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      ) : null}
 
       <section className="section shell tool-hero-section" id="avif-to-jpg-overview">
         <div className="glass-card tool-hero-wrap">
@@ -294,6 +313,3 @@ export default async function LocalizedAvifToJpgPage({ params }) {
     </main>
   );
 }
-
-
-

@@ -283,7 +283,53 @@
         "question": "Sailyyko laskudata yksityisena?",
         "answer": "Kylla. Laskun muokkaus ja PDF-luonti tapahtuvat selaimessa, eika dataa laheteta palvelimelle taman tyokalun kautta."
       }
-    ]
+    ],
+    "seoSectionTitle": "Laskugeneraattorin opas ja verkkolaskutuksen vinkit",
+    "seoSectionSubtitle": "Luo ammattimainen lasku verkossa, tarkista olennaiset laskutustiedot ja lataa valmis PDF muutamassa minuutissa.",
+    "seoSections": [
+      {
+        "title": "Ilmainen verkkolaskugeneraattori nopeaan laskutukseen",
+        "body": "Kayta tata ilmaista verkkolaskugeneraattoria, kun haluat luoda selkean ja ammattimaisen laskun ilman rekisterointia. Voit lisata yrityksen tiedot, asiakkaan tiedot, rivit, veron ja maksuehdot samalla kun esikatselu paivittyy heti."
+      },
+      {
+        "title": "Rakenna lasku niilla tiedoilla, joita asiakkaat odottavat",
+        "body": "Hyva lasku sisaltaa yrityksen nimen, laskunumeron, paivayksen, erapaivan, eritellyt rivit, veron, loppusumman ja maksutiedot. Tama laskutyokalu auttaa pitamaan kaikki tiedot jarjestyksessa, jotta lasku on helppo tarkistaa ja lahettaa."
+      },
+      {
+        "title": "Lataa PDF-lasku valmiina lahetettavaksi",
+        "body": "Kun lasku nayttaa oikealta, voit ladata sen PDF-muodossa sahkopostiin, kirjanpitoon tai suoraan asiakkaalle lahetettavaksi. Voit myos lisata yrityksen logon viimeisteltya ulkoasua varten."
+      },
+      {
+        "title": "Sailyta laskutiedot yksityisina selaimessa",
+        "body": "Laskun muokkaus ja PDF-luonti tapahtuvat selaimessa, joten arkaluonteiset laskutustiedot pysyvat laitteellasi samalla kun valmistelet lopullista tiedostoa."
+      }
+    ],
+    "seoHowTo": {
+      "title": "Miten teet laskun verkossa",
+      "description": "Seuraa naita vaiheita, kun haluat luoda asiakkaalle valmiin laskun ilmaisella laskugeneraattorilla.",
+      "steps": [
+        {
+          "id": "add-business-details",
+          "title": "Lisaa yrityksen tiedot",
+          "description": "Syota yrityksen nimi, sahkoposti, puhelin, osoite ja halutessasi logo, jotta laskusta nakyy selkeasti lahettaja."
+        },
+        {
+          "id": "fill-client-and-invoice-info",
+          "title": "Tayta asiakkaan ja laskun tiedot",
+          "description": "Lisaa asiakkaan tiedot, laskunumero, paivays, erapaiva, valuutta ja veroprosentti ennen loppusumman tarkistamista."
+        },
+        {
+          "id": "list-items-and-payment-details",
+          "title": "Lisaa rivit ja maksutiedot",
+          "description": "Kirjaa tuotteet tai palvelut riveille, maarita maarat ja hinnat ja tayta tarvittaessa pankkitiedot seka maksuehdot."
+        },
+        {
+          "id": "review-and-download-pdf",
+          "title": "Tarkista esikatselu ja lataa PDF",
+          "description": "Varmista reaaliaikaisesta esikatselusta, etta ulkoasu, summat ja sanamuodot ovat oikein, ja lataa valmis lasku PDF-tiedostona."
+        }
+      ]
+    }
   },
   "imageToWebp": {
     "title": "Kuva WebP-muotoon",
