@@ -13,7 +13,7 @@ export default function Footer({ locale, footer, withTopSpacing = false }) {
         <div className="footer-col">
           <h4>{footer.quickLinks}</h4>
           <a href={`/${locale}/#projects`}>{footer.projects}</a>
-          <a href={`/${locale}/contact`}>{footer.requestCv}</a>
+          <a href={`/${locale}/#contact`}>{footer.requestCv}</a>
           <a href={`/${locale}/#contact`}>{footer.contact}</a>
         </div>
 

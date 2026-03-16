@@ -12,18 +12,6 @@ export default function sitemap() {
       priority: 1,
     },
     {
-      url: `${siteUrl}/en/projects`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/en/contact`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
       url: `${siteUrl}/en/tools`,
       lastModified,
       changeFrequency: "weekly",
@@ -58,18 +46,6 @@ export default function sitemap() {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.9,
-    },
-    {
-      url: `${siteUrl}/fi/projects`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${siteUrl}/fi/contact`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.6,
     },
     {
       url: `${siteUrl}/fi/tools`,
