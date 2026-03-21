@@ -42,6 +42,12 @@ export default function sitemap() {
       priority: 0.65,
     },
     {
+      url: `${siteUrl}/en/tools/heic-to-png`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.65,
+    },
+    {
       url: `${siteUrl}/fi`,
       lastModified,
       changeFrequency: "weekly",
@@ -73,6 +79,12 @@ export default function sitemap() {
     },
     {
       url: `${siteUrl}/fi/tools/avif-to-jpg`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.55,
+    },
+    {
+      url: `${siteUrl}/fi/tools/heic-to-png`,
       lastModified,
       changeFrequency: "weekly",
       priority: 0.55,

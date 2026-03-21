@@ -1,4 +1,4 @@
-import FaqSection from "../../../components/FaqSection";
+﻿import FaqSection from "../../../components/FaqSection";
 import Footer from "../../../components/Footer";
 import ImageToWebpTool from "../../../components/ImageToWebpTool";
 import Navbar from "../../../components/Navbar";
@@ -297,6 +297,10 @@ export default async function LocalizedImageToWebpPage({ params }) {
               <h3>{dict.meta.avifToJpgTitle}</h3>
               <p>{dict.imageToWebp?.relatedAvifDescription}</p>
             </a>
+            <a className="tool-related-card" href={`/${locale}/tools/heic-to-png`}>
+              <h3>{dict.meta.heicToPngTitle}</h3>
+              <p>{dict.imageToWebp?.relatedHeicDescription}</p>
+            </a>
             <a className="tool-related-card" href={`/${locale}/tools`}>
               <h3>{dict.imageToWebp?.relatedBrowseLabel || dict.tools.title}</h3>
               <p>{dict.imageToWebp?.relatedBrowseDescription}</p>
@@ -313,3 +317,4 @@ export default async function LocalizedImageToWebpPage({ params }) {
     </main>
   );
 }
+

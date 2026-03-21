@@ -1,6 +1,6 @@
-﻿import AvifToJpgTool from "../../../components/AvifToJpgTool";
 import FaqSection from "../../../components/FaqSection";
 import Footer from "../../../components/Footer";
+import HeicToPngTool from "../../../components/HeicToPngTool";
 import Navbar from "../../../components/Navbar";
 import { getDictionary, isValidLocale } from "@/lib/i18n";
 import { getSiteUrl } from "@/lib/site";
@@ -15,57 +15,56 @@ export async function generateMetadata({ params }) {
 
   const dict = getDictionary(locale);
   const siteUrl = getSiteUrl();
-  const pagePath = `/${locale}/tools/avif-to-jpg`;
+  const pagePath = `/${locale}/tools/heic-to-png`;
   const pageUrl = `${siteUrl}${pagePath}`;
   const ogImage = `${siteUrl}/assets/profileimage.jpeg`;
   const seoTitle =
     locale === "fi"
-      ? "AVIF JPG-muotoon verkossa | Ilmainen AVIF to JPG Converter"
-      : "AVIF to JPG Converter Online | Free AVIF to JPEG Tool";
+      ? "HEIC PNG-muotoon verkossa | Ilmainen HEIC to PNG Converter"
+      : "HEIC to PNG Converter Online | Free HEIC to PNG Tool";
   const keywords =
     locale === "fi"
       ? [
-          "avif to jpg",
-          "avif to jpeg",
-          "convert avif to jpg",
-          "avif muunnin",
-          "avif jpg muunnin",
-          "muunna avif jpg",
-          "ilmainen avif muunnin",
-          "online avif to jpg",
-          "avif kuva jpg",
-          "avif file to jpg",
-          "avif to jpg converter",
-          "what is an avif file",
+          "heic to png",
+          "convert heic to png",
+          "heic png muunnin",
+          "muunna heic png",
+          "heif to png",
+          "convert heif to png",
+          "heic muunnin",
+          "online heic to png",
+          "heic to png converter",
+          "heic kuva png",
+          "what is a heic file",
           "Manjula tyokalut",
         ]
       : [
-          "avif to jpg",
-          "avif to jpeg",
-          "convert avif to jpg",
-          "convert avif to jpeg",
-          "avif converter",
-          "avif to jpg converter",
-          "free avif to jpg converter",
-          "online avif to jpg",
-          "avif file to jpg",
-          "batch avif to jpg",
-          "what is an avif file",
+          "heic to png",
+          "convert heic to png",
+          "heif to png",
+          "convert heif to png",
+          "heic to png converter",
+          "free heic to png converter",
+          "online heic to png",
+          "batch heic to png",
+          "heic file to png",
+          "what is a heic file",
+          "png converter",
           "Manjula tools",
         ];
   const ogImageAlt =
-    locale === "fi" ? "AVIF JPG-muunnin, tekijana Manjula" : "AVIF to JPG Converter by Manjula";
+    locale === "fi" ? "HEIC PNG-muunnin, tekijana Manjula" : "HEIC to PNG Converter by Manjula";
 
   return {
     title: seoTitle,
-    description: dict.meta.avifToJpgDescription,
+    description: dict.meta.heicToPngDescription,
     keywords,
     alternates: {
       canonical: pagePath,
       languages: {
-        en: "/en/tools/avif-to-jpg",
-        fi: "/fi/tools/avif-to-jpg",
-        "x-default": "/en/tools/avif-to-jpg",
+        en: "/en/tools/heic-to-png",
+        fi: "/fi/tools/heic-to-png",
+        "x-default": "/en/tools/heic-to-png",
       },
     },
     robots: {
@@ -86,7 +85,7 @@ export async function generateMetadata({ params }) {
       locale: locale === "fi" ? "fi_FI" : "en_US",
       alternateLocale: locale === "fi" ? ["en_US"] : ["fi_FI"],
       title: seoTitle,
-      description: dict.meta.avifToJpgDescription,
+      description: dict.meta.heicToPngDescription,
       images: [
         {
           url: ogImage,
@@ -99,13 +98,13 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: "summary_large_image",
       title: seoTitle,
-      description: dict.meta.avifToJpgDescription,
+      description: dict.meta.heicToPngDescription,
       images: [ogImage],
     },
   };
 }
 
-export default async function LocalizedAvifToJpgPage({ params }) {
+export default async function LocalizedHeicToPngPage({ params }) {
   const { locale } = await params;
 
   if (!isValidLocale(locale)) {
@@ -114,26 +113,26 @@ export default async function LocalizedAvifToJpgPage({ params }) {
 
   const dict = getDictionary(locale);
   const siteUrl = getSiteUrl();
-  const pageUrl = `${siteUrl}/${locale}/tools/avif-to-jpg`;
-  const faqItems = Array.isArray(dict.avifToJpg?.faqItems)
-    ? dict.avifToJpg.faqItems.filter((item) => item?.question && item?.answer)
+  const pageUrl = `${siteUrl}/${locale}/tools/heic-to-png`;
+  const faqItems = Array.isArray(dict.heicToPng?.faqItems)
+    ? dict.heicToPng.faqItems.filter((item) => item?.question && item?.answer)
     : [];
-  const introParagraphs = Array.isArray(dict.avifToJpg?.introParagraphs)
-    ? dict.avifToJpg.introParagraphs.filter(Boolean)
+  const introParagraphs = Array.isArray(dict.heicToPng?.introParagraphs)
+    ? dict.heicToPng.introParagraphs.filter(Boolean)
     : [];
-  const heroPoints = Array.isArray(dict.avifToJpg?.heroPoints) ? dict.avifToJpg.heroPoints.filter(Boolean) : [];
-  const seoSections = Array.isArray(dict.avifToJpg?.seoSections)
-    ? dict.avifToJpg.seoSections.filter((item) => item?.title && item?.body)
+  const heroPoints = Array.isArray(dict.heicToPng?.heroPoints) ? dict.heicToPng.heroPoints.filter(Boolean) : [];
+  const seoSections = Array.isArray(dict.heicToPng?.seoSections)
+    ? dict.heicToPng.seoSections.filter((item) => item?.title && item?.body)
     : [];
-  const howToSteps = Array.isArray(dict.avifToJpg?.seoHowTo?.steps)
-    ? dict.avifToJpg.seoHowTo.steps.filter((item) => item?.id && item?.title && item?.description)
+  const howToSteps = Array.isArray(dict.heicToPng?.seoHowTo?.steps)
+    ? dict.heicToPng.seoHowTo.steps.filter((item) => item?.id && item?.title && item?.description)
     : [];
 
-  const avifToolJsonLd = {
+  const heicToolJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: dict.meta.avifToJpgTitle,
-    description: dict.meta.avifToJpgDescription,
+    name: dict.meta.heicToPngTitle,
+    description: dict.meta.heicToPngDescription,
     url: pageUrl,
     applicationCategory: "UtilitiesApplication",
     applicationSubCategory: locale === "fi" ? "Kuvamuunnin" : "Image Converter",
@@ -152,11 +151,10 @@ export default async function LocalizedAvifToJpgPage({ params }) {
       url: siteUrl,
     },
     featureList: [
-      "AVIF to JPG conversion",
-      "AVIF to JPEG conversion",
+      "HEIC to PNG conversion",
+      "HEIF to PNG conversion",
       "Batch image conversion",
-      "Adjustable JPG quality",
-      "Custom background color for transparency",
+      "Lossless PNG export",
       "In-browser processing",
       "No file upload",
     ],
@@ -197,7 +195,7 @@ export default async function LocalizedAvifToJpgPage({ params }) {
       {
         "@type": "ListItem",
         position: 3,
-        name: dict.meta.avifToJpgTitle,
+        name: dict.meta.heicToPngTitle,
         item: pageUrl,
       },
     ],
@@ -205,11 +203,8 @@ export default async function LocalizedAvifToJpgPage({ params }) {
 
   return (
     <main className="portfolio-page" id="top" lang={locale}>
-      <Navbar locale={locale} nav={dict.nav} currentPath="/tools/avif-to-jpg" />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(avifToolJsonLd) }}
-      />
+      <Navbar locale={locale} nav={dict.nav} currentPath="/tools/heic-to-png" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(heicToolJsonLd) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
@@ -218,11 +213,11 @@ export default async function LocalizedAvifToJpgPage({ params }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       ) : null}
 
-      <section className="section shell tool-hero-section" id="avif-to-jpg-overview">
+      <section className="section shell tool-hero-section" id="heic-to-png-overview">
         <div className="glass-card tool-hero-wrap">
           <div className="tool-hero-copy">
-            {dict.avifToJpg?.heroKicker ? <p className="tool-hero-kicker">{dict.avifToJpg.heroKicker}</p> : null}
-            <h1>{dict.avifToJpg?.heroTitle || dict.meta.avifToJpgTitle}</h1>
+            {dict.heicToPng?.heroKicker ? <p className="tool-hero-kicker">{dict.heicToPng.heroKicker}</p> : null}
+            <h1>{dict.heicToPng?.heroTitle || dict.meta.heicToPngTitle}</h1>
             {introParagraphs.map((paragraph) => (
               <p className="tool-hero-lead" key={paragraph}>
                 {paragraph}
@@ -238,20 +233,20 @@ export default async function LocalizedAvifToJpgPage({ params }) {
             ) : null}
 
             <div className="tool-jump-links">
-              <a href="#avif-to-jpg">{dict.avifToJpg?.jumpStart}</a>
-              <a href="#avif-to-jpg-guide">{dict.avifToJpg?.jumpHowTo}</a>
-              <a href="#avif-to-jpg-faq">{dict.avifToJpg?.jumpFaq}</a>
+              <a href="#heic-to-png">{dict.heicToPng?.jumpStart}</a>
+              <a href="#heic-to-png-guide">{dict.heicToPng?.jumpHowTo}</a>
+              <a href="#heic-to-png-faq">{dict.heicToPng?.jumpFaq}</a>
             </div>
           </div>
         </div>
       </section>
 
-      <AvifToJpgTool text={dict.avifToJpg} hideHeader />
+      <HeicToPngTool text={dict.heicToPng} hideHeader />
       {seoSections.length || howToSteps.length ? (
-        <section className="section shell" id="avif-to-jpg-guide">
+        <section className="section shell" id="heic-to-png-guide">
           <div className="glass-card tool-guide-wrap">
-            <h2>{dict.avifToJpg?.seoSectionTitle}</h2>
-            <p className="section-subtitle">{dict.avifToJpg?.seoSectionSubtitle}</p>
+            <h2>{dict.heicToPng?.seoSectionTitle}</h2>
+            <p className="section-subtitle">{dict.heicToPng?.seoSectionSubtitle}</p>
 
             <div className="tool-guide-grid">
               {seoSections.length ? (
@@ -267,8 +262,8 @@ export default async function LocalizedAvifToJpgPage({ params }) {
 
               {howToSteps.length ? (
                 <div className="tool-howto-panel">
-                  <h3>{dict.avifToJpg?.seoHowTo?.title}</h3>
-                  <p>{dict.avifToJpg?.seoHowTo?.description}</p>
+                  <h3>{dict.heicToPng?.seoHowTo?.title}</h3>
+                  <p>{dict.heicToPng?.seoHowTo?.description}</p>
                   <ol className="tool-howto-list">
                     {howToSteps.map((item) => (
                       <li className="tool-howto-step" id={item.id} key={item.id}>
@@ -284,26 +279,26 @@ export default async function LocalizedAvifToJpgPage({ params }) {
         </section>
       ) : null}
       <FaqSection
-        id="avif-to-jpg-faq"
-        title={dict.avifToJpg?.faqTitle}
-        subtitle={dict.avifToJpg?.faqSubtitle}
+        id="heic-to-png-faq"
+        title={dict.heicToPng?.faqTitle}
+        subtitle={dict.heicToPng?.faqSubtitle}
         items={faqItems}
       />
-      <section className="section shell" id="avif-related-tools">
+      <section className="section shell" id="heic-related-tools">
         <div className="glass-card tool-related-wrap">
-          <h2>{dict.avifToJpg?.relatedTitle}</h2>
+          <h2>{dict.heicToPng?.relatedTitle}</h2>
           <div className="tool-related-list">
-            <a className="tool-related-card" href={`/${locale}/tools/heic-to-png`}>
-              <h3>{dict.meta.heicToPngTitle}</h3>
-              <p>{dict.avifToJpg?.relatedHeicDescription}</p>
+            <a className="tool-related-card" href={`/${locale}/tools/avif-to-jpg`}>
+              <h3>{dict.meta.avifToJpgTitle}</h3>
+              <p>{dict.heicToPng?.relatedAvifDescription}</p>
             </a>
             <a className="tool-related-card" href={`/${locale}/tools/image-to-webp`}>
               <h3>{dict.meta.imageToWebpTitle}</h3>
-              <p>{dict.avifToJpg?.relatedWebpDescription}</p>
+              <p>{dict.heicToPng?.relatedWebpDescription}</p>
             </a>
             <a className="tool-related-card" href={`/${locale}/tools`}>
-              <h3>{dict.avifToJpg?.relatedBrowseLabel || dict.tools.title}</h3>
-              <p>{dict.avifToJpg?.relatedBrowseDescription}</p>
+              <h3>{dict.heicToPng?.relatedBrowseLabel || dict.tools.title}</h3>
+              <p>{dict.heicToPng?.relatedBrowseDescription}</p>
             </a>
           </div>
         </div>
@@ -317,4 +312,3 @@ export default async function LocalizedAvifToJpgPage({ params }) {
     </main>
   );
 }
-

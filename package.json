@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "docx": "^9.6.1",
+    "heic2any": "^0.0.4",
     "jspdf": "^4.2.0",
     "jspdf-autotable": "^5.0.7",
     "next": "16.1.6",

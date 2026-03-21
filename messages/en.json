@@ -14,6 +14,8 @@
     "imageToWebpDescription": "Convert JPG, JPEG, and PNG to WebP online for free. Adjust quality, batch-convert images, and download web-ready files directly in your browser.",
     "avifToJpgTitle": "AVIF to JPG Converter",
     "avifToJpgDescription": "Convert AVIF to JPG or JPEG online for free. Adjust quality, choose a background color for transparency, batch-convert files, and download the result in your browser.",
+    "heicToPngTitle": "HEIC to PNG Converter",
+    "heicToPngDescription": "Convert HEIC or HEIF to PNG online for free. Batch-convert iPhone photos, keep full image quality, and download PNG files directly in your browser.",
     "resumeBuilderTitle": "Free Resume Builder",
     "resumeBuilderDescription": "Free resume builder with ATS-friendly resume templates, live preview, and instant PDF or DOCX download. Create a professional resume online with no sign-up."
   },
@@ -204,6 +206,12 @@
         "name": "AVIF to JPG",
         "description": "Convert AVIF files into widely supported JPG images with no upload and adjustable quality.",
         "href": "/tools/avif-to-jpg"
+      },
+      {
+        "id": "heic-to-png",
+        "name": "HEIC to PNG",
+        "description": "Convert HEIC and HEIF photos into PNG files in the browser with no upload and batch download.",
+        "href": "/tools/heic-to-png"
       }
     ]
   },
@@ -351,6 +359,7 @@
     "relatedBrowseLabel": "Browse all tools",
     "relatedBrowseDescription": "See the rest of the free converter and utility pages on the site.",
     "relatedAvifDescription": "Need wider compatibility instead? Convert AVIF images into JPG files.",
+    "relatedHeicDescription": "Need PNG output from iPhone photos? Convert HEIC and HEIF images in the browser.",
     "dropzone": "Drag and drop JPG, JPEG, or PNG files here, or click to upload",
     "supported": "Supports JPG, JPEG, PNG",
     "qualityLabel": "WebP Quality",
@@ -471,6 +480,7 @@
     "relatedBrowseLabel": "Browse all tools",
     "relatedBrowseDescription": "See the rest of the free converter and utility pages on the site.",
     "relatedWebpDescription": "Need web optimization instead? Convert JPG, JPEG, and PNG images to WebP.",
+    "relatedHeicDescription": "Need lossless PNG output for iPhone photos? Convert HEIC and HEIF files to PNG.",
     "highlightsLabel": "AVIF to JPG converter highlights",
     "highlights": [
       "No upload",
@@ -580,6 +590,137 @@
           "id": "download-jpg-files",
           "title": "Convert and download your JPG files",
           "description": "Start the conversion, review the output previews, and download each JPG file or all of them together."
+        }
+      ]
+    }
+  },
+  "heicToPng": {
+    "title": "HEIC to PNG Converter",
+    "subtitle": "Upload HEIC or HEIF files, convert them to PNG, and download the result.",
+    "heroKicker": "Free image converter",
+    "heroTitle": "HEIC to PNG Converter Online",
+    "introParagraphs": [
+      "Use this free HEIC to PNG converter when you need iPhone photos in a format that works more easily in browsers, apps, design tools, or documents. It converts HEIC and HEIF images to PNG directly in your browser, which keeps the workflow fast and private."
+    ],
+    "heroPoints": [
+      "Convert HEIC and HEIF files to PNG directly in your browser.",
+      "Batch-convert multiple iPhone photos in one session.",
+      "Export PNG files without uploading images to a server."
+    ],
+    "jumpStart": "Start converting",
+    "jumpHowTo": "How to convert",
+    "jumpFaq": "Read FAQ",
+    "relatedTitle": "Related tools",
+    "relatedBrowseLabel": "Browse all tools",
+    "relatedBrowseDescription": "See the rest of the free converter and utility pages on the site.",
+    "relatedAvifDescription": "Need JPG output instead? Convert AVIF images into widely supported JPG files.",
+    "relatedWebpDescription": "Want smaller web images after editing? Convert JPG, JPEG, and PNG files to WebP.",
+    "highlightsLabel": "HEIC to PNG converter highlights",
+    "highlights": [
+      "No upload",
+      "Batch convert",
+      "PNG output"
+    ],
+    "dropzone": "Drag and drop HEIC or HEIF files here, or click to upload",
+    "supported": "Supports HEIC and HEIF image files",
+    "previewNote": "Most browsers cannot preview the original HEIC file directly, so the source panel shows the uploaded file while the PNG preview appears after conversion.",
+    "convert": "Convert to PNG",
+    "converting": "Converting...",
+    "clear": "Clear All",
+    "downloadAll": "Download All",
+    "original": "Original HEIC",
+    "originalPreviewLabel": "HEIC source",
+    "converted": "PNG Output",
+    "saved": "Saved",
+    "largerBy": "Larger by",
+    "download": "Download PNG",
+    "statusReady": "Ready",
+    "statusConverting": "Converting",
+    "statusDone": "Done",
+    "statusError": "Failed",
+    "emptyTitle": "No HEIC images selected yet.",
+    "emptySubtitle": "Upload one or more HEIC or HEIF files to start conversion.",
+    "invalidType": "Only HEIC and HEIF files are supported.",
+    "failedMessage": "Could not convert this HEIC file. Please try another image or browser.",
+    "faqTitle": "HEIC to PNG FAQ",
+    "faqSubtitle": "Quick answers about converting HEIC and HEIF files to PNG online.",
+    "faqItems": [
+      {
+        "question": "Is this HEIC to PNG converter free?",
+        "answer": "Yes. You can convert HEIC images to PNG for free and download the results without creating an account."
+      },
+      {
+        "question": "Can I convert HEIF to PNG too?",
+        "answer": "Yes. This tool supports both HEIC and HEIF image files."
+      },
+      {
+        "question": "Are my HEIC files uploaded to a server?",
+        "answer": "No. Conversion runs in your browser, so your HEIC and HEIF files are not uploaded by this tool."
+      },
+      {
+        "question": "Can I convert multiple HEIC files at once?",
+        "answer": "Yes. You can upload multiple HEIC or HEIF files, convert them in one session, and download each PNG individually or all together."
+      },
+      {
+        "question": "Will the PNG file be larger than the HEIC file?",
+        "answer": "Often yes. PNG uses lossless compression, while HEIC is usually more compressed, so the converted PNG can be larger than the original."
+      },
+      {
+        "question": "Does the PNG keep HEIC metadata or Live Photo data?",
+        "answer": "Not always. Browser-side conversion may strip metadata such as EXIF details, and Live Photo or burst content is typically reduced to a still image."
+      },
+      {
+        "question": "What is a HEIC file?",
+        "answer": "HEIC is Apple's High Efficiency Image Container format, commonly used by iPhone photos. It stores high-quality images in a smaller size than older formats, but support is still uneven across browsers and apps."
+      }
+    ],
+    "seoSectionTitle": "HEIC to PNG guide and format tips",
+    "seoSectionSubtitle": "Learn when PNG is the better choice, why HEIC can be harder to use, and what to expect from file size and metadata.",
+    "seoSections": [
+      {
+        "title": "Why convert HEIC to PNG?",
+        "body": "Use this HEIC to PNG converter when you need an image format that opens more easily in design apps, documents, website builders, CMS tools, or older workflows. PNG is widely supported and easy to reuse after conversion."
+      },
+      {
+        "title": "Why can PNG files be larger than HEIC?",
+        "body": "HEIC is designed for efficient compression, while PNG focuses on lossless image quality. That means a converted PNG often takes more storage space, even though it can be easier to edit or share across different tools."
+      },
+      {
+        "title": "HEIC and HEIF are both supported",
+        "body": "Many users search for HEIC to PNG, while some files use the HEIF label instead. This converter supports both HEIC and HEIF image files, so you can upload either format and export a standard PNG."
+      },
+      {
+        "title": "Fast browser-side conversion for privacy",
+        "body": "The conversion runs in your browser instead of sending images to a remote server. That helps keep the workflow private and avoids extra upload time before you download the finished PNG files."
+      },
+      {
+        "title": "Metadata and Live Photo limitations",
+        "body": "Some HEIC files include metadata, bursts, or Live Photo-related data. Browser-side conversion is mainly focused on the visible image itself, so metadata may not be preserved and multi-frame content is usually reduced to a still PNG."
+      }
+    ],
+    "seoHowTo": {
+      "title": "How to convert HEIC to PNG online",
+      "description": "Follow these steps to convert HEIC or HEIF files into PNG images in your browser.",
+      "steps": [
+        {
+          "id": "upload-heic",
+          "title": "Upload your HEIC or HEIF files",
+          "description": "Drag HEIC images into the drop area or choose them from your device."
+        },
+        {
+          "id": "start-png-conversion",
+          "title": "Start the PNG conversion",
+          "description": "Run the converter to process one or more HEIC files into PNG format."
+        },
+        {
+          "id": "review-png-preview",
+          "title": "Review the PNG preview",
+          "description": "Wait for the PNG previews to finish so you can check the output and compare file sizes."
+        },
+        {
+          "id": "download-png-files",
+          "title": "Download your PNG files",
+          "description": "Download each converted PNG individually or save all finished files together."
         }
       ]
     }
