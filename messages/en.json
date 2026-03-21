@@ -16,6 +16,8 @@
     "avifToJpgDescription": "Convert AVIF to JPG or JPEG online for free. Adjust quality, choose a background color for transparency, batch-convert files, and download the result in your browser.",
     "heicToPngTitle": "HEIC to PNG Converter",
     "heicToPngDescription": "Convert HEIC or HEIF to PNG online for free. Batch-convert iPhone photos, keep full image quality, and download PNG files directly in your browser.",
+    "removeLineBreaksTitle": "Remove Line Breaks Tool",
+    "removeLineBreaksDescription": "Remove line breaks from text online for free. Replace line breaks with spaces, keep paragraph breaks, remove empty lines, and clean copied text instantly in your browser.",
     "resumeBuilderTitle": "Free Resume Builder",
     "resumeBuilderDescription": "Free resume builder with ATS-friendly resume templates, live preview, and instant PDF or DOCX download. Create a professional resume online with no sign-up."
   },
@@ -212,6 +214,12 @@
         "name": "HEIC to PNG",
         "description": "Convert HEIC and HEIF photos into PNG files in the browser with no upload and batch download.",
         "href": "/tools/heic-to-png"
+      },
+      {
+        "id": "remove-line-breaks",
+        "name": "Remove Line Breaks",
+        "description": "Remove line breaks from text, keep paragraphs when needed, and copy the cleaned result instantly.",
+        "href": "/tools/remove-line-breaks"
       }
     ]
   },
@@ -721,6 +729,146 @@
           "id": "download-png-files",
           "title": "Download your PNG files",
           "description": "Download each converted PNG individually or save all finished files together."
+        }
+      ]
+    }
+  },
+  "removeLineBreaks": {
+    "title": "Remove Line Breaks Tool",
+    "subtitle": "Paste text, remove line breaks instantly, and copy the cleaned result.",
+    "heroKicker": "Free text utility",
+    "heroTitle": "Remove Line Breaks Online",
+    "introParagraphs": [
+      "Use this free Remove Line Breaks tool when copied text from PDFs, emails, documents, or websites breaks onto too many lines. It lets you remove line breaks, replace them with spaces, keep paragraph breaks when needed, and clean the result directly in your browser."
+    ],
+    "heroPoints": [
+      "Remove line breaks from text instantly in your browser.",
+      "Replace line breaks with spaces or keep paragraph breaks.",
+      "Clean pasted text without uploading anything to a server."
+    ],
+    "jumpStart": "Start cleaning",
+    "jumpHowTo": "How it works",
+    "jumpFaq": "Read FAQ",
+    "relatedTitle": "Related tools",
+    "relatedBrowseLabel": "Browse all tools",
+    "relatedBrowseDescription": "See the rest of the free converter and utility pages on the site.",
+    "relatedHeicDescription": "Need image conversion too? Turn HEIC and HEIF photos into browser-friendly PNG files.",
+    "relatedWebpDescription": "Need web image compression after editing assets? Convert JPG, JPEG, and PNG files to WebP.",
+    "highlightsLabel": "Remove line breaks tool highlights",
+    "highlights": [
+      "Instant output",
+      "No upload",
+      "Paragraph-safe"
+    ],
+    "modeLabel": "Choose how to remove line breaks",
+    "modeReplaceSpace": "Replace line breaks with spaces",
+    "modeReplaceSpaceHint": "Best when you want broken lines merged into one clean sentence or paragraph.",
+    "modeRemoveAll": "Remove all line breaks",
+    "modeRemoveAllHint": "Deletes line breaks completely, even between paragraphs.",
+    "modePreserveParagraphs": "Keep paragraph breaks",
+    "modePreserveParagraphsHint": "Replaces single line breaks with spaces while keeping paragraph gaps.",
+    "modeRemoveEmpty": "Remove empty lines only",
+    "modeRemoveEmptyHint": "Keeps normal lines but removes blank lines between them.",
+    "optionsLabel": "Extra cleanup options",
+    "trimLines": "Trim spaces at the start and end of each line",
+    "collapseSpaces": "Collapse repeated spaces after cleanup",
+    "helperNote": "Everything runs locally in your browser, so pasted text stays on your device.",
+    "inputLabel": "Input text",
+    "inputDescription": "Paste the text that contains unwanted line breaks.",
+    "inputPlaceholder": "Paste text here...",
+    "outputLabel": "Cleaned output",
+    "outputDescription": "Your cleaned text updates automatically as you type or change options.",
+    "outputPlaceholder": "The cleaned result will appear here.",
+    "processing": "Updating the cleaned output...",
+    "charsLabel": "chars",
+    "wordsLabel": "words",
+    "linesLabel": "lines",
+    "useSample": "Use Sample",
+    "copyResult": "Copy Result",
+    "copied": "Copied",
+    "clear": "Clear All",
+    "sampleInput": "This is the first line.\nThis is the second line.\n\nThis starts a new paragraph.\nThis line belongs to the same paragraph.",
+    "emptyTitle": "No text added yet.",
+    "emptySubtitle": "Paste text into the input area to remove line breaks and copy the cleaned output.",
+    "faqTitle": "Remove Line Breaks FAQ",
+    "faqSubtitle": "Quick answers about removing line breaks, keeping paragraphs, and cleaning copied text.",
+    "faqItems": [
+      {
+        "question": "Is this remove line breaks tool free?",
+        "answer": "Yes. You can remove line breaks from text for free and copy the result without creating an account."
+      },
+      {
+        "question": "Are my text and notes uploaded to a server?",
+        "answer": "No. Text processing runs in your browser, so the content you paste is not uploaded by this tool."
+      },
+      {
+        "question": "Can I replace line breaks with spaces instead of deleting everything?",
+        "answer": "Yes. The default mode replaces line breaks with spaces, which is useful when text was copied from a PDF, email, or narrow column layout."
+      },
+      {
+        "question": "Can I keep paragraph breaks while removing broken lines?",
+        "answer": "Yes. Choose the keep paragraph breaks mode if you want to merge wrapped lines but keep blank-line paragraph spacing."
+      },
+      {
+        "question": "Can I remove empty lines only?",
+        "answer": "Yes. There is a mode for removing blank lines while keeping the remaining line structure in place."
+      },
+      {
+        "question": "How do I remove line breaks in Word or Google Docs?",
+        "answer": "You can use find and replace inside Word or Google Docs, but if the text was copied from another source, this tool is often faster because you can paste the content, clean it, and paste it back."
+      },
+      {
+        "question": "How do I remove line breaks in Excel cells?",
+        "answer": "For Excel you can use formulas or find and replace, but this tool is useful when you want to clean text first before pasting it into cells, sheets, forms, or import files."
+      }
+    ],
+    "seoSectionTitle": "Remove line breaks guide and text cleanup tips",
+    "seoSectionSubtitle": "Learn when to remove line breaks, how to keep paragraphs, and what to do with text copied from Word, Excel, PDFs, or Google Docs.",
+    "seoSections": [
+      {
+        "title": "Why remove line breaks from text?",
+        "body": "Text copied from PDFs, emails, chat exports, subtitles, narrow columns, or OCR tools often contains unwanted hard line breaks. A remove line breaks tool helps turn that broken text back into clean paragraphs or a single continuous line."
+      },
+      {
+        "title": "Replace line breaks with spaces or keep paragraphs",
+        "body": "Sometimes you want one single paragraph, and other times you only want to remove wrapped lines while preserving paragraph breaks. This tool supports both workflows, so you can choose the output that matches your editing task."
+      },
+      {
+        "title": "Remove line breaks from text copied from Word, PDFs, or websites",
+        "body": "When text is copied from Word documents, PDF files, website columns, or email messages, line endings often appear in the wrong places. Cleaning the text before pasting it into a CMS, form, spreadsheet, or note app makes the result much easier to edit."
+      },
+      {
+        "title": "How to remove line breaks in Word, Excel, and Google Docs",
+        "body": "Word, Excel, and Google Docs all have ways to remove line breaks with find and replace or formulas, but the steps change depending on the app. This page gives you a faster browser-based option when you just want to paste the text, clean it, and continue working."
+      },
+      {
+        "title": "Fast browser-side cleanup for privacy",
+        "body": "The text cleanup happens in your browser, which keeps the interaction fast and helps keep pasted content on your own device rather than sending it to a server."
+      }
+    ],
+    "seoHowTo": {
+      "title": "How to remove line breaks online",
+      "description": "Follow these steps to remove line breaks from text and copy the cleaned result.",
+      "steps": [
+        {
+          "id": "paste-text",
+          "title": "Paste your text",
+          "description": "Paste text into the input box from a PDF, email, document, website, or spreadsheet."
+        },
+        {
+          "id": "choose-cleanup-mode",
+          "title": "Choose the cleanup mode",
+          "description": "Pick whether you want to replace line breaks with spaces, remove them all, keep paragraph breaks, or delete only empty lines."
+        },
+        {
+          "id": "review-cleaned-output",
+          "title": "Review the cleaned output",
+          "description": "Check the live output panel and adjust the extra cleanup options if you want trimmed lines or fewer repeated spaces."
+        },
+        {
+          "id": "copy-result",
+          "title": "Copy the result",
+          "description": "Copy the cleaned text and paste it into Word, Excel, Google Docs, a CMS, a form, or any other editing workflow."
         }
       ]
     }

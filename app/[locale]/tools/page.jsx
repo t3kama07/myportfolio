@@ -1,4 +1,4 @@
-﻿import Footer from "../../components/Footer";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import { getDictionary, isValidLocale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
@@ -44,6 +44,7 @@ export default async function LocalizedToolsPage({ params }) {
     "heic-to-png": `/${locale}/tools/heic-to-png`,
     "invoice-generator": `/${locale}/tools/invoice-generator`,
     "image-to-webp": `/${locale}/tools/image-to-webp`,
+    "remove-line-breaks": `/${locale}/tools/remove-line-breaks`,
     "resume-builder": `/${locale}/tools/resume-builder`,
   };
 
@@ -92,4 +93,5 @@ export default async function LocalizedToolsPage({ params }) {
     </main>
   );
 }
+
 

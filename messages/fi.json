@@ -16,6 +16,8 @@
     "avifToJpgDescription": "Muunna AVIF JPG- tai JPEG-muotoon ilmaiseksi verkossa. Saada laatua, valitse taustavari lapiakyville alueille, kasittele useita tiedostoja ja lataa tulos selaimessa.",
     "heicToPngTitle": "HEIC PNG-muotoon",
     "heicToPngDescription": "Muunna HEIC- tai HEIF-kuvat PNG-muotoon ilmaiseksi verkossa. Kasittele useita iPhone-kuvia kerralla, sailyta kuvanlaatu ja lataa PNG-tiedostot suoraan selaimessa.",
+    "removeLineBreaksTitle": "Poista Rivinvaihdot -tyokalu",
+    "removeLineBreaksDescription": "Poista rivinvaihdot tekstista ilmaiseksi verkossa. Korvaa rivinvaihdot valilyonneilla, sailyta kappalejaot tarvittaessa, poista tyhjat rivit ja siisti kopioitu teksti heti selaimessa.",
     "resumeBuilderTitle": "Ilmainen CV-tyokalu",
     "resumeBuilderDescription": "Ilmainen CV-tyokalu, jolla teet ATS-ystavallisen ansioluettelon verkossa reaaliaikaisella esikatselulla seka PDF- tai DOCX-viennilla ilman rekisterointia."
   },
@@ -163,11 +165,11 @@
       "submitError": "Viestin lahetys epaonnistui. Yrita uudelleen tai laheta sahkopostia osoitteeseen hello@manjula.live.",
       "validation": {
         "nameRequired": "Kirjoita nimesi.",
-        "nameTooLong": "Nimen tulee olla alle 120 merkkiä.",
+        "nameTooLong": "Nimen tulee olla alle 120 merkkia.",
         "emailRequired": "Kirjoita sahkopostiosoitteesi.",
         "emailInvalid": "Kirjoita kelvollinen sahkopostiosoite.",
         "messageRequired": "Kirjoita viesti.",
-        "messageTooLong": "Viestin tulee olla alle 5000 merkkiä."
+        "messageTooLong": "Viestin tulee olla alle 5000 merkkia."
       }
     }
   },
@@ -212,6 +214,12 @@
         "name": "HEIC PNG-muotoon",
         "description": "Muunna HEIC- ja HEIF-kuvat PNG-tiedostoiksi selaimessa ilman latausta palvelimelle.",
         "href": "/tools/heic-to-png"
+      },
+      {
+        "id": "remove-line-breaks",
+        "name": "Poista rivinvaihdot",
+        "description": "Poista rivinvaihdot tekstista, sailyta kappaleet tarvittaessa ja kopioi siivottu tulos heti.",
+        "href": "/tools/remove-line-breaks"
       }
     ]
   },
@@ -725,6 +733,146 @@
       ]
     }
   },
+  "removeLineBreaks": {
+    "title": "Poista Rivinvaihdot -tyokalu",
+    "subtitle": "Liita teksti, poista rivinvaihdot heti ja kopioi siivottu tulos.",
+    "heroKicker": "Ilmainen tekstityokalu",
+    "heroTitle": "Poista rivinvaihdot verkossa",
+    "introParagraphs": [
+      "Kayta tata ilmaista rivinvaihtojen poistotyokalua silloin, kun PDF:sta, sahkopostista, dokumentista tai verkkosivulta kopioitu teksti hajoaa liian monelle riville. Tyokalu auttaa poistamaan rivinvaihdot, korvaamaan ne valilyonneilla, sailyttamaan kappalejaot tarvittaessa ja siistimaan tekstin suoraan selaimessa."
+    ],
+    "heroPoints": [
+      "Poista rivinvaihdot tekstista heti selaimessa.",
+      "Korvaa rivinvaihdot valilyonneilla tai sailyta kappalejaot.",
+      "Siisti liitetty teksti ilman latausta palvelimelle."
+    ],
+    "jumpStart": "Aloita siivous",
+    "jumpHowTo": "Miten se toimii",
+    "jumpFaq": "Lue UKK",
+    "relatedTitle": "Liittyvat tyokalut",
+    "relatedBrowseLabel": "Selaa kaikkia tyokaluja",
+    "relatedBrowseDescription": "Katso muut ilmaiset muuntimet ja apurityokalut sivustolla.",
+    "relatedHeicDescription": "Tarvitsetko myos kuvamuunnosta? Muunna HEIC- ja HEIF-kuvat PNG-muotoon selaimessa.",
+    "relatedWebpDescription": "Tarvitsetko web-kuvien pakkausta muokkauksen jalkeen? Muunna JPG-, JPEG- ja PNG-kuvat WebP-muotoon.",
+    "highlightsLabel": "Rivinvaihtojen poistotyokalun kohokohdat",
+    "highlights": [
+      "Valiton tulos",
+      "Ei latausta",
+      "Kappaleet sailyvat"
+    ],
+    "modeLabel": "Valitse tapa poistaa rivinvaihdot",
+    "modeReplaceSpace": "Korvaa rivinvaihdot valilyonneilla",
+    "modeReplaceSpaceHint": "Paras vaihtoehto silloin, kun haluat yhdistaa katkenneet rivit siistiksi lauseeksi tai kappaleeksi.",
+    "modeRemoveAll": "Poista kaikki rivinvaihdot",
+    "modeRemoveAllHint": "Poistaa rivinvaihdot kokonaan myos kappaleiden valista.",
+    "modePreserveParagraphs": "Sailyta kappalejaot",
+    "modePreserveParagraphsHint": "Korvaa yksittaiset rivinvaihdot valilyonneilla mutta jattaa kappalevalit paikalleen.",
+    "modeRemoveEmpty": "Poista vain tyhjat rivit",
+    "modeRemoveEmptyHint": "Sailyttaa tavalliset rivit mutta poistaa valista tyhjat rivit.",
+    "optionsLabel": "Lisaasetukset",
+    "trimLines": "Poista valilyonnit rivien alusta ja lopusta",
+    "collapseSpaces": "Yhdista toistuvat valilyonnit siivouksen jalkeen",
+    "helperNote": "Kaikki tapahtuu selaimessa, joten liitetty teksti pysyy omalla laitteellasi.",
+    "inputLabel": "Syoteteksti",
+    "inputDescription": "Liita teksti, jossa on ei-toivottuja rivinvaihtoja.",
+    "inputPlaceholder": "Liita teksti tahan...",
+    "outputLabel": "Siivottu tulos",
+    "outputDescription": "Tulosteksti paivittyy automaattisesti, kun kirjoitat tai vaihdat asetuksia.",
+    "outputPlaceholder": "Siivottu tulos tulee tahan.",
+    "processing": "Paivitetaan siivottua tulosta...",
+    "charsLabel": "merkkia",
+    "wordsLabel": "sanaa",
+    "linesLabel": "rivia",
+    "useSample": "Kayta esimerkkia",
+    "copyResult": "Kopioi tulos",
+    "copied": "Kopioitu",
+    "clear": "Tyhjenna kaikki",
+    "sampleInput": "Tama on ensimmainen rivi.\nTama on toinen rivi.\n\nTasta alkaa uusi kappale.\nTama rivi kuuluu samaan kappaleeseen.",
+    "emptyTitle": "Tekstia ei ole lisatty viela.",
+    "emptySubtitle": "Liita teksti syotekenttaan poistaaksesi rivinvaihdot ja kopioidaksesi siivotun tuloksen.",
+    "faqTitle": "Rivinvaihtojen poisto UKK",
+    "faqSubtitle": "Nopeat vastaukset rivinvaihtojen poistamiseen, kappaleiden sailyttamiseen ja kopioidun tekstin siivoamiseen.",
+    "faqItems": [
+      {
+        "question": "Onko taman rivinvaihtojen poistotyokalun kaytto ilmaista?",
+        "answer": "Kylla. Voit poistaa rivinvaihdot tekstista ilmaiseksi ja kopioida tuloksen ilman tilin luontia."
+      },
+      {
+        "question": "Ladataanko tekstini palvelimelle?",
+        "answer": "Ei. Tekstin kasittely tapahtuu selaimessa, joten liittamaasi sisaltoa ei ladata palvelimelle taman tyokalun kautta."
+      },
+      {
+        "question": "Voinko korvata rivinvaihdot valilyonneilla sen sijaan, etta poistaisin kaiken?",
+        "answer": "Kylla. Oletustila korvaa rivinvaihdot valilyonneilla, mikali teksti on kopioitu esimerkiksi PDF:sta, sahkopostista tai kapeasta palstasta."
+      },
+      {
+        "question": "Voinko sailyttaa kappalejaot samalla kun poistan rikkoutuneet rivit?",
+        "answer": "Kylla. Valitse kappalejaot sailyttava tila, jos haluat yhdistaa rivikatkot mutta jattaa tyhjilla riveilla erotellut kappaleet paikoilleen."
+      },
+      {
+        "question": "Voinko poistaa vain tyhjat rivit?",
+        "answer": "Kylla. Tyokalussa on tila, joka poistaa tyhjat rivit mutta sailyttaa muun rivirakenteen."
+      },
+      {
+        "question": "Miten poistan rivinvaihdot Wordissa tai Google Docsissa?",
+        "answer": "Voit kayttaa Hae ja korvaa -toimintoa Wordissa tai Google Docsissa, mutta jos teksti on kopioitu toisesta lahteesta, tama tyokalu on usein nopeampi: liita teksti, siivoa se ja liita takaisin."
+      },
+      {
+        "question": "Miten poistan rivinvaihdot Excelin soluista?",
+        "answer": "Excelissa voit kayttaa kaavoja tai hae ja korvaa -toimintoa, mutta tama tyokalu sopii hyvin tilanteisiin, joissa haluat siivota tekstin ennen kuin liitat sen soluihin, taulukkoon, lomakkeeseen tai tuontitiedostoon."
+      }
+    ],
+    "seoSectionTitle": "Rivinvaihtojen poisto-opas ja tekstin siivousvinkit",
+    "seoSectionSubtitle": "Lue milloin rivinvaihdot kannattaa poistaa, miten kappaleet voi sailyttaa ja mita kannattaa tehda Wordista, Excelista, PDF:sta tai Google Docsista kopioidulle tekstille.",
+    "seoSections": [
+      {
+        "title": "Miksi rivinvaihdot kannattaa poistaa tekstista?",
+        "body": "PDF:sta, sahkopostista, chat-viennista, tekstityksista, kapeista palstoista tai OCR-tyokaluista kopioitu teksti sisaltaa usein ei-toivottuja rivikatkoja. Rivinvaihtojen poistotyokalu auttaa muuttamaan rikkoutuneen tekstin taas siisteiksi kappaleiksi tai yhdeksi jatkuvaksi riviksi."
+      },
+      {
+        "title": "Korvaa rivinvaihdot valilyonneilla tai sailyta kappalejaot",
+        "body": "Joskus haluat yhden yhtenaisen kappaleen, ja joskus haluat poistaa vain rivien kietoutumisen mutta sailyttaa kappalejaot. Tama tyokalu tukee molempia tyonkulkuja, joten voit valita lopputuloksen tarpeesi mukaan."
+      },
+      {
+        "title": "Poista rivinvaihdot Wordista, PDF:sta tai verkkosivulta kopioidusta tekstista",
+        "body": "Kun teksti kopioidaan Word-dokumentista, PDF-tiedostosta, verkkosivun palstasta tai sahkopostiviestista, rivinvaihdot tulevat usein vaariin kohtiin. Kun siivoat tekstin ennen sen liittamista CMS:aan, lomakkeeseen, taulukkoon tai muistiinpanoihin, sita on paljon helpompi muokata."
+      },
+      {
+        "title": "Miten rivinvaihdot poistetaan Wordissa, Excelissa ja Google Docsissa",
+        "body": "Wordissa, Excelissa ja Google Docsissa rivinvaihtoja voi poistaa hae ja korvaa -toiminnolla tai kaavoilla, mutta vaiheet riippuvat sovelluksesta. Tama sivu tarjoaa nopeamman selainpohjaisen vaihtoehdon silloin, kun haluat vain liittaa tekstin, siivota sen ja jatkaa tyota."
+      },
+      {
+        "title": "Nopea selainpohjainen siivous yksityisyytta varten",
+        "body": "Tekstin siivous tapahtuu selaimessa, joten toiminta pysyy nopeana ja liitetty sisalto pysyy omalla laitteellasi sen sijaan, etta se lahetettaisiin palvelimelle."
+      }
+    ],
+    "seoHowTo": {
+      "title": "Miten poistat rivinvaihdot verkossa",
+      "description": "Seuraa naita vaiheita, kun haluat poistaa rivinvaihdot tekstista ja kopioida siivotun tuloksen.",
+      "steps": [
+        {
+          "id": "paste-text",
+          "title": "Liita teksti",
+          "description": "Liita teksti syoteruutuun esimerkiksi PDF:sta, sahkopostista, dokumentista, verkkosivulta tai taulukosta."
+        },
+        {
+          "id": "choose-cleanup-mode",
+          "title": "Valitse siivoustila",
+          "description": "Valitse haluatko korvata rivinvaihdot valilyonneilla, poistaa ne kaikki, sailyttaa kappalejaot vai poistaa vain tyhjat rivit."
+        },
+        {
+          "id": "review-cleaned-output",
+          "title": "Tarkista siivottu tulos",
+          "description": "Katso reaaliaikaista tulospaneelia ja saata lisaasetuksia, jos haluat siistityt rivit tai vahemman toistuvia valilyonteja."
+        },
+        {
+          "id": "copy-result",
+          "title": "Kopioi tulos",
+          "description": "Kopioi siivottu teksti ja liita se Wordiin, Exceliin, Google Docsiin, CMS:aan, lomakkeeseen tai muuhun tyonkulkuun."
+        }
+      ]
+    }
+  },
   "footer": {
     "name": "Manjula",
     "role": "Web-kehittaja",
@@ -891,3 +1039,4 @@
     }
   }
 }
+
