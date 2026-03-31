@@ -1,13 +1,13 @@
 export const projects = [
   {
     id: "MREngineering",
-    title: "MREngineering",
+    title: "PS Engineering",
     stack: "Demo Website / Construction Industry",
     description: "Demo site prepared for a construction company website.",
-    demoUrl: "https://mrengineeringdemo.vercel.app/",
+    demoUrl: "https://psengineering.vercel.app/",
     githubUrl: "https://github.com/t3kama07/mrengineering.git",
     thumbnailSrc: "/assets/mreng.png",
-    thumbnailAlt: "MREngineering website thumbnail",
+    thumbnailAlt: "PS Engineering website thumbnail",
     thumbnailPosition: "top center",
   },
   {
