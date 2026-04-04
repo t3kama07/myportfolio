@@ -12,6 +12,8 @@
     "invoiceGeneratorDescription": "Ilmainen verkkolaskugeneraattori reaaliaikaisella esikatselulla, verolaskennalla, valuuttatuella ja heti ladattavalla PDF:lla.",
     "imageToWebpTitle": "Kuva WebP-muotoon",
     "imageToWebpDescription": "Muunna JPG-, JPEG- ja PNG-kuvat WebP-muotoon ilmaiseksi verkossa. Saada laatua, kasittele useita kuvia ja lataa web-kayttoon sopivat tiedostot suoraan selaimessa.",
+    "imageCropperTitle": "Kuvan Rajaus",
+    "imageCropperDescription": "Rajaa kuvia ilmaiseksi verkossa vedettavalla rajausalueella, kuvasuhde-esiasetuksilla, kaannolla ja heti ladattavalla PNG-, JPG- tai WebP-viennilla suoraan selaimessa.",
     "avifToJpgTitle": "AVIF JPG-muotoon",
     "avifToJpgDescription": "Muunna AVIF JPG- tai JPEG-muotoon ilmaiseksi verkossa. Saada laatua, valitse taustavari lapiakyville alueille, kasittele useita tiedostoja ja lataa tulos selaimessa.",
     "heicToPngTitle": "HEIC PNG-muotoon",
@@ -202,6 +204,12 @@
         "name": "Kuva WebP-muotoon",
         "description": "Muunna JPG-, JPEG- ja PNG-kuvat WebP-muotoon parempaa verkkosuorituskykya varten.",
         "href": "#"
+      },
+      {
+        "id": "image-cropper",
+        "name": "Kuvan rajaus",
+        "description": "Rajaa, muuta kokoa ja vie kuvia esiasetuksilla, kaannolla ja reaaliaikaisella esikatselulla.",
+        "href": "/tools/image-cropper"
       },
       {
         "id": "avif-to-jpg",
@@ -869,6 +877,148 @@
           "id": "copy-result",
           "title": "Kopioi tulos",
           "description": "Kopioi siivottu teksti ja liita se Wordiin, Exceliin, Google Docsiin, CMS:aan, lomakkeeseen tai muuhun tyonkulkuun."
+        }
+      ]
+    }
+  },
+  "imageCropper": {
+    "title": "Kuvan rajaus",
+    "subtitle": "Lataa kuva, siirra rajausaluetta, valitse kuvasuhde ja vie valmis tulos heti.",
+    "heroKicker": "Ilmainen kuvatyokalu",
+    "heroTitle": "Rajaa kuvia verkossa reaaliaikaisella esikatselulla",
+    "introParagraphs": [
+      "Kayta tata ilmaista kuvien rajausohjelmaa silloin, kun haluat rajata valokuvia, kuvakaappauksia, tuotekuvia tai somegrafiikkaa ilman tiedoston lataamista palvelimelle. Voit siirtaa rajausaluetta, vaihtaa kuvasuhdetta, kaantaa kuvaa ja vieda lopputuloksen PNG-, JPG- tai WebP-muodossa."
+    ],
+    "heroPoints": [
+      "Siirra ja muuta rajausalueen kokoa suoraan kuvan paalla.",
+      "Kayta valmiita kuvasuhteita neliolle, pystykuvalle, vaakakuvalle, storylle ja perusrajaukselle.",
+      "Kaanna kuvaa ja vie valmis rajaus PNG-, JPG- tai WebP-muodossa selaimessa."
+    ],
+    "jumpStart": "Aloita rajaus",
+    "jumpHowTo": "Miten kayttaa",
+    "jumpFaq": "Lue UKK",
+    "relatedTitle": "Liittyvat tyokalut",
+    "relatedBrowseLabel": "Selaa kaikkia tyokaluja",
+    "relatedBrowseDescription": "Katso muut ilmaiset apurityokalut ja kuvatyokalut sivustolla.",
+    "relatedWebpDescription": "Tarvitsetko pienemman web-kayttoon sopivan tiedoston rajauksen jalkeen? Muunna tulos WebP-muotoon.",
+    "relatedAvifDescription": "Tarvitsetko laajempaa yhteensopivuutta AVIF-kuville? Muunna ne JPG-muotoon selaimessa.",
+    "dropzone": "Vedaa kuva tahan tai klikkaa ladataksesi",
+    "supported": "Tukee JPG-, JPEG-, PNG-, WebP-, GIF-, BMP- ja AVIF-kuvia. SVG- ja HEIC-tiedostoja ei tueta tassa rajaimessa.",
+    "replaceImage": "Vaihda kuva",
+    "rotateLeft": "Kaanna vasemmalle",
+    "rotateRight": "Kaanna oikealle",
+    "resetEdits": "Palauta muokkaukset",
+    "clear": "Poista kuva",
+    "download": "Lataa rajaus",
+    "helperNote": "Kaikki tapahtuu selaimessa, joten kuva pysyy omalla laitteellasi koko rajauksen ajan.",
+    "workspaceLabel": "Kuvan rajausalue",
+    "resizeLabel": "Rajauskahva",
+    "aspectLabel": "Kuvasuhde-esiasetukset",
+    "aspectHint": "Valitse vapaa rajaus tai valmis muoto profiilikuville, postauksille, bannereille ja story-kuville.",
+    "presets": {
+      "free": "Vapaa",
+      "square": "Nelio",
+      "portrait": "4:5 Pysty",
+      "landscape": "16:9 Vaaka",
+      "story": "9:16 Story",
+      "classic": "3:2 Perus"
+    },
+    "exportLabel": "Vientiasetukset",
+    "exportHint": "Valitse tulosmuoto ennen kuin lataat rajatun kuvan.",
+    "formats": {
+      "png": "PNG",
+      "jpg": "JPG",
+      "webp": "WebP"
+    },
+    "losslessHint": "PNG-vienti on havioton, joten laatuliukuria ei tarvita.",
+    "qualityLabel": "Viennin laatu",
+    "qualityHint": "Korkeampi laatu sailyttaa enemman yksityiskohtia mutta voi kasvattaa tiedostokokoa JPG- ja WebP-viennissa.",
+    "previewLabel": "Reaaliaikainen esikatselu",
+    "previewHint": "Esikatselu paivittyy automaattisesti, kun siirrata rajausta tai vaihdat vientiasetuksia.",
+    "previewAlt": "Rajatun kuvan esikatselu",
+    "previewEmpty": "Rajattu tulos nakyy tassa.",
+    "previewRendering": "Paivitetaan esikatselua...",
+    "previewReady": "Esikatselu valmis",
+    "originalDimensions": "Alkuperainen",
+    "cropDimensions": "Rajaus",
+    "fileSize": "Arvioitu koko",
+    "emptyTitle": "Kuvaa ei ole valittu viela.",
+    "emptySubtitle": "Lataa kuva aloittaaksesi rajauksen, kaannon ja viennin selaimessa.",
+    "invalidType": "Valitse tuettu kuvatiedosto, kuten JPG, PNG, WebP, GIF, BMP tai AVIF.",
+    "loadError": "Tata kuvaa ei voitu avata. Yrita toista tiedostoa.",
+    "previewError": "Rajatun kuvan esikatselua ei voitu luoda juuri nyt. Yrita uudelleen.",
+    "rotateError": "Kuvaa ei voitu kaantaa. Yrita toista tiedostoa.",
+    "faqTitle": "Kuvan rajauksen UKK",
+    "faqSubtitle": "Nopeat vastaukset kuvien rajaukseen, kuvasuhteisiin, yksityisyyteen ja selainpohjaiseen vientiin.",
+    "faqItems": [
+      {
+        "question": "Onko taman kuvan rajausohjelman kaytto ilmaista?",
+        "answer": "Kylla. Voit rajata kuvia, kaantaa niita ja ladata tuloksen ilmaiseksi."
+      },
+      {
+        "question": "Ladataanko kuvani palvelimelle?",
+        "answer": "Ei. Rajaus tapahtuu selaimessa, joten tiedostot pysyvat omalla laitteellasi."
+      },
+      {
+        "question": "Voinko rajata JPG-, PNG- ja WebP-kuvia?",
+        "answer": "Kylla. Tyokalu tukee yleisia selaimessa toimivia kuvaformaatteja, kuten JPG, PNG, WebP, GIF, BMP ja AVIF."
+      },
+      {
+        "question": "Voinko rajata kuvan nelioksi tai somekuvasuhteeseen?",
+        "answer": "Kylla. Voit vaihtaa vapaan rajauksen ja valmiiden esiasetusten, kuten nelion, 4:5-pystykuvan, 16:9-vaakakuvan, 9:16-storyn ja 3:2-perusmuodon valilla."
+      },
+      {
+        "question": "Voinko kaantaa kuvaa ennen vientia?",
+        "answer": "Kylla. Kayta kaantopainikkeita, jos haluat pyorayttaa kuvaa vasemmalle tai oikealle ennen latausta."
+      },
+      {
+        "question": "Voinko vieda rajatun kuvan PNG-, JPG- tai WebP-muodossa?",
+        "answer": "Kylla. Voit valita PNG-, JPG- tai WebP-viennin ennen lopullisen rajauksen lataamista."
+      }
+    ],
+    "seoSectionTitle": "Kuvan rajauksen opas ja kaytannon vinkit",
+    "seoSectionSubtitle": "Lue milloin kiintea kuvasuhde auttaa, miksi selainpohjainen rajaus on kayteva ja miten viet siistin kuvan webiin tai someen.",
+    "seoSections": [
+      {
+        "title": "Rajaa kuvia nopeasti ilman raskasta editoria",
+        "body": "Verkkopohjainen kuvien rajausohjelma on hyodyllinen silloin, kun haluat vain rajata sommittelua, valmistella somegrafiikan tai poistaa turhaa tyhjaa tilaa kuvakaappauksesta. Suuren suunnitteluohjelman sijaan voit ladata kuvan, siirtaa rajausaluetta ja vieda tuloksen heti."
+      },
+      {
+        "title": "Kayta kuvasuhde-esiasetuksia yhtenaisiin lopputuloksiin",
+        "body": "Kiinteat kuvasuhteet auttavat silloin, kun haluat tasaisen lopputuloksen profiilikuville, tuotekorteille, blogin pikkukuville, esityskalvoille tai somejulkaisuille. Tassa rajaimessa on useita yleisia esiasetuksia, joten voit vaihtaa muotoa ilman arvailua."
+      },
+      {
+        "title": "Vie rajatut kuvat oikeassa formaatissa",
+        "body": "PNG sopii haviottomaan tulokseen, JPG toimii hyvin valokuvapainotteisille kuville ja WebP on usein hyva vaihtoehto silloin, kun haluat pienemman web-kayttoon sopivan tiedoston. Esikatselu auttaa tarkistamaan tuloksen ennen latausta."
+      },
+      {
+        "title": "Pida kuvien muokkaus yksityisena selaimessa",
+        "body": "Rajaus tapahtuu selaimessa sen sijaan, etta kuva lahetettaisiin etapalvelimelle. Tama pitaa toiminnan nopeana ja tarjoaa yksityisemman tavan rajata henkilo-, asiakas- tai tyokuvia."
+      }
+    ],
+    "seoHowTo": {
+      "title": "Miten rajaat kuvan verkossa",
+      "description": "Seuraa naita vaiheita, kun haluat rajata valokuvan tai grafiikan ja ladata valmiin tuloksen.",
+      "steps": [
+        {
+          "id": "upload-image",
+          "title": "Lataa kuva",
+          "description": "Vedaa tiedosto pudotusalueelle tai valitse kuva laitteeltasi."
+        },
+        {
+          "id": "adjust-crop-area",
+          "title": "Saada rajausaluetta",
+          "description": "Siirra rajausaluetta, muuta kokoa kahvoilla ja vaihda kuvasuhde-esiasetusta tarvittaessa."
+        },
+        {
+          "id": "choose-export-settings",
+          "title": "Valitse vientiasetukset",
+          "description": "Valitse PNG, JPG tai WebP ja saata laatua, jos viet JPG- tai WebP-muodossa."
+        },
+        {
+          "id": "download-cropped-image",
+          "title": "Lataa rajattu kuva",
+          "description": "Tarkista reaaliaikainen esikatselu ja lataa valmis rajaus suoraan selaimesta."
         }
       ]
     }

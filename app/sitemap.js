@@ -36,6 +36,12 @@ export default function sitemap() {
       priority: 0.6,
     },
     {
+      url: `${siteUrl}/en/tools/image-cropper`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.63,
+    },
+    {
       url: `${siteUrl}/en/tools/avif-to-jpg`,
       lastModified,
       changeFrequency: "weekly",
@@ -82,6 +88,12 @@ export default function sitemap() {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.5,
+    },
+    {
+      url: `${siteUrl}/fi/tools/image-cropper`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.53,
     },
     {
       url: `${siteUrl}/fi/tools/avif-to-jpg`,

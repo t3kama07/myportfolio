@@ -12,6 +12,8 @@
     "invoiceGeneratorDescription": "Free online invoice generator with live preview, tax calculation, currency support, and instant PDF download.",
     "imageToWebpTitle": "Image to WebP Converter",
     "imageToWebpDescription": "Convert JPG, JPEG, and PNG to WebP online for free. Adjust quality, batch-convert images, and download web-ready files directly in your browser.",
+    "imageCropperTitle": "Image Cropper",
+    "imageCropperDescription": "Use a free image cropper online to crop images with drag handles, aspect ratio presets, rotate tools, and instant PNG, JPG, or WebP export directly in your browser.",
     "avifToJpgTitle": "AVIF to JPG Converter",
     "avifToJpgDescription": "Convert AVIF to JPG or JPEG online for free. Adjust quality, choose a background color for transparency, batch-convert files, and download the result in your browser.",
     "heicToPngTitle": "HEIC to PNG Converter",
@@ -202,6 +204,12 @@
         "name": "Image to WebP",
         "description": "Convert JPG, JPEG, and PNG images into WebP with better web performance.",
         "href": "#"
+      },
+      {
+        "id": "image-cropper",
+        "name": "Image Cropper",
+        "description": "Crop, resize, and export images with aspect presets, rotation, and live preview.",
+        "href": "/tools/image-cropper"
       },
       {
         "id": "avif-to-jpg",
@@ -869,6 +877,148 @@
           "id": "copy-result",
           "title": "Copy the result",
           "description": "Copy the cleaned text and paste it into Word, Excel, Google Docs, a CMS, a form, or any other editing workflow."
+        }
+      ]
+    }
+  },
+  "imageCropper": {
+    "title": "Image Cropper",
+    "subtitle": "Upload an image, drag the crop box, choose an aspect ratio, and export the result instantly.",
+    "heroKicker": "Free image editor",
+    "heroTitle": "Image Cropper Online With Live Preview",
+    "introParagraphs": [
+      "Use this free image cropper online when you need a quick image crop for photos, screenshots, product images, or social media assets without uploading them to a server. This image crop tool lets you drag the crop area, switch aspect ratios, rotate the image, and export the final crop as PNG, JPG, or WebP."
+    ],
+    "heroPoints": [
+      "Drag and resize the crop box directly over your image.",
+      "Use aspect presets for square, portrait, landscape, story, and classic crops.",
+      "Rotate the image and export to PNG, JPG, or WebP in the browser."
+    ],
+    "jumpStart": "Start cropping",
+    "jumpHowTo": "How to use it",
+    "jumpFaq": "Read FAQ",
+    "relatedTitle": "Related tools",
+    "relatedBrowseLabel": "Browse all tools",
+    "relatedBrowseDescription": "See the rest of the free utilities and image tools on the site.",
+    "relatedWebpDescription": "Need a smaller web-ready file after cropping? Convert the result to WebP.",
+    "relatedAvifDescription": "Need wider compatibility for AVIF files? Convert them into JPG in the browser.",
+    "dropzone": "Drag and drop an image here, or click to upload",
+    "supported": "Supports JPG, JPEG, PNG, WebP, GIF, BMP, AVIF. SVG and HEIC are not supported in this cropper.",
+    "replaceImage": "Replace Image",
+    "rotateLeft": "Rotate Left",
+    "rotateRight": "Rotate Right",
+    "resetEdits": "Reset Edits",
+    "clear": "Clear Image",
+    "download": "Download Crop",
+    "helperNote": "Everything runs locally in your browser, so the image never leaves your device while you crop it.",
+    "workspaceLabel": "Image crop workspace",
+    "resizeLabel": "Resize handle",
+    "aspectLabel": "Aspect ratio presets",
+    "aspectHint": "Choose a freeform crop or switch to a ready-made format for profile images, posts, banners, and stories.",
+    "presets": {
+      "free": "Free",
+      "square": "Square",
+      "portrait": "4:5 Portrait",
+      "landscape": "16:9 Landscape",
+      "story": "9:16 Story",
+      "classic": "3:2 Classic"
+    },
+    "exportLabel": "Export settings",
+    "exportHint": "Pick the output format before downloading the cropped image.",
+    "formats": {
+      "png": "PNG",
+      "jpg": "JPG",
+      "webp": "WebP"
+    },
+    "losslessHint": "PNG export is lossless, so the quality slider is not needed.",
+    "qualityLabel": "Export quality",
+    "qualityHint": "Higher quality keeps more detail but may increase file size for JPG and WebP exports.",
+    "previewLabel": "Live preview",
+    "previewHint": "The preview updates automatically when you move the crop or change export settings.",
+    "previewAlt": "Cropped image preview",
+    "previewEmpty": "Your cropped result will appear here.",
+    "previewRendering": "Updating preview...",
+    "previewReady": "Preview ready",
+    "originalDimensions": "Original",
+    "cropDimensions": "Crop",
+    "fileSize": "Estimated size",
+    "emptyTitle": "No image selected yet.",
+    "emptySubtitle": "Upload an image to start cropping, rotating, and exporting it in the browser.",
+    "invalidType": "Please choose a supported image file such as JPG, PNG, WebP, GIF, BMP, or AVIF.",
+    "loadError": "This image could not be opened. Please try another file.",
+    "previewError": "The cropped preview could not be generated right now. Please try again.",
+    "rotateError": "The image could not be rotated. Please try another file.",
+    "faqTitle": "Image Cropper FAQ",
+    "faqSubtitle": "Quick answers about image crop online workflows, aspect ratios, privacy, and browser-based export.",
+    "faqItems": [
+      {
+        "question": "Is this image cropper free?",
+        "answer": "Yes. You can crop images, rotate them, and download the result for free."
+      },
+      {
+        "question": "Are my images uploaded to a server?",
+        "answer": "No. The cropper runs in your browser, so your files stay on your device."
+      },
+      {
+        "question": "Can I crop JPG, PNG, and WebP files?",
+        "answer": "Yes. The tool supports common browser-friendly image formats including JPG, PNG, WebP, GIF, BMP, and AVIF."
+      },
+      {
+        "question": "Can I crop an image to a square or social media ratio?",
+        "answer": "Yes. You can switch between free cropping and presets such as square, 4:5 portrait, 16:9 landscape, 9:16 story, and 3:2 classic."
+      },
+      {
+        "question": "Can I rotate the image before exporting?",
+        "answer": "Yes. Use the rotate buttons to turn the image left or right before downloading the crop."
+      },
+      {
+        "question": "Can I export the cropped image as PNG, JPG, or WebP?",
+        "answer": "Yes. You can choose PNG, JPG, or WebP before downloading the final crop."
+      }
+    ],
+    "seoSectionTitle": "Image Cropper Online Guide and Image Crop Tips",
+    "seoSectionSubtitle": "Learn when to use fixed aspect ratios, why browser-side image crop online workflows are useful, and how to export clean images for web or social media.",
+    "seoSections": [
+      {
+        "title": "Use a free image cropper online without a heavy editor",
+        "body": "An online image cropper is useful when you only need a fast image crop for framing, a social graphic, or whitespace cleanup around a screenshot. Instead of opening a large design app, you can use this free image cropper, upload the image, move the crop area, and export the result immediately."
+      },
+      {
+        "title": "Use aspect ratio presets for consistent image crop layouts",
+        "body": "Fixed aspect ratios help when you want consistent output across profile photos, product cards, blog thumbnails, presentation slides, or social media posts. This image crop tool includes several common presets so you can switch formats without guessing the proportions."
+      },
+      {
+        "title": "Export cropped images in the format that fits the job",
+        "body": "PNG is a solid choice for lossless output, JPG works well for photo-heavy images, and WebP is often useful when you want a smaller web-ready file. If you need image crop and resize control for web delivery, the preview lets you review the result before you download it."
+      },
+      {
+        "title": "Keep image editing private in the browser",
+        "body": "The crop workflow runs in your browser rather than sending the image to a remote server. That keeps the interaction fast and gives you a more private way to crop personal photos, client assets, or work screenshots."
+      }
+    ],
+    "seoHowTo": {
+      "title": "How to crop an image online",
+      "description": "Follow these steps to crop a photo or graphic and download the result.",
+      "steps": [
+        {
+          "id": "upload-image",
+          "title": "Upload your image",
+          "description": "Drag a file into the drop area or choose an image from your device."
+        },
+        {
+          "id": "adjust-crop-area",
+          "title": "Adjust the crop area",
+          "description": "Move the crop box, resize it with the handles, and switch aspect ratio presets if you need a fixed format."
+        },
+        {
+          "id": "choose-export-settings",
+          "title": "Choose export settings",
+          "description": "Pick PNG, JPG, or WebP, and adjust quality when you export to JPG or WebP."
+        },
+        {
+          "id": "download-cropped-image",
+          "title": "Download the cropped image",
+          "description": "Review the live preview and download the finished crop directly from your browser."
         }
       ]
     }

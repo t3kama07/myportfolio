@@ -748,6 +748,394 @@ a {
   min-width: 130px;
 }
 
+.cropper-wrap {
+  padding: 26px 20px;
+}
+
+.cropper-tool-panel {
+  margin-top: 20px;
+  border-radius: 22px;
+  border: 1px solid rgba(145, 156, 212, 0.34);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 18px;
+}
+
+.cropper-tool-panel.is-headerless {
+  margin-top: 0;
+}
+
+.cropper-file-input {
+  display: none;
+}
+
+.cropper-dropzone {
+  width: 100%;
+  min-height: 148px;
+  border: 2px dashed rgba(110, 179, 255, 0.58);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at top left, rgba(231, 241, 255, 0.8), transparent 38%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(243, 247, 255, 0.88));
+  color: #697286;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cropper-dropzone:hover,
+.cropper-dropzone.is-dragging {
+  border-color: rgba(127, 142, 246, 0.88);
+  box-shadow: 0 12px 28px rgba(108, 126, 219, 0.14);
+  transform: translateY(-1px);
+}
+
+.cropper-dropzone span:last-child {
+  max-width: 34rem;
+  overflow-wrap: anywhere;
+}
+
+.cropper-drop-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cropper-drop-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #5a78f2;
+}
+
+.cropper-supported,
+.cropper-helper-note,
+.cropper-quality-note {
+  margin: 10px 2px 0;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.cropper-empty {
+  margin-top: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(149, 160, 216, 0.3);
+  background: rgba(255, 255, 255, 0.64);
+  padding: 18px;
+}
+
+.cropper-empty h3 {
+  margin: 0 0 6px;
+  font-size: 1.06rem;
+}
+
+.cropper-empty p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.cropper-toolbar {
+  display: grid;
+  gap: 10px;
+}
+
+.cropper-toolbar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cropper-workbench {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(290px, 0.85fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.cropper-editor-card,
+.cropper-card {
+  border-radius: 20px;
+  border: 1px solid rgba(145, 156, 212, 0.28);
+  background: rgba(250, 252, 255, 0.86);
+  padding: 14px;
+}
+
+.cropper-workspace {
+  position: relative;
+  min-height: clamp(320px, 55vw, 540px);
+  border-radius: 18px;
+  overflow: hidden;
+  background:
+    linear-gradient(45deg, rgba(235, 240, 255, 0.82) 25%, transparent 25%, transparent 75%, rgba(235, 240, 255, 0.82) 75%),
+    linear-gradient(45deg, rgba(235, 240, 255, 0.82) 25%, transparent 25%, transparent 75%, rgba(235, 240, 255, 0.82) 75%),
+    linear-gradient(160deg, rgba(252, 253, 255, 0.96), rgba(239, 244, 255, 0.92));
+  background-position:
+    0 0,
+    16px 16px,
+    0 0;
+  background-size:
+    32px 32px,
+    32px 32px,
+    auto;
+  box-shadow: inset 0 0 0 1px rgba(149, 160, 216, 0.22);
+}
+
+.cropper-workspace.is-interacting,
+.cropper-selection {
+  cursor: move;
+}
+
+.cropper-image-stage {
+  position: absolute;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(113, 123, 178, 0.14);
+}
+
+.cropper-image-stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #fff;
+  user-select: none;
+}
+
+.cropper-selection {
+  position: absolute;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.94);
+  box-shadow:
+    0 0 0 9999px rgba(24, 31, 61, 0.45),
+    0 12px 28px rgba(23, 28, 54, 0.18);
+  touch-action: none;
+}
+
+.cropper-selection.is-locked {
+  border-color: rgba(255, 255, 255, 0.98);
+}
+
+.cropper-selection-grid {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image:
+    linear-gradient(to right, transparent 33.333%, rgba(255, 255, 255, 0.4) 33.333%, rgba(255, 255, 255, 0.4) 34.333%, transparent 34.333%, transparent 66.666%, rgba(255, 255, 255, 0.4) 66.666%, rgba(255, 255, 255, 0.4) 67.666%, transparent 67.666%),
+    linear-gradient(to bottom, transparent 33.333%, rgba(255, 255, 255, 0.4) 33.333%, rgba(255, 255, 255, 0.4) 34.333%, transparent 34.333%, transparent 66.666%, rgba(255, 255, 255, 0.4) 66.666%, rgba(255, 255, 255, 0.4) 67.666%, transparent 67.666%);
+}
+
+.cropper-selection-size {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 999px;
+  background: rgba(27, 35, 66, 0.72);
+  color: #fff;
+  padding: 5px 9px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.cropper-handle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #4f6df5;
+  border-radius: 50%;
+  background: #fff;
+  padding: 0;
+  box-shadow: 0 4px 10px rgba(62, 83, 183, 0.24);
+}
+
+.cropper-handle.is-nw,
+.cropper-handle.is-n,
+.cropper-handle.is-ne {
+  top: -8px;
+}
+
+.cropper-handle.is-sw,
+.cropper-handle.is-s,
+.cropper-handle.is-se {
+  bottom: -8px;
+}
+
+.cropper-handle.is-nw,
+.cropper-handle.is-w,
+.cropper-handle.is-sw {
+  left: -8px;
+}
+
+.cropper-handle.is-ne,
+.cropper-handle.is-e,
+.cropper-handle.is-se {
+  right: -8px;
+}
+
+.cropper-handle.is-n,
+.cropper-handle.is-s {
+  left: calc(50% - 8px);
+}
+
+.cropper-handle.is-e,
+.cropper-handle.is-w {
+  top: calc(50% - 8px);
+}
+
+.cropper-handle.is-nw,
+.cropper-handle.is-se {
+  cursor: nwse-resize;
+}
+
+.cropper-handle.is-ne,
+.cropper-handle.is-sw {
+  cursor: nesw-resize;
+}
+
+.cropper-handle.is-n,
+.cropper-handle.is-s {
+  cursor: ns-resize;
+}
+
+.cropper-handle.is-e,
+.cropper-handle.is-w {
+  cursor: ew-resize;
+}
+
+.cropper-stat-row {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cropper-stat-chip {
+  border-radius: 999px;
+  border: 1px solid rgba(145, 156, 212, 0.28);
+  background: rgba(244, 247, 255, 0.92);
+  color: #5f6995;
+  padding: 5px 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.cropper-sidebar {
+  display: grid;
+  gap: 12px;
+}
+
+.cropper-card-head h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #425086;
+}
+
+.cropper-card-head p {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.cropper-chip-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.cropper-chip,
+.cropper-format {
+  border-radius: 14px;
+  border: 1px solid rgba(145, 156, 212, 0.28);
+  background: rgba(255, 255, 255, 0.92);
+  color: #4f5b8d;
+  padding: 11px 12px;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cropper-chip:hover,
+.cropper-format:hover {
+  transform: translateY(-1px);
+  border-color: rgba(111, 140, 248, 0.42);
+}
+
+.cropper-chip.is-active,
+.cropper-format.is-active {
+  border-color: rgba(87, 114, 238, 0.52);
+  background: linear-gradient(160deg, rgba(237, 243, 255, 0.98), rgba(227, 236, 255, 0.98));
+  color: #4052a5;
+  box-shadow: 0 8px 18px rgba(89, 111, 208, 0.14);
+}
+
+.cropper-format-list {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.cropper-quality {
+  margin-top: 12px;
+}
+
+.cropper-quality input[type="range"] {
+  width: 100%;
+  margin-top: 8px;
+  accent-color: #6f8cf8;
+}
+
+.cropper-preview-frame {
+  margin-top: 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(145, 156, 212, 0.26);
+  background: rgba(245, 248, 255, 0.94);
+  overflow: hidden;
+}
+
+.cropper-preview-frame img,
+.cropper-preview-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.cropper-preview-frame img {
+  display: block;
+  object-fit: contain;
+  background: #fff;
+}
+
+.cropper-preview-placeholder {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  text-align: center;
+  color: #7a82a7;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.cropper-preview-meta {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #667199;
+  font-size: 0.84rem;
+}
+
 .text-tool-wrap {
   padding: 26px 20px;
 }
@@ -2182,6 +2570,7 @@ a {
 }
 
 @media (max-width: 1120px) {
+  .cropper-workbench,
   .tool-guide-grid,
   .resume-builder-grid,
   .resume-seo-grid {
@@ -2761,6 +3150,7 @@ a {
   .projects-wrap,
   .tools-wrap,
   .webp-wrap,
+  .cropper-wrap,
   .text-tool-wrap,
   .faq-wrap,
   .webp-faq-wrap,
@@ -2913,12 +3303,26 @@ a {
     padding: 14px;
   }
 
+  .cropper-tool-panel {
+    padding: 14px;
+  }
+
   .webp-dropzone {
     min-height: 100px;
     padding: 12px;
   }
 
+  .cropper-dropzone {
+    min-height: 120px;
+    padding: 14px;
+  }
+
   .webp-drop-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .cropper-drop-icon {
     width: 34px;
     height: 34px;
   }
@@ -2940,6 +3344,26 @@ a {
 
   .webp-item-actions .btn {
     width: 100%;
+  }
+
+  .cropper-toolbar-actions,
+  .cropper-format-list,
+  .cropper-chip-grid {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .cropper-toolbar-actions .btn {
+    width: 100%;
+  }
+
+  .cropper-workspace {
+    min-height: 320px;
+  }
+
+  .cropper-preview-meta {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .project-actions {
@@ -2991,6 +3415,10 @@ a {
     padding: 12px;
   }
 
+  .cropper-tool-panel {
+    padding: 12px;
+  }
+
   .text-tool-panel {
     padding: 12px;
   }
@@ -3016,6 +3444,17 @@ a {
 
   .webp-item {
     padding: 12px;
+  }
+
+  .cropper-editor-card,
+  .cropper-card {
+    padding: 12px;
+  }
+
+  .cropper-selection-size {
+    right: 8px;
+    bottom: 8px;
+    font-size: 0.7rem;
   }
 
   .webp-preview figcaption {

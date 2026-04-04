@@ -42,6 +42,7 @@ export default async function LocalizedToolsPage({ params }) {
   const internalToolPaths = {
     "avif-to-jpg": `/${locale}/tools/avif-to-jpg`,
     "heic-to-png": `/${locale}/tools/heic-to-png`,
+    "image-cropper": `/${locale}/tools/image-cropper`,
     "invoice-generator": `/${locale}/tools/invoice-generator`,
     "image-to-webp": `/${locale}/tools/image-to-webp`,
     "remove-line-breaks": `/${locale}/tools/remove-line-breaks`,
@@ -93,5 +94,6 @@ export default async function LocalizedToolsPage({ params }) {
     </main>
   );
 }
+
 
 
