@@ -21,7 +21,9 @@
     "removeLineBreaksTitle": "Remove Line Breaks Tool",
     "removeLineBreaksDescription": "Remove line breaks from text online for free. Replace line breaks with spaces, keep paragraph breaks, remove empty lines, and clean copied text instantly in your browser.",
     "resumeBuilderTitle": "Free Resume Builder",
-    "resumeBuilderDescription": "Free resume builder with ATS-friendly resume templates, live preview, and instant PDF or DOCX download. Create a professional resume online with no sign-up."
+    "resumeBuilderDescription": "Free resume builder with ATS-friendly resume templates, live preview, and instant PDF or DOCX download. Create a professional resume online with no sign-up.",
+    "screenRecorderTitle": "Free Screen Recorder for Chrome",
+    "screenRecorderDescription": "Free Chrome screen recorder extension with simple controls, a recording timer, optional microphone audio, preview, and downloadable video."
   },
   "nav": {
     "projects": "Projects",
@@ -228,8 +230,123 @@
         "name": "Remove Line Breaks",
         "description": "Remove line breaks from text, keep paragraphs when needed, and copy the cleaned result instantly.",
         "href": "/tools/remove-line-breaks"
+      },
+      {
+        "id": "screen-recorder",
+        "name": "Screen Recorder",
+        "description": "Record your screen in Chrome with a timer, optional microphone audio, preview, and downloadable video.",
+        "href": "/tools/screen-recorder"
       }
     ]
+  },
+  "screenRecorder": {
+    "title": "Screen Recorder",
+    "subtitle": "A lightweight Chrome extension for quick screen capture with simple controls and downloadable recordings.",
+    "heroKicker": "Chrome extension",
+    "heroTitle": "Free Screen Recorder for Chrome",
+    "introParagraphs": [
+      "Use this Chrome extension when you want to capture your screen quickly without opening a heavy recording app. It gives you a simple popup, a clean recording page, and a straightforward flow for starting, pausing, stopping, previewing, and downloading your video."
+    ],
+    "heroPoints": [
+      "Start a screen recording from a simple popup and dedicated recorder page.",
+      "Turn microphone audio and tab audio on only when you need them.",
+      "Pause, stop, preview, and download the recording from the browser."
+    ],
+    "jumpDownload": "Download extension",
+    "jumpHowTo": "How to install",
+    "jumpPrivacy": "Privacy Policy",
+    "jumpFaq": "Read FAQ",
+    "downloadTitle": "Download the extension ZIP",
+    "downloadDescription": "Download the packaged extension, extract it on your computer, then load it into Chrome from the extensions page in developer mode.",
+    "downloadButton": "Download ZIP",
+    "installGuideButton": "Install guide",
+    "privacyButton": "Privacy Policy",
+    "downloadNote": "After downloading, unzip the file and load the extracted folder through chrome://extensions with Developer mode enabled.",
+    "privacyTitle": "Privacy Policy",
+    "privacySummary": "This extension does not collect, store, or transmit personal data. Recordings and saved preferences stay on the user's device.",
+    "privacyCtaDescription": "Use the public privacy policy page below when submitting the extension to the Chrome Developer Dashboard.",
+    "privacyPolicyTitle": "Privacy Policy for Free Screen Recorder for Chrome",
+    "privacyPolicySubtitle": "This privacy policy explains how the extension handles recordings, settings, and user data.",
+    "privacyPolicyIntro": "Free Screen Recorder for Chrome is designed to work locally in the browser and to keep the recording workflow private.",
+    "privacyPolicyItems": [
+      "This extension does not collect, store, or transmit any personal user data.",
+      "All screen recordings and audio captured using this extension are processed locally on the user's device. No data is sent to external servers.",
+      "The extension may use browser storage only to save user preferences such as audio settings, including microphone or tab audio selection. This information is stored locally and is not shared.",
+      "This extension does not track browsing history, user activity, or website content.",
+      "No data is sold, transferred, or shared with third parties."
+    ],
+    "privacyContactLabel": "If you have any questions, you may contact us at:",
+    "seoSectionTitle": "Screen recorder extension guide",
+    "seoSectionSubtitle": "See what the extension does, how to install it in Chrome, and how to save your recordings locally.",
+    "seoSections": [
+      {
+        "title": "Simple controls for fast screen capture",
+        "body": "The extension starts with a small popup that lets you choose your recording setup before opening the recorder page. That keeps the workflow light and makes it faster to start a recording when you only need clean screen capture controls."
+      },
+      {
+        "title": "Optional microphone and tab audio",
+        "body": "You can enable microphone audio when you want voice narration, and tab audio when you are sharing a Chrome tab that supports audio capture. That makes the extension useful for walkthroughs, demos, tutorials, and lightweight presentations."
+      },
+      {
+        "title": "Preview and download after recording",
+        "body": "Once you stop the recording, the extension shows a preview and gives you a direct download option. That makes it easy to save the video locally and review the result before sharing it anywhere else."
+      }
+    ],
+    "seoHowTo": {
+      "title": "How to install and use the extension",
+      "description": "Follow these steps to install the extension in Chrome and start recording.",
+      "steps": [
+        {
+          "id": "download-extension",
+          "title": "Download the extension ZIP",
+          "description": "Download the packaged ZIP file from this page to your computer."
+        },
+        {
+          "id": "extract-and-load",
+          "title": "Extract the files and load the extension",
+          "description": "Unzip the download, open chrome://extensions, enable Developer mode, and choose Load unpacked to select the extracted folder."
+        },
+        {
+          "id": "choose-audio-options",
+          "title": "Choose your audio options",
+          "description": "Open the extension popup and decide whether you want microphone audio, tab audio, or both before launching the recorder."
+        },
+        {
+          "id": "record-preview-download",
+          "title": "Record, preview, and download",
+          "description": "Start the recording, pause or stop when needed, then preview the result and download the finished video locally."
+        }
+      ]
+    },
+    "faqTitle": "Screen Recorder FAQ",
+    "faqSubtitle": "Quick answers about installing and using this Chrome screen recorder extension.",
+    "faqItems": [
+      {
+        "question": "Is this screen recorder free?",
+        "answer": "Yes. You can download the extension and use it for free."
+      },
+      {
+        "question": "Can it record microphone audio?",
+        "answer": "Yes. The extension includes an optional microphone toggle so you can include voice narration when needed."
+      },
+      {
+        "question": "Can it record tab audio?",
+        "answer": "Yes. Tab audio works when you share a Chrome tab and enable tab audio in the share picker."
+      },
+      {
+        "question": "How do I install this extension in Chrome?",
+        "answer": "Download the ZIP, extract it, open chrome://extensions, turn on Developer mode, and load the extracted folder with Load unpacked."
+      },
+      {
+        "question": "What happens after I stop recording?",
+        "answer": "The recorder page shows a preview of the video and lets you download the recording again from the browser."
+      }
+    ],
+    "relatedTitle": "Related tools",
+    "relatedBrowseLabel": "Browse all tools",
+    "relatedBrowseDescription": "See the rest of the free utilities and browser-based tools on the site.",
+    "relatedImageCropperDescription": "Need to crop screenshots or visuals after recording? Use the image cropper.",
+    "relatedWebpDescription": "Need lighter image assets for the web after capturing content? Convert images to WebP."
   },
   "invoiceGenerator": {
     "title": "Invoice Generator",

@@ -21,7 +21,9 @@
     "removeLineBreaksTitle": "Poista Rivinvaihdot -tyokalu",
     "removeLineBreaksDescription": "Poista rivinvaihdot tekstista ilmaiseksi verkossa. Korvaa rivinvaihdot valilyonneilla, sailyta kappalejaot tarvittaessa, poista tyhjat rivit ja siisti kopioitu teksti heti selaimessa.",
     "resumeBuilderTitle": "Ilmainen CV-tyokalu",
-    "resumeBuilderDescription": "Ilmainen CV-tyokalu, jolla teet ATS-ystavallisen ansioluettelon verkossa reaaliaikaisella esikatselulla seka PDF- tai DOCX-viennilla ilman rekisterointia."
+    "resumeBuilderDescription": "Ilmainen CV-tyokalu, jolla teet ATS-ystavallisen ansioluettelon verkossa reaaliaikaisella esikatselulla seka PDF- tai DOCX-viennilla ilman rekisterointia.",
+    "screenRecorderTitle": "Ilmainen nayton tallennin Chromelle",
+    "screenRecorderDescription": "Ilmainen Chrome-lisosa nayton tallentamiseen yksinkertaisilla ohjaimilla, ajastimella, valinnaisella mikrofonilla, esikatselulla ja videon latauksella."
   },
   "nav": {
     "projects": "Projektit",
@@ -228,8 +230,123 @@
         "name": "Poista rivinvaihdot",
         "description": "Poista rivinvaihdot tekstista, sailyta kappaleet tarvittaessa ja kopioi siivottu tulos heti.",
         "href": "/tools/remove-line-breaks"
+      },
+      {
+        "id": "screen-recorder",
+        "name": "Nayton tallennin",
+        "description": "Tallenna naytto Chromessa ajastimella, valinnaisella mikrofonilla, esikatselulla ja ladattavalla videolla.",
+        "href": "/tools/screen-recorder"
       }
     ]
+  },
+  "screenRecorder": {
+    "title": "Nayton tallennin",
+    "subtitle": "Kevyt Chrome-lisosa nopeaan nayton tallennukseen yksinkertaisilla asetuksilla ja ladattavalla videolla.",
+    "heroKicker": "Chrome-lisosa",
+    "heroTitle": "Ilmainen nayton tallennin Chromelle",
+    "introParagraphs": [
+      "Kayta tata Chrome-lisosaa, kun haluat tallentaa nayton nopeasti ilman raskasta tallennusohjelmaa. Saat yksinkertaisen popupin, selkean tallennussivun ja suoran tavan kaynnistaa, keskeyttaa, lopettaa, esikatsella ja ladata videon."
+    ],
+    "heroPoints": [
+      "Aloita nayton tallennus yksinkertaisesta popupista ja erilliselta tallennussivulta.",
+      "Ota mikrofoni ja valilehden aani mukaan vain silloin kun tarvitset niita.",
+      "Keskeyta, lopeta, esikatsele ja lataa tallenne suoraan selaimesta."
+    ],
+    "jumpDownload": "Lataa lisosa",
+    "jumpHowTo": "Asennusohje",
+    "jumpPrivacy": "Tietosuojakaytanto",
+    "jumpFaq": "Lue UKK",
+    "downloadTitle": "Lataa lisosan ZIP-paketti",
+    "downloadDescription": "Lataa pakattu lisosa, pura tiedostot koneellesi ja lataa se Chromeen laajennusten sivulta kehittajatilan avulla.",
+    "downloadButton": "Lataa ZIP",
+    "installGuideButton": "Asennusohje",
+    "privacyButton": "Tietosuojakaytanto",
+    "downloadNote": "Latauksen jalkeen pura ZIP ja lataa kansio chrome://extensions-sivulla, kun Developer mode on paalla.",
+    "privacyTitle": "Tietosuojakaytanto",
+    "privacySummary": "Tama lisosa ei kerää, tallenna tai laheta henkilotietoja. Tallenteet ja asetukset pysyvat kayttajan omalla laitteella.",
+    "privacyCtaDescription": "Kayta alla olevaa julkista tietosuojakaytannon sivua, kun lisäät laajennuksen Chrome Developer Dashboardiin.",
+    "privacyPolicyTitle": "Tietosuojakaytanto: Ilmainen nayton tallennin Chromelle",
+    "privacyPolicySubtitle": "Tama tietosuojakaytanto kertoo, miten lisosa kasittelee tallenteita, asetuksia ja kayttajatietoja.",
+    "privacyPolicyIntro": "Ilmainen nayton tallennin Chromelle on suunniteltu toimimaan paikallisesti selaimessa ja pitamaan tallennustyonkulun yksityisena.",
+    "privacyPolicyItems": [
+      "Tama lisosa ei keraa, tallenna tai laheta kayttajan henkilotietoja.",
+      "Kaikki lisosan tallentamat nayttotallenteet ja aani kasitellaan paikallisesti kayttajan laitteella. Tietoja ei laheteta ulkoisille palvelimille.",
+      "Lisosa voi kayttaa selaimen paikallista tallennustilaa vain kayttaja-asetusten, kuten mikrofonin tai valilehden aanen valinnan, tallentamiseen. Naita tietoja ei jaeta.",
+      "Tama lisosa ei seuraa selaushistoriaa, kayttajan toimintaa tai verkkosivujen sisaltoa.",
+      "Tietoja ei myyda, siirreta tai jaeta kolmansille osapuolille."
+    ],
+    "privacyContactLabel": "Jos sinulla on kysyttavaa, voit ottaa yhteytta:",
+    "seoSectionTitle": "Nayton tallennin -lisosan opas",
+    "seoSectionSubtitle": "Katso mita lisosa tekee, miten se asennetaan Chromeen ja miten tallenteet ladataan paikallisesti.",
+    "seoSections": [
+      {
+        "title": "Yksinkertaiset ohjaimet nopeaan tallennukseen",
+        "body": "Lisosa alkaa pienella popupilla, jossa valitset tallennuksen asetukset ennen tallennussivun avaamista. Se tekee tyokulusta kevyen ja nopean silloin kun tarvitset vain selkeat nayton tallennuksen ohjaimet."
+      },
+      {
+        "title": "Valinnainen mikrofoni ja valilehden aani",
+        "body": "Voit ottaa mikrofonin mukaan, kun haluat puhetta tallenteeseen, ja valilehden aanen, kun jaat Chrome-valilehden joka tukee aanen kaappausta. Siksi lisosa sopii demoihin, opastuksiin ja kevyisiin esityksiin."
+      },
+      {
+        "title": "Esikatselu ja lataus tallennuksen jalkeen",
+        "body": "Kun lopetat tallennuksen, lisosa nayttaa videon esikatselun ja tarjoaa suoran latausvaihtoehdon. Tallenne on helppo tallentaa paikallisesti ja tarkistaa ennen jakamista."
+      }
+    ],
+    "seoHowTo": {
+      "title": "Kuinka asennat ja kaytat lisaaosaa",
+      "description": "Seuraa naita vaiheita, jotta saat lisosan Chromeen ja aloitat tallennuksen.",
+      "steps": [
+        {
+          "id": "download-extension",
+          "title": "Lataa ZIP-paketti",
+          "description": "Lataa taman sivun tarjoama pakattu ZIP-tiedosto omalle koneellesi."
+        },
+        {
+          "id": "extract-and-load",
+          "title": "Pura tiedostot ja lataa lisosa",
+          "description": "Pura ZIP, avaa chrome://extensions, ota Developer mode kayttoon ja valitse Load unpacked ladataksesi puretun kansion."
+        },
+        {
+          "id": "choose-audio-options",
+          "title": "Valitse aaniasetukset",
+          "description": "Avaa lisosan popup ja paata haluatko mikrofonin, valilehden aanen vai molemmat ennen tallennuksen aloittamista."
+        },
+        {
+          "id": "record-preview-download",
+          "title": "Tallenna, esikatsele ja lataa",
+          "description": "Kaynnista tallennus, keskeyta tai lopeta tarvittaessa, ja esikatsele sitten tulos ennen videon lataamista koneellesi."
+        }
+      ]
+    },
+    "faqTitle": "Nayton tallentimen UKK",
+    "faqSubtitle": "Nopeat vastaukset taman Chrome-nayton tallennin -lisosan asennuksesta ja kaytosta.",
+    "faqItems": [
+      {
+        "question": "Onko tama nayton tallennin ilmainen?",
+        "answer": "Kylla. Voit ladata lisosan ja kayttaa sita ilmaiseksi."
+      },
+      {
+        "question": "Voiko tama tallentaa mikrofonin?",
+        "answer": "Kylla. Lisosassa on valinnainen mikrofonikytkin, joten voit ottaa puheen mukaan tallenteeseen."
+      },
+      {
+        "question": "Voiko tama tallentaa valilehden aanen?",
+        "answer": "Kylla. Valilehden aani toimii, kun jaat Chrome-valilehden ja valitset jakonakymasta aanen mukaan."
+      },
+      {
+        "question": "Miten asennan taman lisosan Chromeen?",
+        "answer": "Lataa ZIP, pura se, avaa chrome://extensions, laita Developer mode paalle ja lataa purettu kansio Load unpacked -toiminnolla."
+      },
+      {
+        "question": "Mita tapahtuu kun lopetan tallennuksen?",
+        "answer": "Tallennussivu nayttaa videon esikatselun ja antaa mahdollisuuden ladata tallenteen uudelleen selaimesta."
+      }
+    ],
+    "relatedTitle": "Liittyvat tyokalut",
+    "relatedBrowseLabel": "Selaa kaikkia tyokaluja",
+    "relatedBrowseDescription": "Katso muut sivuston ilmaiset apurityokalut ja selaimessa toimivat ratkaisut.",
+    "relatedImageCropperDescription": "Tarvitsetko kuvakaappausten rajauksen tallennuksen jalkeen? Kayta kuvan rajausta.",
+    "relatedWebpDescription": "Tarvitsetko kevyempia kuvia verkkoon tallennetun sisallon jalkeen? Muunna kuvat WebP-muotoon."
   },
   "invoiceGenerator": {
     "title": "Laskugeneraattori",

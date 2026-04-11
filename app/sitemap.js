@@ -60,6 +60,18 @@ export default function sitemap() {
       priority: 0.62,
     },
     {
+      url: `${siteUrl}/en/tools/screen-recorder`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.61,
+    },
+    {
+      url: `${siteUrl}/en/tools/screen-recorder/privacy-policy`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.45,
+    },
+    {
       url: `${siteUrl}/fi`,
       lastModified,
       changeFrequency: "weekly",
@@ -112,6 +124,18 @@ export default function sitemap() {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.52,
+    },
+    {
+      url: `${siteUrl}/fi/tools/screen-recorder`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.51,
+    },
+    {
+      url: `${siteUrl}/fi/tools/screen-recorder/privacy-policy`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.4,
     },
   ];
 }
