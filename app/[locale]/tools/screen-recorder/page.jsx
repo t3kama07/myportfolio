@@ -65,7 +65,8 @@ export default async function LocalizedScreenRecorderPage({ params }) {
   const dict = getDictionary(locale);
   const siteUrl = getSiteUrl();
   const pageUrl = `${siteUrl}/${locale}/tools/screen-recorder`;
-  const downloadUrl = `${siteUrl}/downloads/screen-recorder-extension.zip`;
+  const chromeWebStoreUrl =
+    "https://chromewebstore.google.com/detail/free-screen-recorder-for/ghaocfhignjfidadllpigokcpfgdlbee";
   const faqItems = Array.isArray(dict.screenRecorder?.faqItems)
     ? dict.screenRecorder.faqItems.filter((item) => item?.question && item?.answer)
     : [];
@@ -92,7 +93,7 @@ export default async function LocalizedScreenRecorderPage({ params }) {
     operatingSystem: "Chrome",
     inLanguage: locale,
     isAccessibleForFree: true,
-    downloadUrl,
+    downloadUrl: chromeWebStoreUrl,
     offers: {
       "@type": "Offer",
       price: "0",
@@ -191,7 +192,7 @@ export default async function LocalizedScreenRecorderPage({ params }) {
             ) : null}
 
             <div className="tool-jump-links">
-              <a href="#screen-recorder-download">{dict.screenRecorder?.jumpDownload}</a>
+              <a href="#screen-recorder-install">{dict.screenRecorder?.jumpDownload}</a>
               <a href="#screen-recorder-guide">{dict.screenRecorder?.jumpHowTo}</a>
               <a href="#screen-recorder-privacy">{dict.screenRecorder?.jumpPrivacy}</a>
               <a href="#screen-recorder-faq">{dict.screenRecorder?.jumpFaq}</a>
@@ -200,12 +201,17 @@ export default async function LocalizedScreenRecorderPage({ params }) {
         </div>
       </section>
 
-      <section className="section shell" id="screen-recorder-download">
+      <section className="section shell" id="screen-recorder-install">
         <div className="glass-card tool-guide-wrap">
           <h2>{dict.screenRecorder?.downloadTitle}</h2>
           <p className="section-subtitle">{dict.screenRecorder?.downloadDescription}</p>
           <div className="tool-actions">
-            <a className="btn btn-primary" href="/downloads/screen-recorder-extension.zip" download>
+            <a
+              className="btn btn-primary"
+              href={chromeWebStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {dict.screenRecorder?.downloadButton}
             </a>
             <a className="btn btn-secondary" href="#screen-recorder-guide">
@@ -215,7 +221,6 @@ export default async function LocalizedScreenRecorderPage({ params }) {
               {dict.screenRecorder?.privacyButton}
             </a>
           </div>
-          <p>{dict.screenRecorder?.downloadNote}</p>
         </div>
       </section>
 

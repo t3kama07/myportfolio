@@ -23,7 +23,7 @@
     "resumeBuilderTitle": "Free Resume Builder",
     "resumeBuilderDescription": "Free resume builder with ATS-friendly resume templates, live preview, and instant PDF or DOCX download. Create a professional resume online with no sign-up.",
     "screenRecorderTitle": "Free Screen Recorder for Chrome",
-    "screenRecorderDescription": "Free Chrome screen recorder extension with simple controls, a recording timer, optional microphone audio, preview, and downloadable video."
+    "screenRecorderDescription": "Free Chrome screen recorder extension you can install from the Chrome Web Store with simple controls, a recording timer, optional microphone audio, preview, and saved video."
   },
   "nav": {
     "projects": "Projects",
@@ -241,7 +241,7 @@
   },
   "screenRecorder": {
     "title": "Screen Recorder",
-    "subtitle": "A lightweight Chrome extension for quick screen capture with simple controls and downloadable recordings.",
+    "subtitle": "A lightweight Chrome extension you can install from the Chrome Web Store for quick screen capture with simple controls and saved recordings.",
     "heroKicker": "Chrome extension",
     "heroTitle": "Free Screen Recorder for Chrome",
     "introParagraphs": [
@@ -252,19 +252,18 @@
       "Turn microphone audio and tab audio on only when you need them.",
       "Pause, stop, preview, and download the recording from the browser."
     ],
-    "jumpDownload": "Download extension",
+    "jumpDownload": "Add to Chrome",
     "jumpHowTo": "How to install",
     "jumpPrivacy": "Privacy Policy",
     "jumpFaq": "Read FAQ",
-    "downloadTitle": "Download the extension ZIP",
-    "downloadDescription": "Download the packaged extension, extract it on your computer, then load it into Chrome from the extensions page in developer mode.",
-    "downloadButton": "Download ZIP",
-    "installGuideButton": "Install guide",
+    "downloadTitle": "Install from the Chrome Web Store",
+    "downloadDescription": "Open the Chrome Web Store listing and click Add to Chrome to install the extension.",
+    "downloadButton": "Add to Chrome",
+    "installGuideButton": "Installation guide",
     "privacyButton": "Privacy Policy",
-    "downloadNote": "After downloading, unzip the file and load the extracted folder through chrome://extensions with Developer mode enabled.",
     "privacyTitle": "Privacy Policy",
     "privacySummary": "This extension does not collect, store, or transmit personal data. Recordings and saved preferences stay on the user's device.",
-    "privacyCtaDescription": "Use the public privacy policy page below when submitting the extension to the Chrome Developer Dashboard.",
+    "privacyCtaDescription": "Use the public privacy policy page below when submitting or updating the extension listing.",
     "privacyPolicyTitle": "Privacy Policy for Free Screen Recorder for Chrome",
     "privacyPolicySubtitle": "This privacy policy explains how the extension handles recordings, settings, and user data.",
     "privacyPolicyIntro": "Free Screen Recorder for Chrome is designed to work locally in the browser and to keep the recording workflow private.",
@@ -277,7 +276,7 @@
     ],
     "privacyContactLabel": "If you have any questions, you may contact us at:",
     "seoSectionTitle": "Screen recorder extension guide",
-    "seoSectionSubtitle": "See what the extension does, how to install it in Chrome, and how to save your recordings locally.",
+    "seoSectionSubtitle": "See what the extension does, how to install it from the Chrome Web Store, and how to save your recordings locally.",
     "seoSections": [
       {
         "title": "Simple controls for fast screen capture",
@@ -298,13 +297,13 @@
       "steps": [
         {
           "id": "download-extension",
-          "title": "Download the extension ZIP",
-          "description": "Download the packaged ZIP file from this page to your computer."
+          "title": "Open the Chrome Web Store listing",
+          "description": "Review the extension page and details before installing it."
         },
         {
           "id": "extract-and-load",
-          "title": "Extract the files and load the extension",
-          "description": "Unzip the download, open chrome://extensions, enable Developer mode, and choose Load unpacked to select the extracted folder."
+          "title": "Click Add to Chrome",
+          "description": "Confirm the install prompt in Chrome to add the extension to your browser."
         },
         {
           "id": "choose-audio-options",
@@ -323,7 +322,7 @@
     "faqItems": [
       {
         "question": "Is this screen recorder free?",
-        "answer": "Yes. You can download the extension and use it for free."
+        "answer": "Yes. You can install the extension from the Chrome Web Store and use it for free."
       },
       {
         "question": "Can it record microphone audio?",
@@ -335,7 +334,7 @@
       },
       {
         "question": "How do I install this extension in Chrome?",
-        "answer": "Download the ZIP, extract it, open chrome://extensions, turn on Developer mode, and load the extracted folder with Load unpacked."
+        "answer": "Open the Chrome Web Store listing and click Add to Chrome, then confirm the install prompt in Chrome."
       },
       {
         "question": "What happens after I stop recording?",
@@ -1149,7 +1148,6 @@
     "contact": "Contact",
     "contactHeading": "Contact",
     "requestCv": "Download CV",
-    "builtWith": "Built with Next.js",
     "linkedin": "LinkedIn",
     "github": "GitHub"
   },

@@ -35,7 +35,6 @@ export default function Footer({ locale, footer, withTopSpacing = false }) {
 
       <div className="footer-meta">
         <span>&copy; {year} Manjula</span>
-        <span>{footer.builtWith}</span>
       </div>
     </div>
   );

@@ -241,7 +241,7 @@
   },
   "screenRecorder": {
     "title": "Nayton tallennin",
-    "subtitle": "Kevyt Chrome-lisosa nopeaan nayton tallennukseen yksinkertaisilla asetuksilla ja ladattavalla videolla.",
+    "subtitle": "Kevyt Chrome-lisosa, jonka voit asentaa Chrome Web Storesta nopeaan nayton tallennukseen.",
     "heroKicker": "Chrome-lisosa",
     "heroTitle": "Ilmainen nayton tallennin Chromelle",
     "introParagraphs": [
@@ -252,19 +252,18 @@
       "Ota mikrofoni ja valilehden aani mukaan vain silloin kun tarvitset niita.",
       "Keskeyta, lopeta, esikatsele ja lataa tallenne suoraan selaimesta."
     ],
-    "jumpDownload": "Lataa lisosa",
+    "jumpDownload": "Lisaa Chromeen",
     "jumpHowTo": "Asennusohje",
     "jumpPrivacy": "Tietosuojakaytanto",
     "jumpFaq": "Lue UKK",
-    "downloadTitle": "Lataa lisosan ZIP-paketti",
-    "downloadDescription": "Lataa pakattu lisosa, pura tiedostot koneellesi ja lataa se Chromeen laajennusten sivulta kehittajatilan avulla.",
-    "downloadButton": "Lataa ZIP",
+    "downloadTitle": "Asenna Chrome Web Storesta",
+    "downloadDescription": "Avaa Chrome Web Store -sivu ja valitse Lisaa Chromeen asentaaksesi lisosan.",
+    "downloadButton": "Lisaa Chromeen",
     "installGuideButton": "Asennusohje",
     "privacyButton": "Tietosuojakaytanto",
-    "downloadNote": "Latauksen jalkeen pura ZIP ja lataa kansio chrome://extensions-sivulla, kun Developer mode on paalla.",
     "privacyTitle": "Tietosuojakaytanto",
     "privacySummary": "Tama lisosa ei kerää, tallenna tai laheta henkilotietoja. Tallenteet ja asetukset pysyvat kayttajan omalla laitteella.",
-    "privacyCtaDescription": "Kayta alla olevaa julkista tietosuojakaytannon sivua, kun lisäät laajennuksen Chrome Developer Dashboardiin.",
+    "privacyCtaDescription": "Kayta alla olevaa julkista tietosuojakaytannon sivua, kun lisaat tai paivitat lisosan listauksen.",
     "privacyPolicyTitle": "Tietosuojakaytanto: Ilmainen nayton tallennin Chromelle",
     "privacyPolicySubtitle": "Tama tietosuojakaytanto kertoo, miten lisosa kasittelee tallenteita, asetuksia ja kayttajatietoja.",
     "privacyPolicyIntro": "Ilmainen nayton tallennin Chromelle on suunniteltu toimimaan paikallisesti selaimessa ja pitamaan tallennustyonkulun yksityisena.",
@@ -277,7 +276,7 @@
     ],
     "privacyContactLabel": "Jos sinulla on kysyttavaa, voit ottaa yhteytta:",
     "seoSectionTitle": "Nayton tallennin -lisosan opas",
-    "seoSectionSubtitle": "Katso mita lisosa tekee, miten se asennetaan Chromeen ja miten tallenteet ladataan paikallisesti.",
+    "seoSectionSubtitle": "Katso mita lisosa tekee, miten se asennetaan Chrome Web Storen kautta ja miten tallenteet ladataan paikallisesti.",
     "seoSections": [
       {
         "title": "Yksinkertaiset ohjaimet nopeaan tallennukseen",
@@ -298,13 +297,13 @@
       "steps": [
         {
           "id": "download-extension",
-          "title": "Lataa ZIP-paketti",
-          "description": "Lataa taman sivun tarjoama pakattu ZIP-tiedosto omalle koneellesi."
+          "title": "Avaa Chrome Web Store -sivu",
+          "description": "Tutustu lisosan sivuun ja tietoihin ennen asennusta."
         },
         {
           "id": "extract-and-load",
-          "title": "Pura tiedostot ja lataa lisosa",
-          "description": "Pura ZIP, avaa chrome://extensions, ota Developer mode kayttoon ja valitse Load unpacked ladataksesi puretun kansion."
+          "title": "Valitse Lisaa Chromeen",
+          "description": "Vahvista Chromen asennuskehote, jotta lisosa lisataan selaimeesi."
         },
         {
           "id": "choose-audio-options",
@@ -323,7 +322,7 @@
     "faqItems": [
       {
         "question": "Onko tama nayton tallennin ilmainen?",
-        "answer": "Kylla. Voit ladata lisosan ja kayttaa sita ilmaiseksi."
+        "answer": "Kylla. Voit asentaa lisosan Chrome Web Storesta ja kayttaa sita ilmaiseksi."
       },
       {
         "question": "Voiko tama tallentaa mikrofonin?",
@@ -335,7 +334,7 @@
       },
       {
         "question": "Miten asennan taman lisosan Chromeen?",
-        "answer": "Lataa ZIP, pura se, avaa chrome://extensions, laita Developer mode paalle ja lataa purettu kansio Load unpacked -toiminnolla."
+        "answer": "Avaa Chrome Web Store -sivu ja valitse Lisaa Chromeen, sitten vahvista asennus Chromessa."
       },
       {
         "question": "Mita tapahtuu kun lopetan tallennuksen?",
@@ -1149,7 +1148,6 @@
     "contact": "Yhteys",
     "contactHeading": "Yhteys",
     "requestCv": "Pyyda CV",
-    "builtWith": "Rakennettu Next.js:lla",
     "linkedin": "LinkedIn",
     "github": "GitHub"
   },
