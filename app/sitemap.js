@@ -72,6 +72,18 @@ export default function sitemap() {
       priority: 0.45,
     },
     {
+      url: `${siteUrl}/en/blog`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.72,
+    },
+    {
+      url: `${siteUrl}/en/blog/10-easy-tools-to-start-your-tech-journey-in-2026`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.74,
+    },
+    {
       url: `${siteUrl}/fi`,
       lastModified,
       changeFrequency: "weekly",
@@ -136,6 +148,18 @@ export default function sitemap() {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.4,
+    },
+    {
+      url: `${siteUrl}/fi/blog`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.62,
+    },
+    {
+      url: `${siteUrl}/fi/blog/10-easy-tools-to-start-your-tech-journey-in-2026`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.64,
     },
   ];
 }
