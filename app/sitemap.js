@@ -84,6 +84,12 @@ export default function sitemap() {
       priority: 0.74,
     },
     {
+      url: `${siteUrl}/en/blog/10-best-tools-to-create-3d-websites-using-three-js-in-2026`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
       url: `${siteUrl}/fi`,
       lastModified,
       changeFrequency: "weekly",
@@ -160,6 +166,12 @@ export default function sitemap() {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.64,
+    },
+    {
+      url: `${siteUrl}/fi/blog/10-best-tools-to-create-3d-websites-using-three-js-in-2026`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.65,
     },
   ];
 }

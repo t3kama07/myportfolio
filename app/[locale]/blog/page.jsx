@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import { blogPosts } from "../../data/blogPosts";
@@ -13,7 +14,8 @@ function getBlogCopy(locale) {
         "Ajatuksia web-kehityksesta, UI/UX-ratkaisuista ja kaytannon SEO-optimoinnista oikeissa projekteissa.",
       intro:
         "Talta sivulta loydat artikkeleita kehitystyosta, suorituskyvysta ja kayttajaystavallisista web-ratkaisuista.",
-      readLabel: "Lue artikkeli",
+      readLabel: "Jatka lukemista...",
+      topicLabel: "Artikkelit",
       comingSoon: "Lisaa artikkeleita tulossa pian.",
     };
   }
@@ -24,16 +26,18 @@ function getBlogCopy(locale) {
       "Notes on web development, UI/UX decisions, and practical SEO improvements from real-world builds.",
     intro:
       "This page shares practical articles on product development, SEO, and user-centered web experiences.",
-    readLabel: "Read article",
+    readLabel: "Keep reading...",
+    topicLabel: "Articles",
     comingSoon: "More posts are coming soon.",
   };
 }
 
-function formatDateLabel(isoDate, locale) {
+function formatCardDateLabel(isoDate, locale) {
   const date = new Date(isoDate);
 
   return new Intl.DateTimeFormat(locale === "fi" ? "fi-FI" : "en-US", {
-    month: "long",
+    month: "short",
+    day: "numeric",
     year: "numeric",
   }).format(date);
 }
@@ -103,16 +107,37 @@ export default async function LocalizedBlogPage({ params }) {
           <p className="section-subtitle">{copy.intro}</p>
 
           <div className="blog-grid">
-            {blogPosts.map((post) => (
-              <article className="blog-card" id={post.slug} key={post.slug}>
-                <p className="blog-date">{formatDateLabel(post.datePublished, locale)}</p>
-                <h2>{post.title}</h2>
-                <p>{post.excerpt}</p>
-                <a className="btn btn-secondary" href={`/${locale}/blog/${post.slug}`}>
-                  {copy.readLabel}
-                </a>
-              </article>
-            ))}
+            {blogPosts.map((post) => {
+              const firstToolWithImage = post.tools?.find((tool) => tool?.image?.src);
+              const featuredImageSrc =
+                post.featuredImage?.src || firstToolWithImage?.image?.src || "/assets/profileimage.jpeg";
+              const featuredImageAlt =
+                post.featuredImage?.alt || firstToolWithImage?.image?.alt || `${post.title} featured image`;
+
+              return (
+                <article className="blog-card" id={post.slug} key={post.slug}>
+                  <div className="blog-card-media">
+                    <Image
+                      src={featuredImageSrc}
+                      alt={featuredImageAlt}
+                      width={1200}
+                      height={675}
+                      sizes="(max-width: 900px) 100vw, (max-width: 1200px) 92vw, 900px"
+                      className="blog-card-image"
+                    />
+                  </div>
+                  <div className="blog-card-content">
+                    <p className="blog-topic">{copy.topicLabel}</p>
+                    <h2>{post.title}</h2>
+                    <p className="blog-excerpt">{post.excerpt}</p>
+                    <a className="blog-read-link" href={`/${locale}/blog/${post.slug}`}>
+                      {copy.readLabel}
+                    </a>
+                    <p className="blog-date">{formatCardDateLabel(post.datePublished, locale)}</p>
+                  </div>
+                </article>
+              );
+            })}
           </div>
 
           <p className="blog-note">{copy.comingSoon}</p>

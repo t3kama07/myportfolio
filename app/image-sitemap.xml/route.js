@@ -27,12 +27,15 @@ export async function GET() {
   const blogRows = locales.flatMap((locale) =>
     blogPosts.map((post) => {
       const pageUrl = `${siteUrl}/${locale}/blog/${post.slug}`;
-      const imageUrls = post.tools
-        .map((tool) => tool.image?.src)
+      const imageUrls = [
+        post.featuredImage?.src,
+        ...post.tools.map((tool) => tool.image?.src),
+      ]
         .filter(Boolean)
         .map((src) => `${siteUrl}${src}`);
+      const uniqueImageUrls = [...new Set(imageUrls)];
 
-      return { pageUrl, imageUrls };
+      return { pageUrl, imageUrls: uniqueImageUrls };
     }),
   );
 

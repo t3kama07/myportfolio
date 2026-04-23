@@ -36,6 +36,8 @@ export async function generateMetadata({ params }) {
   if (!post) {
     return {};
   }
+  const socialImageSrc = post.featuredImage?.src || post.tools[0]?.image?.src || "/assets/profileimage.jpeg";
+  const socialImageAlt = post.featuredImage?.alt || post.tools[0]?.image?.alt || post.title;
 
   return {
     title: post.title,
@@ -63,10 +65,10 @@ export async function generateMetadata({ params }) {
       modifiedTime: post.dateModified,
       images: [
         {
-          url: post.tools[0]?.image?.src || "/assets/profileimage.jpeg",
+          url: socialImageSrc,
           width: 1200,
           height: 675,
-          alt: post.tools[0]?.image?.alt || post.title,
+          alt: socialImageAlt,
         },
       ],
     },
@@ -74,7 +76,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: post.title,
       description: post.seoDescription,
-      images: [post.tools[0]?.image?.src || "/assets/profileimage.jpeg"],
+      images: [socialImageSrc],
     },
   };
 }
@@ -94,6 +96,11 @@ export default async function LocalizedBlogPostPage({ params }) {
   const dict = getDictionary(locale);
   const siteUrl = getSiteUrl();
   const postUrl = `${siteUrl}/${locale}/blog/${post.slug}`;
+  const articleImages = [
+    post.featuredImage?.src ? `${siteUrl}${post.featuredImage.src}` : null,
+    ...post.tools.map((tool) => (tool.image?.src ? `${siteUrl}${tool.image.src}` : null)),
+  ].filter(Boolean);
+  const uniqueArticleImages = [...new Set(articleImages)];
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -103,7 +110,7 @@ export default async function LocalizedBlogPostPage({ params }) {
     datePublished: post.datePublished,
     dateModified: post.dateModified,
     mainEntityOfPage: postUrl,
-    image: post.tools.map((tool) => `${siteUrl}${tool.image?.src}`).filter(Boolean),
+    image: uniqueArticleImages,
     author: {
       "@type": "Person",
       name: "Manjula",
@@ -155,7 +162,6 @@ export default async function LocalizedBlogPostPage({ params }) {
             <p key={paragraph}>{paragraph}</p>
           ))}
 
-          <h2>10 Easy Tools to Start Your Tech Journey in 2026</h2>
           <ol className="blog-tool-list">
             {post.tools.map((tool) => (
               <li key={tool.name} id={tool.name.toLowerCase().replace(/\s+/g, "-")}>
