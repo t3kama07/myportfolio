@@ -173,7 +173,8 @@ export default async function LocalizedBlogPostPage({ params }) {
                       alt={tool.image.alt || `${tool.name} illustration`}
                       width={1200}
                       height={675}
-                      sizes="(max-width: 720px) 100vw, (max-width: 1120px) 92vw, 860px"
+                      sizes="(max-width: 720px) 100vw, (max-width: 1120px) 60vw, 560px"
+                      quality={70}
                       className="blog-tool-image"
                     />
                   </figure>
