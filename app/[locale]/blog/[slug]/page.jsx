@@ -42,7 +42,7 @@ export async function generateMetadata({ params }) {
   return {
     title: post.title,
     description: post.seoDescription,
-    keywords: [
+    keywords: post.keywords || [
       "tech journey 2026",
       "beginner tech tools",
       "learn coding for beginners",

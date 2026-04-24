@@ -90,6 +90,12 @@ export default function sitemap() {
       priority: 0.75,
     },
     {
+      url: `${siteUrl}/en/blog/10-platforms-to-host-your-website-for-free-in-2026`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
       url: `${siteUrl}/fi`,
       lastModified,
       changeFrequency: "weekly",
@@ -169,6 +175,12 @@ export default function sitemap() {
     },
     {
       url: `${siteUrl}/fi/blog/10-best-tools-to-create-3d-websites-using-three-js-in-2026`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.65,
+    },
+    {
+      url: `${siteUrl}/fi/blog/10-platforms-to-host-your-website-for-free-in-2026`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.65,
