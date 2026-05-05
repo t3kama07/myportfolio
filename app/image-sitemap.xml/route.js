@@ -27,26 +27,42 @@ export async function GET() {
   const blogRows = locales.flatMap((locale) =>
     blogPosts.map((post) => {
       const pageUrl = `${siteUrl}/${locale}/blog/${post.slug}`;
-      const imageUrls = [
-        post.featuredImage?.src,
-        ...post.tools.map((tool) => tool.image?.src),
-      ]
-        .filter(Boolean)
-        .map((src) => `${siteUrl}${src}`);
-      const uniqueImageUrls = [...new Set(imageUrls)];
+      const images = [
+        post.featuredImage?.src
+          ? {
+              url: `${siteUrl}${post.featuredImage.src}`,
+              title: post.featuredImage.alt || post.title,
+            }
+          : null,
+        ...post.tools.map((tool) =>
+          tool.image?.src
+            ? {
+                url: `${siteUrl}${tool.image.src}`,
+                title: tool.image.alt || `${tool.name} image`,
+              }
+            : null,
+        ),
+      ].filter(Boolean);
+      const uniqueImages = Array.from(new Map(images.map((image) => [image.url, image])).values());
 
-      return { pageUrl, imageUrls: uniqueImageUrls };
+      return { pageUrl, images: uniqueImages };
     }),
   );
 
   const siteRows = locales.flatMap((locale) => [
     {
       pageUrl: `${siteUrl}/${locale}`,
-      imageUrls: sharedHomeImages.map((src) => `${siteUrl}${src}`),
+      images: sharedHomeImages.map((src) => ({
+        url: `${siteUrl}${src}`,
+        title: "Manjula portfolio image",
+      })),
     },
     {
       pageUrl: `${siteUrl}/${locale}/tools/screen-recorder`,
-      imageUrls: screenRecorderImages.map((src) => `${siteUrl}${src}`),
+      images: screenRecorderImages.map((src) => ({
+        url: `${siteUrl}${src}`,
+        title: "Screen recorder icon",
+      })),
     },
   ]);
 
@@ -54,9 +70,14 @@ export async function GET() {
 
   const xmlBody = rows
     .map(
-      ({ pageUrl, imageUrls }) => `<url>
+      ({ pageUrl, images }) => `<url>
   <loc>${escapeXml(pageUrl)}</loc>
-  ${imageUrls.map((url) => `<image:image><image:loc>${escapeXml(url)}</image:loc></image:image>`).join("\n  ")}
+  ${images
+    .map(
+      (image) =>
+        `<image:image><image:loc>${escapeXml(image.url)}</image:loc><image:title>${escapeXml(image.title)}</image:title></image:image>`,
+    )
+    .join("\n  ")}
 </url>`,
     )
     .join("\n");
