@@ -23,14 +23,16 @@
     "resumeBuilderTitle": "Ilmainen CV-tyokalu",
     "resumeBuilderDescription": "Ilmainen CV-tyokalu, jolla teet ATS-ystavallisen ansioluettelon verkossa reaaliaikaisella esikatselulla seka PDF- tai DOCX-viennilla ilman rekisterointia.",
     "screenRecorderTitle": "Ilmainen nayton tallennin Chromelle",
-    "screenRecorderDescription": "Ilmainen Chrome-lisosa nayton tallentamiseen yksinkertaisilla ohjaimilla, ajastimella, valinnaisella mikrofonilla, esikatselulla ja videon latauksella."
+    "screenRecorderDescription": "Ilmainen Chrome-lisosa nayton tallentamiseen yksinkertaisilla ohjaimilla, ajastimella, valinnaisella mikrofonilla, esikatselulla ja videon latauksella.",
+    "cvTitle": "CV",
+    "cvDescription": "Katso Manjula Karunanayakan CV verkossa seka koulutus, taidot, projektit ja latausvaihtoehdot."
   },
   "nav": {
     "projects": "Projektit",
     "tools": "Tyokalut",
     "skills": "Taidot",
     "contact": "Yhteys",
-    "requestCv": "Pyyda CV",
+    "requestCv": "Katso CV",
     "languageSwitch": "Kielenvaihto"
   },
   "hero": {
@@ -184,22 +186,10 @@
     "comingSoon": "Tulossa pian",
     "items": [
       {
-        "id": "qr-generator",
-        "name": "QR-generaattori",
-        "description": "Luo QR-koodeja nopeasti linkeille, yhteystiedoille tai tekstille.",
-        "href": "#"
-      },
-      {
-        "id": "resume-builder",
-        "name": "CV-tyokalu",
-        "description": "Luo ATS-ystavallinen ansioluettelo verkossa malleilla, reaaliaikaisella esikatselulla ja PDF- tai DOCX-viennilla.",
-        "href": "#"
-      },
-      {
-        "id": "invoice-generator",
-        "name": "Laskugeneraattori",
-        "description": "Luo selkeita laskuja riveilla ja summilla muutamassa sekunnissa.",
-        "href": "#"
+        "id": "screen-recorder",
+        "name": "Nayton tallennin",
+        "description": "Tallenna naytto Chromessa ajastimella, valinnaisella mikrofonilla, esikatselulla ja ladattavalla videolla.",
+        "href": "/tools/screen-recorder"
       },
       {
         "id": "image-to-webp",
@@ -232,10 +222,22 @@
         "href": "/tools/remove-line-breaks"
       },
       {
-        "id": "screen-recorder",
-        "name": "Nayton tallennin",
-        "description": "Tallenna naytto Chromessa ajastimella, valinnaisella mikrofonilla, esikatselulla ja ladattavalla videolla.",
-        "href": "/tools/screen-recorder"
+        "id": "qr-generator",
+        "name": "QR-generaattori",
+        "description": "Luo QR-koodeja nopeasti linkeille, yhteystiedoille tai tekstille.",
+        "href": "#"
+      },
+      {
+        "id": "resume-builder",
+        "name": "CV-tyokalu",
+        "description": "Luo ATS-ystavallinen ansioluettelo verkossa malleilla, reaaliaikaisella esikatselulla ja PDF- tai DOCX-viennilla.",
+        "href": "#"
+      },
+      {
+        "id": "invoice-generator",
+        "name": "Laskugeneraattori",
+        "description": "Luo selkeita laskuja riveilla ja summilla muutamassa sekunnissa.",
+        "href": "#"
       }
     ]
   },
@@ -1148,9 +1150,25 @@
     "blog": "Blogi",
     "contact": "Yhteys",
     "contactHeading": "Yhteys",
-    "requestCv": "Pyyda CV",
+    "requestCv": "Katso CV",
     "linkedin": "LinkedIn",
     "github": "GitHub"
+  },
+  "cvPage": {
+    "kicker": "Ansioluettelo",
+    "actionsTitle": "Lataa PDF",
+    "actionsDescription": "Lataa taman CV:n PDF-versio suoraan sivulta.",
+    "downloadPdf": "Lataa PDF",
+    "downloadingPdf": "Valmistellaan PDF...",
+    "downloadNote": "PDF sailyttaa saman kaksipalstaisen CV-rakenteen eika avaa selaimen tulostusnakymaa.",
+    "pdfError": "CV-PDF:n luonti epaonnistui juuri nyt. Yrita uudelleen.",
+    "contactTitle": "Yhteystiedot",
+    "skillsTitle": "Tekniset taidot",
+    "aboutTitle": "Tietoa minusta",
+    "summaryTitle": "Ammatillinen tiivistelma",
+    "educationTitle": "Koulutus",
+    "projectsTitle": "Akateemiset projektit",
+    "extraTitle": "Muut tiedot"
   },
   "resumeBuilder": {
     "title": "Ilmainen CV-tyokalu",

@@ -14,7 +14,7 @@ export default function Footer({ locale, footer, withTopSpacing = false }) {
           <h4>{footer.quickLinks}</h4>
           <a href={`/${locale}/#projects`}>{footer.projects}</a>
           <a href={`/${locale}/blog`}>{footer.blog || (locale === "fi" ? "Blogi" : "Blog")}</a>
-          <a href={`/${locale}/#contact`}>{footer.requestCv}</a>
+          <a href={`/${locale}/cv`}>{footer.requestCv}</a>
           <a href={`/${locale}/#contact`}>{footer.contact}</a>
         </div>
 

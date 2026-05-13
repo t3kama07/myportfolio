@@ -23,14 +23,16 @@
     "resumeBuilderTitle": "Free Resume Builder",
     "resumeBuilderDescription": "Free resume builder with ATS-friendly resume templates, live preview, and instant PDF or DOCX download. Create a professional resume online with no sign-up.",
     "screenRecorderTitle": "Free Screen Recorder for Chrome",
-    "screenRecorderDescription": "Free Chrome screen recorder extension you can install from the Chrome Web Store with simple controls, a recording timer, optional microphone audio, preview, and saved video."
+    "screenRecorderDescription": "Free Chrome screen recorder extension you can install from the Chrome Web Store with simple controls, a recording timer, optional microphone audio, preview, and saved video.",
+    "cvTitle": "CV",
+    "cvDescription": "View Manjula Karunanayaka's CV online, including education, technical skills, projects, and direct download options."
   },
   "nav": {
     "projects": "Projects",
     "tools": "Tools",
     "skills": "Skills",
     "contact": "Contact",
-    "requestCv": "Download CV",
+    "requestCv": "View CV",
     "languageSwitch": "Language switch"
   },
   "hero": {
@@ -184,22 +186,10 @@
     "comingSoon": "Coming Soon",
     "items": [
       {
-        "id": "qr-generator",
-        "name": "QR Generator",
-        "description": "Generate QR codes quickly for URLs, contact info, or plain text.",
-        "href": "#"
-      },
-      {
-        "id": "resume-builder",
-        "name": "Resume Builder",
-        "description": "Create an ATS-friendly resume online with templates, live preview, and PDF or DOCX export.",
-        "href": "#"
-      },
-      {
-        "id": "invoice-generator",
-        "name": "Invoice Generator",
-        "description": "Create clean invoices with itemized rows and totals in seconds.",
-        "href": "#"
+        "id": "screen-recorder",
+        "name": "Screen Recorder",
+        "description": "Record your screen in Chrome with a timer, optional microphone audio, preview, and downloadable video.",
+        "href": "/tools/screen-recorder"
       },
       {
         "id": "image-to-webp",
@@ -232,10 +222,22 @@
         "href": "/tools/remove-line-breaks"
       },
       {
-        "id": "screen-recorder",
-        "name": "Screen Recorder",
-        "description": "Record your screen in Chrome with a timer, optional microphone audio, preview, and downloadable video.",
-        "href": "/tools/screen-recorder"
+        "id": "qr-generator",
+        "name": "QR Generator",
+        "description": "Generate QR codes quickly for URLs, contact info, or plain text.",
+        "href": "#"
+      },
+      {
+        "id": "resume-builder",
+        "name": "Resume Builder",
+        "description": "Create an ATS-friendly resume online with templates, live preview, and PDF or DOCX export.",
+        "href": "#"
+      },
+      {
+        "id": "invoice-generator",
+        "name": "Invoice Generator",
+        "description": "Create clean invoices with itemized rows and totals in seconds.",
+        "href": "#"
       }
     ]
   },
@@ -1148,9 +1150,25 @@
     "blog": "Blog",
     "contact": "Contact",
     "contactHeading": "Contact",
-    "requestCv": "Download CV",
+    "requestCv": "View CV",
     "linkedin": "LinkedIn",
     "github": "GitHub"
+  },
+  "cvPage": {
+    "kicker": "Curriculum Vitae",
+    "actionsTitle": "Download PDF",
+    "actionsDescription": "Download a PDF version of this CV directly from the page.",
+    "downloadPdf": "Download PDF",
+    "downloadingPdf": "Preparing PDF...",
+    "downloadNote": "The PDF keeps the same two-column CV structure instead of opening the browser print dialog.",
+    "pdfError": "Unable to generate the CV PDF right now. Please try again.",
+    "contactTitle": "Contact Details",
+    "skillsTitle": "Technical Skills",
+    "aboutTitle": "About Me",
+    "summaryTitle": "Professional Summary",
+    "educationTitle": "Education",
+    "projectsTitle": "Academic Projects",
+    "extraTitle": "Other Information"
   },
   "resumeBuilder": {
     "title": "Free Resume Builder",

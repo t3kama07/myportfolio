@@ -12,6 +12,12 @@ export default function sitemap() {
       priority: 1,
     },
     {
+      url: `${siteUrl}/en/cv`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${siteUrl}/en/tools`,
       lastModified,
       changeFrequency: "weekly",
@@ -106,6 +112,12 @@ export default function sitemap() {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: `${siteUrl}/fi/cv`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
     {
       url: `${siteUrl}/fi/tools`,
