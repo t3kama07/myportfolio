@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { SAFE_ROUTE_LOCATIONS } from "@/utils/safeRouteLocations";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { SAFE_ROUTE_CITY_QUERY_OVERRIDES, SAFE_ROUTE_LOCATIONS } from "@/utils/safeRouteLocations";
 import {
   calculateOutdoorScore,
   generateRecommendation,
@@ -19,27 +19,56 @@ const ACTIVITY_IDS = [
   "travel",
   "child-elderly-outing",
 ];
+const GEOCODE_ATTEMPTS = 2;
+
+function wait(ms) {
+  return new Promise((resolve) => {
+    window.setTimeout(resolve, ms);
+  });
+}
 
 function createDateKey(date) {
   return [
-    date.getFullYear(),
-    String(date.getMonth() + 1).padStart(2, "0"),
-    String(date.getDate()).padStart(2, "0"),
+    date.getUTCFullYear(),
+    String(date.getUTCMonth() + 1).padStart(2, "0"),
+    String(date.getUTCDate()).padStart(2, "0"),
   ].join("-");
 }
 
-function addDays(date, days) {
-  const nextDate = new Date(date);
-  nextDate.setDate(nextDate.getDate() + days);
+function addDaysToDateKey(dateKey, days) {
+  const nextDate = new Date(`${dateKey}T00:00:00Z`);
+  nextDate.setUTCDate(nextDate.getUTCDate() + days);
   return nextDate;
 }
 
-function createDateOptions(locale) {
-  const today = new Date();
+function getCurrentDateKeyForTimeZone(timeZone) {
+  try {
+    const formatter = new Intl.DateTimeFormat("en-CA", {
+      timeZone,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    });
+    const parts = formatter.formatToParts(new Date());
+    const mapped = {};
+
+    parts.forEach((part) => {
+      if (part.type !== "literal") {
+        mapped[part.type] = part.value;
+      }
+    });
+
+    return `${mapped.year}-${mapped.month}-${mapped.day}`;
+  } catch {
+    return createDateKey(new Date());
+  }
+}
+
+function createDateOptions(locale, timeZone) {
+  const baseDateKey = getCurrentDateKeyForTimeZone(timeZone);
 
   return Array.from({ length: 16 }, (_, index) => {
-    const date = addDays(today, index);
-    const dateKey = createDateKey(date);
+    const dateKey = createDateKey(addDaysToDateKey(baseDateKey, index));
     const formattedDate = formatForecastDate(dateKey, locale);
 
     if (index === 0) {
@@ -135,9 +164,9 @@ function formatForecastDate(dateKey, locale) {
     return "";
   }
 
-  const parsedDate = new Date(`${dateKey}T00:00:00`);
+  const safeDate = new Date(`${dateKey}T00:00:00Z`);
 
-  if (Number.isNaN(parsedDate.getTime())) {
+  if (Number.isNaN(safeDate.getTime())) {
     return dateKey;
   }
 
@@ -146,7 +175,8 @@ function formatForecastDate(dateKey, locale) {
       year: "numeric",
       month: "long",
       day: "numeric",
-    }).format(parsedDate);
+      timeZone: "UTC",
+    }).format(safeDate);
   } catch {
     return dateKey;
   }
@@ -224,8 +254,38 @@ function getCountryDisplayName(countryCode, locale) {
   }
 }
 
+async function fetchLocationMatch(countryCode, cityName) {
+  const geocodeQuery = SAFE_ROUTE_CITY_QUERY_OVERRIDES[countryCode]?.[cityName] || cityName;
+
+  for (let attempt = 0; attempt < GEOCODE_ATTEMPTS; attempt += 1) {
+    const geocodeResponse = await fetch(
+      `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(geocodeQuery)}&count=3&language=en&format=json&countryCode=${countryCode}`
+    );
+
+    if (geocodeResponse.ok) {
+      const geocodeData = await geocodeResponse.json();
+      const location = Array.isArray(geocodeData?.results) ? geocodeData.results[0] : null;
+
+      if (location && Number.isFinite(location.latitude) && Number.isFinite(location.longitude)) {
+        return {
+          cacheKey: `${countryCode}:${geocodeQuery}`,
+          location,
+        };
+      }
+    }
+
+    if (attempt < GEOCODE_ATTEMPTS - 1) {
+      await wait(180);
+    }
+  }
+
+  return {
+    cacheKey: `${countryCode}:${geocodeQuery}`,
+    location: null,
+  };
+}
+
 export default function SafeRouteDailyTool({ text, locale, hideHeader = false }) {
-  const dateOptions = createDateOptions(locale);
   const countryOptions = Object.keys(SAFE_ROUTE_LOCATIONS)
     .map((countryCode) => ({
       code: countryCode,
@@ -235,11 +295,71 @@ export default function SafeRouteDailyTool({ text, locale, hideHeader = false })
   const [countryCode, setCountryCode] = useState("FI");
   const cityOptions = SAFE_ROUTE_LOCATIONS[countryCode] || [];
   const [city, setCity] = useState("Helsinki");
-  const [selectedDate, setSelectedDate] = useState(dateOptions[0]?.value || "");
+  const [locationMeta, setLocationMeta] = useState(null);
+  const [selectedDate, setSelectedDate] = useState("");
   const [activity, setActivity] = useState("walking");
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [result, setResult] = useState(null);
+  const geocodeCacheRef = useRef(new Map());
+  const locationTimeZone = locationMeta?.timezone || Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+  const dateOptions = useMemo(() => createDateOptions(locale, locationTimeZone), [locale, locationTimeZone]);
+
+  useEffect(() => {
+    let isCancelled = false;
+    const selectedCity = city.trim();
+
+    if (!selectedCity) {
+      setLocationMeta(null);
+      return undefined;
+    }
+
+    const geocodeQuery = SAFE_ROUTE_CITY_QUERY_OVERRIDES[countryCode]?.[selectedCity] || selectedCity;
+    const cacheKey = `${countryCode}:${geocodeQuery}`;
+
+    async function loadLocationMeta() {
+      const cached = geocodeCacheRef.current.get(cacheKey);
+
+      if (cached) {
+        if (!isCancelled) {
+          setLocationMeta(cached);
+        }
+        return;
+      }
+
+      try {
+        const result = await fetchLocationMatch(countryCode, selectedCity);
+
+        if (!result.location) {
+          return;
+        }
+
+        geocodeCacheRef.current.set(result.cacheKey, result.location);
+
+        if (!isCancelled) {
+          setLocationMeta(result.location);
+        }
+      } catch {
+        // Allow submit-time fetch to handle network errors and user-facing messaging.
+      }
+    }
+
+    void loadLocationMeta();
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [city, countryCode]);
+
+  useEffect(() => {
+    if (!dateOptions.length) {
+      return;
+    }
+
+    if (!selectedDate || !dateOptions.some((option) => option.value === selectedDate)) {
+      setSelectedDate(dateOptions[0].value);
+    }
+  }, [dateOptions, selectedDate]);
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -257,22 +377,23 @@ export default function SafeRouteDailyTool({ text, locale, hideHeader = false })
     setResult(null);
 
     try {
-      const geocodeResponse = await fetch(
-        `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(trimmedCity)}&count=1&language=en&format=json&countryCode=${countryCode}`
-      );
+      const geocodeQuery = SAFE_ROUTE_CITY_QUERY_OVERRIDES[countryCode]?.[trimmedCity] || trimmedCity;
+      const cacheKey = `${countryCode}:${geocodeQuery}`;
+      let location = geocodeCacheRef.current.get(cacheKey) || locationMeta;
 
-      if (!geocodeResponse.ok) {
-        throw new Error("geocoding-failed");
+      if (!location || !Number.isFinite(location?.latitude) || !Number.isFinite(location?.longitude)) {
+        const lookup = await fetchLocationMatch(countryCode, trimmedCity);
+        location = lookup.location;
       }
-
-      const geocodeData = await geocodeResponse.json();
-      const location = Array.isArray(geocodeData?.results) ? geocodeData.results[0] : null;
 
       if (!Number.isFinite(location?.latitude) || !Number.isFinite(location?.longitude)) {
         setResult(null);
         setErrorMessage(text.locationNotFound);
         return;
       }
+
+      geocodeCacheRef.current.set(cacheKey, location);
+      setLocationMeta(location);
 
       const weatherUrl =
         `https://api.open-meteo.com/v1/forecast?latitude=${location.latitude}&longitude=${location.longitude}` +

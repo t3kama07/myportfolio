@@ -30,3 +30,9 @@ export const SAFE_ROUTE_LOCATIONS = {
   US: ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Miami", "Seattle", "Boston", "San Francisco", "Atlanta"],
   ZA: ["Johannesburg", "Cape Town", "Durban", "Pretoria", "Port Elizabeth"],
 };
+
+export const SAFE_ROUTE_CITY_QUERY_OVERRIDES = {
+  GR: {
+    Patras: "Patra",
+  },
+};
