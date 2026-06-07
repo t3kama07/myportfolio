@@ -24,6 +24,8 @@
     "resumeBuilderDescription": "Ilmainen CV-tyokalu, jolla teet ATS-ystavallisen ansioluettelon verkossa reaaliaikaisella esikatselulla seka PDF- tai DOCX-viennilla ilman rekisterointia.",
     "screenRecorderTitle": "Ilmainen nayton tallennin Chromelle",
     "screenRecorderDescription": "Ilmainen Chrome-lisosa nayton tallentamiseen yksinkertaisilla ohjaimilla, ajastimella, valinnaisella mikrofonilla, esikatselulla ja videon latauksella.",
+    "safeRouteDailyTitle": "SafeRoute Daily | Ulkoilun turvallisuus ja mukavuus",
+    "safeRouteDailyDescription": "Loyda paivan turvallisin ja mukavin aika lahtea ulos. SafeRoute Daily tarkistaa saan, ilmanlaadun, UV:n, sateen, tuulen, lampotilan, kosteuden ja paivanvalon kavelya, pyorailya, juoksua, matkustamista ja ulkotyota varten.",
     "cvTitle": "CV",
     "cvDescription": "Katso Manjula Karunanayakan CV verkossa seka koulutus, taidot, projektit ja latausvaihtoehdot."
   },
@@ -216,6 +218,12 @@
         "href": "/tools/heic-to-png"
       },
       {
+        "id": "safe-route-daily",
+        "name": "SafeRoute Daily",
+        "description": "Loyda paivan turvallisin ja mukavin aika lahtea ulos saan, ilmanlaadun, UV:n, sateen, tuulen, lampotilan, kosteuden ja paivanvalon avulla.",
+        "href": "/tools/safe-route-daily"
+      },
+      {
         "id": "remove-line-breaks",
         "name": "Poista rivinvaihdot",
         "description": "Poista rivinvaihdot tekstista, sailyta kappaleet tarvittaessa ja kopioi siivottu tulos heti.",
@@ -240,6 +248,92 @@
         "href": "#"
       }
     ]
+  },
+  "safeRouteDaily": {
+    "title": "SafeRoute Daily",
+    "subtitle": "Tarkista saa, UV, tuuli, sade, kosteus, paivanvalo ja ilmanlaatu, jotta loydat turvallisimman ajan lahtea ulos.",
+    "heroKicker": "Ulkoilun suunnittelija",
+    "heroTitle": "Loyda paivan turvallisin aika lahtea ulos",
+    "introParagraphs": [
+      "SafeRoute Daily tarkistaa saan, ilmanlaadun, UV:n, sateen, tuulen, lampotilan ja paivanvalon, jotta loydat parhaan ajan kavelyyn, pyorailyyn, juoksuun, matkustamiseen tai ulkotyohon."
+    ],
+    "heroPoints": [
+      "Hae mika tahansa kaupunki ja vertaile taman paivan jaljella olevia tunteja.",
+      "Piste muuttuu valitun aktiviteetin mukaan, mukaan lukien matkustaminen ja lapsen tai iakkaan ulkoilu.",
+      "Nae paras aikaikkuna, heikoin aikaikkuna ja suurimmat riskit yhdella silmayksella."
+    ],
+    "countryLabel": "Maa",
+    "cityLabel": "Kaupunki",
+    "cityPlaceholder": "Anna kaupunki",
+    "cityEmptyOption": "Ei kaupunkeja saatavilla",
+    "dateLabel": "Paiva",
+    "activityLabel": "Aktiviteetti",
+    "checkButton": "Tarkista ulko-olosuhteet",
+    "checking": "Tarkistetaan...",
+    "loadingMessage": "Tarkistetaan ulko-olosuhteita...",
+    "locationNotFound": "Sijaintia ei loytynyt. Kokeile toista kaupungin nimea.",
+    "loadError": "Ulkoilun turvallisuustietoja ei voitu ladata juuri nyt. Yrita uudelleen.",
+    "noForecastForDate": "Talle paivalle ei ole ennustedataa juuri nyt. Valitse toinen paiva.",
+    "airQualityUnavailable": "Ilmanlaatutiedot eivat ole saatavilla tasta sijainnista tai paivasta, joten piste perustuu saahan, UV:hen, tuuleen, sateeseen, lampotilaan, kosteuteen ja paivanvaloon.",
+    "emptyTitle": "Valmis vertailemaan ulkoilun olosuhteita.",
+    "emptySubtitle": "Valitse maa, kaupunki, paiva ja aktiviteetti nahdaksesi turvallisimman ulkoiluajan.",
+    "mainScoreTitle": "Ulkoilun turvallisuuspiste",
+    "forecastDateLabel": "Ennusteen paiva",
+    "bestTimeTitle": "Paras ulkoiluaika",
+    "avoidTimeTitle": "Valta",
+    "bestTimeHint": "Korkein keskiarvo parhaasta 2-3 tunnin jaksosta valitulle paivalle.",
+    "avoidTimeHint": "Matalin keskiarvo heikoimmasta 2-3 tunnin jaksosta valitulle paivalle.",
+    "warningsTitle": "Tarkkailtavat riskit",
+    "recommendationTitle": "Suositus",
+    "hourlyTitle": "Tuntikohtainen ulkoilun turvallisuusaikajana",
+    "disclaimer": "SafeRoute Daily antaa yleista ohjausta ulkoilun mukavuudesta ja turvallisuudesta julkisten saa- ja ilmanlaatutietojen perusteella. Se ei ole laakinnallinen, hataa koskeva tai virallinen turvallisuusohje. Noudata aina paikallisia varoituksia ja viranomaisia.",
+    "recommendationLead": "Paras aika",
+    "recommendationIn": "kohteessa",
+    "recommendationAround": "on noin",
+    "recommendationBecause": "koska",
+    "andWord": "ja",
+    "activityOptions": {
+      "walking": "Kavely",
+      "cycling": "Pyoraily",
+      "running": "Juoksu",
+      "outdoor-work": "Ulkotyo",
+      "travel": "Matkustaminen",
+      "child-elderly-outing": "Lapsen / iakkaan ulkoilu"
+    },
+    "scoreLabels": {
+      "Excellent": "Erinomainen",
+      "Good": "Hyva",
+      "Moderate": "Kohtalainen",
+      "Poor": "Heikko",
+      "Avoid if possible": "Valta jos mahdollista"
+    },
+    "warningMessages": {
+      "high-uv": "Korkea UV keskipaivan jalkeen",
+      "rain-risk": "Saderiski odotettavissa",
+      "strong-wind": "Voimakasta tuulta odotettavissa",
+      "poor-air": "Heikko ilmanlaatu",
+      "cold-temperature": "Kylma lampotila",
+      "hot-temperature": "Erittain kuuma lampotila",
+      "low-daylight": "Vahan paivanvaloa",
+      "high-humidity": "Korkea kosteus"
+    },
+    "metricLabels": {
+      "temperature": "Lampo",
+      "rain": "Sade",
+      "wind": "Tuuli",
+      "uv": "UV",
+      "humidity": "Kosteus",
+      "pm25": "PM2.5"
+    },
+    "recommendationReasons": {
+      "low-rain": "saderiski on matala",
+      "comfortable-wind": "tuuliolot ovat mukavat",
+      "comfortable-temperature": "lampotila on miellyttava",
+      "lower-uv": "UV on matalampi",
+      "cleaner-air": "ilmanlaatu on parempi",
+      "balanced-humidity": "kosteus tuntuu tasapainoisemmalta",
+      "daylight": "paivanvalo on parempi"
+    }
   },
   "screenRecorder": {
     "title": "Nayton tallennin",

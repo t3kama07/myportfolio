@@ -46,6 +46,7 @@ export default async function LocalizedToolsPage({ params }) {
     "invoice-generator": `/${locale}/tools/invoice-generator`,
     "image-to-webp": `/${locale}/tools/image-to-webp`,
     "remove-line-breaks": `/${locale}/tools/remove-line-breaks`,
+    "safe-route-daily": `/${locale}/tools/safe-route-daily`,
     "screen-recorder": `/${locale}/tools/screen-recorder`,
     "resume-builder": `/${locale}/tools/resume-builder`,
   };

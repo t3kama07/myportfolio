@@ -24,6 +24,8 @@
     "resumeBuilderDescription": "Free resume builder with ATS-friendly resume templates, live preview, and instant PDF or DOCX download. Create a professional resume online with no sign-up.",
     "screenRecorderTitle": "Free Screen Recorder for Chrome",
     "screenRecorderDescription": "Free Chrome screen recorder extension you can install from the Chrome Web Store with simple controls, a recording timer, optional microphone audio, preview, and saved video.",
+    "safeRouteDailyTitle": "SafeRoute Daily | Outdoor Safety & Weather Comfort Planner",
+    "safeRouteDailyDescription": "Find the safest and most comfortable time to go outside today. SafeRoute Daily checks weather, air quality, UV, rain, wind, temperature, humidity, and daylight for walking, cycling, running, travel, and outdoor work.",
     "cvTitle": "CV",
     "cvDescription": "View Manjula Karunanayaka's CV online, including education, technical skills, projects, and direct download options."
   },
@@ -216,6 +218,12 @@
         "href": "/tools/heic-to-png"
       },
       {
+        "id": "safe-route-daily",
+        "name": "SafeRoute Daily",
+        "description": "Find the safest and most comfortable time to go outside today using weather, air quality, UV, rain, wind, temperature, humidity, and daylight data.",
+        "href": "/tools/safe-route-daily"
+      },
+      {
         "id": "remove-line-breaks",
         "name": "Remove Line Breaks",
         "description": "Remove line breaks from text, keep paragraphs when needed, and copy the cleaned result instantly.",
@@ -240,6 +248,92 @@
         "href": "#"
       }
     ]
+  },
+  "safeRouteDaily": {
+    "title": "SafeRoute Daily",
+    "subtitle": "Check weather, UV, wind, rain, humidity, daylight, and air quality to find the safest time to head outside.",
+    "heroKicker": "Outdoor comfort planner",
+    "heroTitle": "Find the safest time to go outside today",
+    "introParagraphs": [
+      "SafeRoute Daily checks weather, air quality, UV, rain, wind, temperature, and daylight to recommend the best outdoor time for walking, cycling, running, travel, or outdoor work."
+    ],
+    "heroPoints": [
+      "Search any city and compare the remaining hours of today.",
+      "Adjust the score by activity type, including travel and child or elderly outings.",
+      "See the best time window, the worst time window, and the main risks at a glance."
+    ],
+    "countryLabel": "Country",
+    "cityLabel": "City",
+    "cityPlaceholder": "Enter a city",
+    "cityEmptyOption": "No cities available",
+    "dateLabel": "Date",
+    "activityLabel": "Activity",
+    "checkButton": "Check outdoor conditions",
+    "checking": "Checking...",
+    "loadingMessage": "Checking outdoor conditions...",
+    "locationNotFound": "Location not found. Try another city name.",
+    "loadError": "Could not load outdoor safety data right now. Please try again.",
+    "noForecastForDate": "No forecast data is available for that date right now. Please choose another date.",
+    "airQualityUnavailable": "Air quality data is unavailable for this location or date, so the score is based on weather, UV, wind, rain, temperature, humidity, and daylight.",
+    "emptyTitle": "Ready to compare today's outdoor hours.",
+    "emptySubtitle": "Choose a country, city, date, and activity to see the safest outdoor time window.",
+    "mainScoreTitle": "Outdoor Safety Score",
+    "forecastDateLabel": "Forecast date",
+    "bestTimeTitle": "Best outdoor time",
+    "avoidTimeTitle": "Avoid",
+    "bestTimeHint": "Highest average score across the strongest 2-3 hour window for the selected date.",
+    "avoidTimeHint": "Lowest average score across the weakest 2-3 hour window for the selected date.",
+    "warningsTitle": "Main risks to watch",
+    "recommendationTitle": "Recommendation",
+    "hourlyTitle": "Hourly outdoor safety timeline",
+    "disclaimer": "SafeRoute Daily provides general outdoor comfort and safety guidance based on public weather and air-quality data. It is not medical, emergency, or official safety advice. Always follow local warnings and official authorities.",
+    "recommendationLead": "The best time for",
+    "recommendationIn": "in",
+    "recommendationAround": "is around",
+    "recommendationBecause": "because",
+    "andWord": "and",
+    "activityOptions": {
+      "walking": "Walking",
+      "cycling": "Cycling",
+      "running": "Running",
+      "outdoor-work": "Outdoor Work",
+      "travel": "Travel",
+      "child-elderly-outing": "Child / Elderly Outing"
+    },
+    "scoreLabels": {
+      "Excellent": "Excellent",
+      "Good": "Good",
+      "Moderate": "Moderate",
+      "Poor": "Poor",
+      "Avoid if possible": "Avoid if possible"
+    },
+    "warningMessages": {
+      "high-uv": "High UV after midday",
+      "rain-risk": "Rain risk expected",
+      "strong-wind": "Strong wind expected",
+      "poor-air": "Poor air quality",
+      "cold-temperature": "Cold temperature",
+      "hot-temperature": "Very hot temperature",
+      "low-daylight": "Low daylight",
+      "high-humidity": "High humidity"
+    },
+    "metricLabels": {
+      "temperature": "Temp",
+      "rain": "Rain",
+      "wind": "Wind",
+      "uv": "UV",
+      "humidity": "Humidity",
+      "pm25": "PM2.5"
+    },
+    "recommendationReasons": {
+      "low-rain": "rain risk is low",
+      "comfortable-wind": "wind conditions are comfortable",
+      "comfortable-temperature": "temperature is comfortable",
+      "lower-uv": "UV is lower",
+      "cleaner-air": "air quality is better",
+      "balanced-humidity": "humidity feels more balanced",
+      "daylight": "daylight is better"
+    }
   },
   "screenRecorder": {
     "title": "Screen Recorder",
