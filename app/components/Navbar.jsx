@@ -76,9 +76,6 @@ export default function Navbar({ locale, nav, currentPath = "/" }) {
             </a>
           </nav>
           {renderLanguageSwitch("lang-switch-desktop")}
-          <a className="btn btn-primary btn-cv" href={`/${locale}/cv`} onClick={closeMenu}>
-            {nav.requestCv}
-          </a>
         </div>
       </div>
     </header>

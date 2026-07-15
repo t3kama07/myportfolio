@@ -25,16 +25,13 @@
     "screenRecorderTitle": "Ilmainen nayton tallennin Chromelle",
     "screenRecorderDescription": "Ilmainen Chrome-lisosa nayton tallentamiseen yksinkertaisilla ohjaimilla, ajastimella, valinnaisella mikrofonilla, esikatselulla ja videon latauksella.",
     "safeRouteDailyTitle": "SafeRoute Daily | Ulkoilun turvallisuus ja mukavuus",
-    "safeRouteDailyDescription": "Loyda paivan turvallisin ja mukavin aika lahtea ulos. SafeRoute Daily tarkistaa saan, ilmanlaadun, UV:n, sateen, tuulen, lampotilan, kosteuden ja paivanvalon kavelya, pyorailya, juoksua, matkustamista ja ulkotyota varten.",
-    "cvTitle": "CV",
-    "cvDescription": "Katso Manjula Karunanayakan CV verkossa seka koulutus, taidot, projektit ja latausvaihtoehdot."
+    "safeRouteDailyDescription": "Loyda paivan turvallisin ja mukavin aika lahtea ulos. SafeRoute Daily tarkistaa saan, ilmanlaadun, UV:n, sateen, tuulen, lampotilan, kosteuden ja paivanvalon kavelya, pyorailya, juoksua, matkustamista ja ulkotyota varten."
   },
   "nav": {
     "projects": "Projektit",
     "tools": "Tyokalut",
     "skills": "Taidot",
     "contact": "Yhteys",
-    "requestCv": "Katso CV",
     "languageSwitch": "Kielenvaihto"
   },
   "hero": {
@@ -1244,25 +1241,8 @@
     "blog": "Blogi",
     "contact": "Yhteys",
     "contactHeading": "Yhteys",
-    "requestCv": "Katso CV",
     "linkedin": "LinkedIn",
     "github": "GitHub"
-  },
-  "cvPage": {
-    "kicker": "Ansioluettelo",
-    "actionsTitle": "Lataa PDF",
-    "actionsDescription": "Lataa taman CV:n PDF-versio suoraan sivulta.",
-    "downloadPdf": "Lataa PDF",
-    "downloadingPdf": "Valmistellaan PDF...",
-    "downloadNote": "PDF sailyttaa saman kaksipalstaisen CV-rakenteen eika avaa selaimen tulostusnakymaa.",
-    "pdfError": "CV-PDF:n luonti epaonnistui juuri nyt. Yrita uudelleen.",
-    "contactTitle": "Yhteystiedot",
-    "skillsTitle": "Tekniset taidot",
-    "aboutTitle": "Tietoa minusta",
-    "summaryTitle": "Ammatillinen tiivistelma",
-    "educationTitle": "Koulutus",
-    "projectsTitle": "Akateemiset projektit",
-    "extraTitle": "Muut tiedot"
   },
   "resumeBuilder": {
     "title": "Ilmainen CV-tyokalu",

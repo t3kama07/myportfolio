@@ -25,16 +25,13 @@
     "screenRecorderTitle": "Free Screen Recorder for Chrome",
     "screenRecorderDescription": "Free Chrome screen recorder extension you can install from the Chrome Web Store with simple controls, a recording timer, optional microphone audio, preview, and saved video.",
     "safeRouteDailyTitle": "SafeRoute Daily | Outdoor Safety & Weather Comfort Planner",
-    "safeRouteDailyDescription": "Find the safest and most comfortable time to go outside today. SafeRoute Daily checks weather, air quality, UV, rain, wind, temperature, humidity, and daylight for walking, cycling, running, travel, and outdoor work.",
-    "cvTitle": "CV",
-    "cvDescription": "View Manjula Karunanayaka's CV online, including education, technical skills, projects, and direct download options."
+    "safeRouteDailyDescription": "Find the safest and most comfortable time to go outside today. SafeRoute Daily checks weather, air quality, UV, rain, wind, temperature, humidity, and daylight for walking, cycling, running, travel, and outdoor work."
   },
   "nav": {
     "projects": "Projects",
     "tools": "Tools",
     "skills": "Skills",
     "contact": "Contact",
-    "requestCv": "View CV",
     "languageSwitch": "Language switch"
   },
   "hero": {
@@ -1244,25 +1241,8 @@
     "blog": "Blog",
     "contact": "Contact",
     "contactHeading": "Contact",
-    "requestCv": "View CV",
     "linkedin": "LinkedIn",
     "github": "GitHub"
-  },
-  "cvPage": {
-    "kicker": "Curriculum Vitae",
-    "actionsTitle": "Download PDF",
-    "actionsDescription": "Download a PDF version of this CV directly from the page.",
-    "downloadPdf": "Download PDF",
-    "downloadingPdf": "Preparing PDF...",
-    "downloadNote": "The PDF keeps the same two-column CV structure instead of opening the browser print dialog.",
-    "pdfError": "Unable to generate the CV PDF right now. Please try again.",
-    "contactTitle": "Contact Details",
-    "skillsTitle": "Technical Skills",
-    "aboutTitle": "About Me",
-    "summaryTitle": "Professional Summary",
-    "educationTitle": "Education",
-    "projectsTitle": "Academic Projects",
-    "extraTitle": "Other Information"
   },
   "resumeBuilder": {
     "title": "Free Resume Builder",
