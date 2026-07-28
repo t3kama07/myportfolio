@@ -45,6 +45,7 @@ export default async function LocalizedToolsPage({ params }) {
     "image-cropper": `/${locale}/tools/image-cropper`,
     "invoice-generator": `/${locale}/tools/invoice-generator`,
     "image-to-webp": `/${locale}/tools/image-to-webp`,
+    "karnaugh-map-solver": `/${locale}/tools/karnaugh-map-solver`,
     "remove-line-breaks": `/${locale}/tools/remove-line-breaks`,
     "safe-route-daily": `/${locale}/tools/safe-route-daily`,
     "screen-recorder": `/${locale}/tools/screen-recorder`,

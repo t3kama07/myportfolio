@@ -25,7 +25,9 @@
     "screenRecorderTitle": "Ilmainen nayton tallennin Chromelle",
     "screenRecorderDescription": "Ilmainen Chrome-lisosa nayton tallentamiseen yksinkertaisilla ohjaimilla, ajastimella, valinnaisella mikrofonilla, esikatselulla ja videon latauksella.",
     "safeRouteDailyTitle": "SafeRoute Daily | Ulkoilun turvallisuus ja mukavuus",
-    "safeRouteDailyDescription": "Loyda paivan turvallisin ja mukavin aika lahtea ulos. SafeRoute Daily tarkistaa saan, ilmanlaadun, UV:n, sateen, tuulen, lampotilan, kosteuden ja paivanvalon kavelya, pyorailya, juoksua, matkustamista ja ulkotyota varten."
+    "safeRouteDailyDescription": "Loyda paivan turvallisin ja mukavin aika lahtea ulos. SafeRoute Daily tarkistaa saan, ilmanlaadun, UV:n, sateen, tuulen, lampotilan, kosteuden ja paivanvalon kavelya, pyorailya, juoksua, matkustamista ja ulkotyota varten.",
+    "karnaughMapSolverTitle": "Karnaugh Map Solver",
+    "karnaughMapSolverDescription": "Ratkaise 2, 3 ja 4 muuttujan Karnaugh-karttoja verkossa. Syota mintermit ja don't-care arvot, klikkaa K-map soluja, katso Gray-code ryhmat ja saa yksinkertaistettu SOP-lauseke."
   },
   "nav": {
     "projects": "Projektit",
@@ -225,6 +227,12 @@
         "name": "Poista rivinvaihdot",
         "description": "Poista rivinvaihdot tekstista, sailyta kappaleet tarvittaessa ja kopioi siivottu tulos heti.",
         "href": "/tools/remove-line-breaks"
+      },
+      {
+        "id": "karnaugh-map-solver",
+        "name": "Karnaugh Map Solver",
+        "description": "Yksinkertaista 2, 3 ja 4 muuttujan Boolen funktioita mintermeilla, don't-care arvoilla, visuaalisilla ryhmilla ja SOP-tuloksella.",
+        "href": "/tools/karnaugh-map-solver"
       },
       {
         "id": "qr-generator",
@@ -1231,6 +1239,135 @@
         }
       ]
     }
+  },
+  "karnaughMapSolver": {
+    "title": "Karnaugh Map Solver",
+    "subtitle": "Syota mintermit, lisaa valinnaiset don't-care arvot, klikkaa soluja ja yksinkertaista Boolen funktio SOP-muotoon.",
+    "heroKicker": "Digitaalilogiikan apuri",
+    "heroTitle": "Karnaugh Map Solver 2, 3 ja 4 muuttujalle",
+    "introParagraphs": [
+      "Kayta tata Karnaugh Map Solver -tyokalua Boolen lausekkeiden yksinkertaistamiseen digitaalilogiikan kursseilla, piirilogiikan harjoittelussa ja nopeissa kotitehtavatarkistuksissa. Kartta kayttaa oikeaa Gray-code jarjestysta, tukee don't-care optimointia ja korostaa lopullisen SOP-lausekkeen ryhmat."
+    ],
+    "heroPoints": [
+      "Valitse 2, 3 tai 4 muuttujaa ja syota mintermit kuten 0, 2, 5, 7.",
+      "Klikkaa soluja vaihtaaksesi arvon 0, 1 ja X valilla samalla kun kartta paivittyy.",
+      "Nae varilliset ryhmat, reunojen yli jatkuvat ryhmat, kulmaryhmat ja vaiheittainen selitys."
+    ],
+    "jumpStart": "Avaa solver",
+    "jumpHowTo": "Miten se toimii",
+    "jumpFaq": "Lue FAQ",
+    "variablesLabel": "Muuttujien maara",
+    "variablesShort": "muuttujaa",
+    "inputSection": "Funktion syotto",
+    "mintermsLabel": "Mintermit",
+    "mintermsPlaceholder": "0, 2, 5, 7",
+    "dontCaresLabel": "Don't-care arvot",
+    "dontCaresPlaceholder": "1, 3",
+    "inputHint": "Kayta pilkulla tai valilyonnilla erotettuja desimaalimuotoisia mintermien numeroita. Klikkaa kartan solua vaihtaaksesi sen arvoksi 0, 1 tai X.",
+    "actionsLabel": "Solver-toiminnot",
+    "solve": "Solve",
+    "reset": "Reset",
+    "copyResult": "Kopioi tulos",
+    "copied": "Kopioitu",
+    "shareLink": "Jaa linkki",
+    "shareCopied": "Linkki kopioitu",
+    "mapTitle": "K-map",
+    "mapHint": "Solut ovat Gray-code jarjestyksessa. Varilliset pisteet nayttavat, mika yksinkertaistettu ryhma kattaa solun.",
+    "resultTitle": "Yksinkertaistettu SOP",
+    "resultPlaceholder": "Klikkaa Solve nahdaksesi yksinkertaistetun lausekkeen.",
+    "groupsTitle": "Ryhmien selitys",
+    "solvePrompt": "Lisaa mintermit tai klikkaa soluja, ja ratkaise ryhmat.",
+    "noGroups": "Ryhmat eivat ole tarpeen, koska funktiossa ei ole 1-soluja.",
+    "groupLabel": "Ryhma {number}",
+    "groupCovers": "Kattaa {size} solua ja sisaltaa mintermit {values}.",
+    "includesDontCares": "Se kayttaa myos don't-care soluja {values}.",
+    "groupConstants": "Vakiona pysyvat muuttujat: {constants}.",
+    "groupTerm": "Tasta muodostuu termi {term}.",
+    "noConstants": "kaikki muuttujat vaihtuvat, joten ryhma yksinkertaistuu arvoon 1",
+    "invalidMinterms": "Virheelliset mintermit: {values}. Tarkista valittu muuttujien maara.",
+    "invalidDontCares": "Virheelliset don't-care arvot: {values}. Tarkista valittu muuttujien maara.",
+    "duplicateMinterms": "Toistuvat mintermit: {values}. Poista samat arvot.",
+    "duplicateDontCares": "Toistuvat don't-care arvot: {values}. Poista samat arvot.",
+    "overlapError": "Paallekkaiset arvot: {values}. Sama termi ei voi olla seka 1 etta X.",
+    "faqTitle": "Karnaugh Map Solver FAQ",
+    "faqSubtitle": "Nopeat vastaukset K-map syottoon, don't-care arvoihin, reunaryhmiin ja SOP-yksinkertaistukseen.",
+    "faqItems": [
+      {
+        "question": "Mita muuttujamaaria tama Karnaugh Map Solver tukee?",
+        "answer": "Se tukee 2, 3 ja 4 muuttujan Karnaugh-karttoja."
+      },
+      {
+        "question": "Voinko kayttaa don't-care arvoja?",
+        "answer": "Kylla. Syota don't-care arvot X-arvoina tai klikkaa solua kunnes siita tulee X. Solver voi kayttaa niita, kun ne tekevat SOP-lausekkeesta yksinkertaisemman."
+      },
+      {
+        "question": "Kayttaako kartta Gray-code jarjestysta?",
+        "answer": "Kylla. Rivit ja sarakkeet jarjestetaan Gray-code tavalla, jotta viereiset solut eroavat vain yhdella muuttujalla."
+      },
+      {
+        "question": "Tukeeko se reunojen yli jatkuvia ryhmia?",
+        "answer": "Kylla. Ryhmat voivat jatkua vasemman ja oikean reunan yli, yla- ja alareunan yli seka 4 muuttujan kartan kulmissa."
+      },
+      {
+        "question": "Missa muodossa tulos annetaan?",
+        "answer": "Solver antaa yksinkertaistetun SOP-muodon eli Sum of Products -muodon."
+      },
+      {
+        "question": "Voinko jakaa ratkaistun K-mapin?",
+        "answer": "Kylla. Valittu muuttujamaara, mintermit ja don't-care arvot tallennetaan URL-osoitteeseen, joten Jaa linkki -painike kopioi linkin ilman tietokantaa."
+      }
+    ],
+    "seoSectionTitle": "Karnaugh-karttaopas opiskelijoille",
+    "seoSectionSubtitle": "Opi miten solver lukee mintermit, muodostaa oikeat K-map ryhmat ja muuttaa jokaisen ryhman SOP-termiksi.",
+    "seoSections": [
+      {
+        "title": "Syota mintermit tai klikkaa K-map soluja",
+        "body": "Voit kirjoittaa mintermit desimaalilukuina, lisata valinnaiset don't-care arvot tai rakentaa funktion klikkaamalla soluja. Jokainen klikkaus vaihtaa solun arvojen 0, 1 ja X valilla."
+      },
+      {
+        "title": "Kayta Gray-code jarjestysta oikeaan viereisyyteen",
+        "body": "Karnaugh-kartat perustuvat Gray-code jarjestykseen, jossa viereiset solut eroavat tasmalleen yhdella muuttujalla. Tama solver nayttaa 2, 3 ja 4 muuttujan kartat tassa jarjestyksessa, mukaan lukien reunojen yli jatkuvat viereisyydet."
+      },
+      {
+        "title": "Nae miten jokainen SOP-termi muodostuu",
+        "body": "Ratkaisun jalkeen jokainen varillinen ryhma listaa solut, jotka se kattaa, seka muuttujat, jotka pysyvat vakiona. Ryhman sisalla muuttuvat muuttujat poistuvat tulotermista."
+      },
+      {
+        "title": "Jaa K-map ilman tietokantaa",
+        "body": "Nykyinen muuttujamaara, mintermit ja don't-care arvot tallennetaan URL-parametreihin. Nain tietyn K-mapin voi jakaa luokkakaverille tai avata myohemmin uudelleen."
+      }
+    ],
+    "seoHowTo": {
+      "title": "Miten Karnaugh-kartta ratkaistaan verkossa",
+      "description": "Seuraa naita vaiheita Boolen funktion yksinkertaistamiseen K-map solverilla.",
+      "steps": [
+        {
+          "id": "choose-variable-count",
+          "title": "Valitse muuttujien maara",
+          "description": "Valitse onko Boolen funktiossa 2, 3 vai 4 muuttujaa."
+        },
+        {
+          "id": "enter-minterms",
+          "title": "Syota mintermit ja don't-care arvot",
+          "description": "Kirjoita desimaalimuotoiset mintermit kuten 0, 2, 5, 7 ja lisaa valinnaiset don't-care arvot, jos tehtavassa on niita."
+        },
+        {
+          "id": "review-kmap-cells",
+          "title": "Tarkista tai muokkaa K-map soluja",
+          "description": "Tarkista luodut solut Gray-code K-mapista tai klikkaa soluja vaihtaaksesi arvojen 0, 1 ja X valilla."
+        },
+        {
+          "id": "solve-sop-expression",
+          "title": "Ratkaise ja lue SOP-lauseke",
+          "description": "Klikkaa Solve nahdaksesi varilliset ryhmat, vaiheittaiset selitykset ja lopullisen yksinkertaistetun SOP-lausekkeen."
+        }
+      ]
+    },
+    "relatedTitle": "Aiheeseen liittyvat tyokalut",
+    "relatedTextDescription": "Siivoa kopioidut muistiinpanot tai tehtavatekstit ennen niiden liittamista dokumentteihin.",
+    "relatedImageDescription": "Rajaa kaavioita, kuvakaappauksia tai kurssimuistiinpanoja suoraan selaimessa.",
+    "relatedBrowseLabel": "Selaa kaikkia tyokaluja",
+    "relatedBrowseDescription": "Katso muut ilmaiset apuvalineet ja opiskelijoille sopivat verkkotyokalut."
   },
   "footer": {
     "name": "Manjula",

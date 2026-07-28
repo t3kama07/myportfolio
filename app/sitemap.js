@@ -60,6 +60,12 @@ export default function sitemap() {
       priority: 0.62,
     },
     {
+      url: `${siteUrl}/en/tools/karnaugh-map-solver`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.62,
+    },
+    {
       url: `${siteUrl}/en/tools/screen-recorder`,
       lastModified,
       changeFrequency: "weekly",
@@ -151,6 +157,12 @@ export default function sitemap() {
     },
     {
       url: `${siteUrl}/fi/tools/remove-line-breaks`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.52,
+    },
+    {
+      url: `${siteUrl}/fi/tools/karnaugh-map-solver`,
       lastModified,
       changeFrequency: "weekly",
       priority: 0.52,

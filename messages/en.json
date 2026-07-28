@@ -25,7 +25,9 @@
     "screenRecorderTitle": "Free Screen Recorder for Chrome",
     "screenRecorderDescription": "Free Chrome screen recorder extension you can install from the Chrome Web Store with simple controls, a recording timer, optional microphone audio, preview, and saved video.",
     "safeRouteDailyTitle": "SafeRoute Daily | Outdoor Safety & Weather Comfort Planner",
-    "safeRouteDailyDescription": "Find the safest and most comfortable time to go outside today. SafeRoute Daily checks weather, air quality, UV, rain, wind, temperature, humidity, and daylight for walking, cycling, running, travel, and outdoor work."
+    "safeRouteDailyDescription": "Find the safest and most comfortable time to go outside today. SafeRoute Daily checks weather, air quality, UV, rain, wind, temperature, humidity, and daylight for walking, cycling, running, travel, and outdoor work.",
+    "karnaughMapSolverTitle": "Karnaugh Map Solver",
+    "karnaughMapSolverDescription": "Solve 2, 3, and 4 variable Karnaugh maps online. Enter minterms and don't-cares, click K-map cells, view Gray-code groups, and get a simplified SOP expression."
   },
   "nav": {
     "projects": "Projects",
@@ -225,6 +227,12 @@
         "name": "Remove Line Breaks",
         "description": "Remove line breaks from text, keep paragraphs when needed, and copy the cleaned result instantly.",
         "href": "/tools/remove-line-breaks"
+      },
+      {
+        "id": "karnaugh-map-solver",
+        "name": "Karnaugh Map Solver",
+        "description": "Simplify 2, 3, and 4 variable Boolean functions with minterms, don't-cares, visual groups, and SOP output.",
+        "href": "/tools/karnaugh-map-solver"
       },
       {
         "id": "qr-generator",
@@ -1231,6 +1239,135 @@
         }
       ]
     }
+  },
+  "karnaughMapSolver": {
+    "title": "Karnaugh Map Solver",
+    "subtitle": "Enter minterms, add optional don't-cares, click cells, and simplify the Boolean function into SOP form.",
+    "heroKicker": "Digital logic helper",
+    "heroTitle": "Karnaugh Map Solver for 2, 3, and 4 variables",
+    "introParagraphs": [
+      "Use this Karnaugh Map Solver to simplify Boolean expressions for digital logic classes, circuit design practice, and quick homework checks. The map uses correct Gray-code ordering, supports don't-care optimisation, and highlights the groups used in the final SOP expression."
+    ],
+    "heroPoints": [
+      "Select 2, 3, or 4 variables and enter minterms such as 0, 2, 5, 7.",
+      "Click cells to cycle between 0, 1, and X while the map updates automatically.",
+      "See colored groups, wrapping groups, corner groups, and a step-by-step explanation."
+    ],
+    "jumpStart": "Open solver",
+    "jumpHowTo": "How it works",
+    "jumpFaq": "Read FAQ",
+    "variablesLabel": "Number of variables",
+    "variablesShort": "variables",
+    "inputSection": "Function input",
+    "mintermsLabel": "Minterms",
+    "mintermsPlaceholder": "0, 2, 5, 7",
+    "dontCaresLabel": "Don't-care terms",
+    "dontCaresPlaceholder": "1, 3",
+    "inputHint": "Use comma or space separated decimal minterm numbers. Click any map cell to switch it between 0, 1, and X.",
+    "actionsLabel": "Solver actions",
+    "solve": "Solve",
+    "reset": "Reset",
+    "copyResult": "Copy Result",
+    "copied": "Copied",
+    "shareLink": "Share Link",
+    "shareCopied": "Link Copied",
+    "mapTitle": "K-map",
+    "mapHint": "Cells are arranged in Gray-code order. Colored dots show which simplified group covers each cell.",
+    "resultTitle": "Simplified SOP",
+    "resultPlaceholder": "Click Solve to see the simplified expression.",
+    "groupsTitle": "Group explanation",
+    "solvePrompt": "Add minterms or click cells, then solve to see the groups.",
+    "noGroups": "No groups are needed because the function has no 1 cells.",
+    "groupLabel": "Group {number}",
+    "groupCovers": "Covers {size} cells and includes minterms {values}.",
+    "includesDontCares": "It also uses don't-care cells {values}.",
+    "groupConstants": "Constant variables: {constants}.",
+    "groupTerm": "This gives term {term}.",
+    "noConstants": "all variables change, so the group simplifies to 1",
+    "invalidMinterms": "Invalid minterm value(s): {values}. Check the selected variable count.",
+    "invalidDontCares": "Invalid don't-care value(s): {values}. Check the selected variable count.",
+    "duplicateMinterms": "Duplicate minterm value(s): {values}. Remove repeated values.",
+    "duplicateDontCares": "Duplicate don't-care value(s): {values}. Remove repeated values.",
+    "overlapError": "Overlapping value(s): {values}. A term cannot be both 1 and X.",
+    "faqTitle": "Karnaugh Map Solver FAQ",
+    "faqSubtitle": "Quick answers about K-map input, don't-cares, wrapping groups, and SOP simplification.",
+    "faqItems": [
+      {
+        "question": "What variable counts does this Karnaugh Map Solver support?",
+        "answer": "It supports 2-variable, 3-variable, and 4-variable K-maps."
+      },
+      {
+        "question": "Can I use don't-care terms?",
+        "answer": "Yes. Enter don't-care terms as X values, or click a cell until it becomes X. The solver can use them when they create a simpler SOP expression."
+      },
+      {
+        "question": "Does the map use Gray-code order?",
+        "answer": "Yes. Rows and columns are ordered with Gray code so adjacent cells differ by one variable."
+      },
+      {
+        "question": "Does it support wrapping groups?",
+        "answer": "Yes. Groups can wrap across left and right edges, top and bottom edges, and the four corners of a 4-variable map."
+      },
+      {
+        "question": "What output form does the solver generate?",
+        "answer": "The solver generates simplified SOP form, also called Sum of Products form."
+      },
+      {
+        "question": "Can I share a solved K-map?",
+        "answer": "Yes. The selected variable count, minterms, and don't-care terms are stored in the URL so the Share Link button can copy a database-free link."
+      }
+    ],
+    "seoSectionTitle": "Karnaugh map guide for students",
+    "seoSectionSubtitle": "Learn how the solver reads minterms, forms valid K-map groups, and turns each group into an SOP term.",
+    "seoSections": [
+      {
+        "title": "Enter minterms or click the K-map directly",
+        "body": "You can type minterms as decimal numbers, add optional don't-care terms, or build the function by clicking cells. Each click cycles a cell through 0, 1, and X so the map is easy to adjust while studying."
+      },
+      {
+        "title": "Use Gray-code order for correct adjacency",
+        "body": "Karnaugh maps rely on Gray-code ordering so neighboring cells differ by exactly one variable. This solver displays 2, 3, and 4 variable maps in that order, including the wraparound edges."
+      },
+      {
+        "title": "See how each SOP term is formed",
+        "body": "After solving, every colored group lists the cells it covers and the variables that remain constant. Variables that change inside a group disappear from that product term."
+      },
+      {
+        "title": "Share a K-map without a database",
+        "body": "The current variable count, minterms, and don't-care terms are stored in URL parameters. That makes it easy to share a specific K-map with a classmate or reopen it later."
+      }
+    ],
+    "seoHowTo": {
+      "title": "How to solve a Karnaugh map online",
+      "description": "Follow these steps to simplify a Boolean function with the K-map solver.",
+      "steps": [
+        {
+          "id": "choose-variable-count",
+          "title": "Choose the number of variables",
+          "description": "Select whether your Boolean function has 2, 3, or 4 variables."
+        },
+        {
+          "id": "enter-minterms",
+          "title": "Enter minterms and don't-cares",
+          "description": "Type decimal minterms such as 0, 2, 5, 7 and add optional don't-care terms if your problem includes them."
+        },
+        {
+          "id": "review-kmap-cells",
+          "title": "Review or edit the K-map cells",
+          "description": "Use the Gray-code K-map to check the generated cells, or click cells to switch between 0, 1, and X."
+        },
+        {
+          "id": "solve-sop-expression",
+          "title": "Solve and read the SOP expression",
+          "description": "Click Solve to see colored groups, step-by-step explanations, and the final simplified SOP expression."
+        }
+      ]
+    },
+    "relatedTitle": "Related tools",
+    "relatedTextDescription": "Clean copied notes or assignment text before pasting it into documents.",
+    "relatedImageDescription": "Crop diagrams, screenshots, or class notes directly in the browser.",
+    "relatedBrowseLabel": "Browse all tools",
+    "relatedBrowseDescription": "See the rest of the free utilities and student-friendly web tools."
   },
   "footer": {
     "name": "Manjula",
