@@ -66,6 +66,12 @@ export default function sitemap() {
       priority: 0.62,
     },
     {
+      url: `${siteUrl}/en/tools/page-replacement-algorithm-calculator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.68,
+    },
+    {
       url: `${siteUrl}/en/tools/screen-recorder`,
       lastModified,
       changeFrequency: "weekly",
@@ -166,6 +172,12 @@ export default function sitemap() {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.52,
+    },
+    {
+      url: `${siteUrl}/fi/tools/page-replacement-algorithm-calculator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.58,
     },
     {
       url: `${siteUrl}/fi/tools/screen-recorder`,

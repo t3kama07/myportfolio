@@ -27,7 +27,9 @@
     "safeRouteDailyTitle": "SafeRoute Daily | Ulkoilun turvallisuus ja mukavuus",
     "safeRouteDailyDescription": "Loyda paivan turvallisin ja mukavin aika lahtea ulos. SafeRoute Daily tarkistaa saan, ilmanlaadun, UV:n, sateen, tuulen, lampotilan, kosteuden ja paivanvalon kavelya, pyorailya, juoksua, matkustamista ja ulkotyota varten.",
     "karnaughMapSolverTitle": "Karnaugh Map Solver",
-    "karnaughMapSolverDescription": "Ratkaise 2, 3 ja 4 muuttujan Karnaugh-karttoja verkossa. Syota mintermit ja don't-care arvot, klikkaa K-map soluja, katso Gray-code ryhmat ja saa yksinkertaistettu SOP-lauseke."
+    "karnaughMapSolverDescription": "Ratkaise 2, 3 ja 4 muuttujan Karnaugh-karttoja verkossa. Syota mintermit ja don't-care arvot, klikkaa K-map soluja, katso Gray-code ryhmat ja saa yksinkertaistettu SOP-lauseke.",
+    "pageReplacementCalculatorTitle": "Page Replacement Algorithm Calculator",
+    "pageReplacementCalculatorDescription": "Simuloi FIFO-, LRU-, Optimal-, Clock-, LFU- ja LIFO-sivunkorvausalgoritmeja ilmaisella laskurilla. Syota reference string, valitse frame-maara ja tarkista page faultit vaiheittain."
   },
   "nav": {
     "projects": "Projektit",
@@ -233,6 +235,12 @@
         "name": "Karnaugh Map Solver",
         "description": "Yksinkertaista 2, 3 ja 4 muuttujan Boolen funktioita mintermeilla, don't-care arvoilla, visuaalisilla ryhmilla ja SOP-tuloksella.",
         "href": "/tools/karnaugh-map-solver"
+      },
+      {
+        "id": "page-replacement-algorithm-calculator",
+        "name": "Page Replacement Algorithm Calculator",
+        "description": "Simuloi FIFO-, LRU-, Optimal-, Clock-, LFU- ja LIFO-sivunkorvausta page faultien, hit rate -arvon ja vaiheittaisen frame-taulukon avulla.",
+        "href": "/tools/page-replacement-algorithm-calculator"
       },
       {
         "id": "qr-generator",
@@ -1368,6 +1376,136 @@
     "relatedImageDescription": "Rajaa kaavioita, kuvakaappauksia tai kurssimuistiinpanoja suoraan selaimessa.",
     "relatedBrowseLabel": "Selaa kaikkia tyokaluja",
     "relatedBrowseDescription": "Katso muut ilmaiset apuvalineet ja opiskelijoille sopivat verkkotyokalut."
+  },
+  "pageReplacementCalculator": {
+    "title": "Page Replacement Algorithm Calculator",
+    "subtitle": "Syota reference string, valitse frame-maara ja simuloi FIFO-, LRU-, Optimal-, Clock-, LFU- tai LIFO-algoritmi vaiheittain.",
+    "heroKicker": "Kayttojarjestelmien laskuri",
+    "heroTitle": "Page Replacement Algorithm Calculator FIFO-, LRU-, Optimal- ja Clock-algoritmeille",
+    "introParagraphs": [
+      "Talla page replacement algorithm calculator -tyokalulla voit ratkaista kayttojarjestelmien muistinhallinnan tehtavia ilman, etta piirrat jokaisen framen kasin. Se tukee FIFO-, LRU-, Optimal-, Clock-, LFU- ja LIFO-algoritmeja ja nayttaa page faultit, hitit, hit rate -arvon, miss rate -arvon ja koko frame-taulukon."
+    ],
+    "heroPoints": [
+      "Liita reference string kuten 7 0 1 2 0 3 0 4 ja valitse frame-maara.",
+      "Vertaile kaikkia algoritmeja samassa taulukossa ja nae pienin page fault -maara.",
+      "Tarkista jokainen vaihe: framet, hit tai fault, poistettu sivu ja korvauksen syy."
+    ],
+    "jumpStart": "Avaa laskuri",
+    "jumpHowTo": "Miten se toimii",
+    "jumpFaq": "Lue FAQ",
+    "inputTitle": "Laskurin syote",
+    "referenceLabel": "Page reference string",
+    "referencePlaceholder": "7 0 1 2 0 3 0 4 2 3 0 3 2",
+    "frameLabel": "Frame-maara",
+    "referenceCountLabel": "Referenssit",
+    "algorithmLabel": "Algoritmi",
+    "loadSample": "Lataa esimerkki",
+    "copyResult": "Kopioi tulos",
+    "copied": "Kopioitu",
+    "shareLink": "Jaa linkki",
+    "shareCopied": "Linkki kopioitu",
+    "summaryTitle": "Tuloksen yhteenveto",
+    "faultsLabel": "Page Faults",
+    "hitsLabel": "Hits",
+    "hitRateLabel": "Hit Rate",
+    "missRateLabel": "Miss Rate",
+    "summarySentence": "{algorithm} tuottaa {faults} page faultia ja {hits} hittia {references} referenssin aikana.",
+    "emptySummary": "Syota kelvollinen reference string ja frame-maara nahdaksesi tulokset.",
+    "compareTitle": "Vertaile kaikkia algoritmeja",
+    "compareSubtitle": "Pienempi page fault -maara tarkoittaa yleensa parempaa tulosta samalla reference stringilla ja frame-maaralla.",
+    "algorithmColumn": "Algoritmi",
+    "stepsTitle": "Vaiheittainen laskenta",
+    "stepsSubtitle": "Frame-tila jokaisen referenssin jalkeen algoritmilla {algorithm}.",
+    "stepColumn": "Vaihe",
+    "pageColumn": "Page",
+    "frameColumn": "Frame {number}",
+    "resultColumn": "Tulos",
+    "evictedColumn": "Evicted",
+    "reasonColumn": "Syy",
+    "faultLabel": "Fault",
+    "hitLabel": "Hit",
+    "validationReferences": "Syota vahintaan yksi page reference.",
+    "validationFrames": "Frame-maaran tulee olla kokonaisluku valilta 1-10.",
+    "validationLimit": "Kayta enintaan 80 referenssia, jotta vaiheittainen taulukko pysyy luettavana.",
+    "faqTitle": "Page Replacement Algorithm Calculator FAQ",
+    "faqSubtitle": "Nopeat vastaukset FIFO-, LRU-, Optimal- ja Clock-algoritmeista seka page faulteista ja hit rate -laskennasta.",
+    "faqItems": [
+      {
+        "question": "Mika on page replacement algorithm calculator?",
+        "answer": "Se on tyokalu, joka simuloi miten kayttojarjestelma paattaa, mika muistissa oleva sivu poistetaan, kun uusi sivu tarvitaan ja kaikki framet ovat taynna."
+      },
+      {
+        "question": "Mita algoritmeja laskuri tukee?",
+        "answer": "Laskuri tukee FIFO-, LRU-, Optimal-, Clock eli Second Chance-, LFU- ja LIFO-algoritmeja."
+      },
+      {
+        "question": "Miten reference string syotetaan?",
+        "answer": "Kirjoita sivuviittaukset valilyonneilla, pilkuilla tai puolipisteilla erotettuna, esimerkiksi 7 0 1 2 0 3 0 4."
+      },
+      {
+        "question": "Mika on page fault?",
+        "answer": "Page fault tapahtuu, kun pyydetty sivu ei ole nykyisissa frameissa, jolloin algoritmin taytyy ladata se ja mahdollisesti poistaa toinen sivu."
+      },
+      {
+        "question": "Miksi Optimal saa usein pienimman page fault -maaran?",
+        "answer": "Optimal valitsee poistettavaksi sivun, jota kaytetaan kauimpana tulevaisuudessa. Oikeat jarjestelmat eivat yleensa voi toteuttaa sita, mutta se toimii hyvana vertailukohtana."
+      },
+      {
+        "question": "Voiko FIFO saada enemman page faulteja, kun frameja lisataan?",
+        "answer": "Kylla. FIFO voi nayttaa Beladyn anomalian, jossa frame-maaran kasvattaminen kasvattaa page faultien maaraa tietyilla reference stringeilla."
+      }
+    ],
+    "seoSectionTitle": "Page replacement -opas kayttojarjestelmakursseille",
+    "seoSectionSubtitle": "Opi miten page faultit, hitit, framet ja korvaussaannot lasketaan yleisilla OS-algoritmeilla.",
+    "seoSections": [
+      {
+        "title": "Laske FIFO, LRU ja Optimal page replacement",
+        "body": "FIFO poistaa vanhimman ladatun sivun, LRU poistaa sivun jota ei ole kaytetty pisimpaan aikaan, ja Optimal poistaa sivun jonka seuraava kaytto on kauimpana tulevaisuudessa. Laskuri ajaa kaikki samalle reference stringille, jotta page fault -maarien vertailu on helppoa."
+      },
+      {
+        "title": "Kayta vaiheittaista taulukkoa tehtavien tarkistamiseen",
+        "body": "Jokainen rivi nayttaa pyydetyn sivun, framejen sisallon referenssin jalkeen, oliko kyseessa hit vai page fault, poistetun sivun ja korvauksen syyn."
+      },
+      {
+        "title": "Vertaile hit rate ja miss rate -arvoja",
+        "body": "Hit rate on hittien maara jaettuna referenssien kokonaismaaralla. Miss rate on page faultien maara jaettuna referenssien kokonaismaaralla. Nama arvot auttavat vertailemaan algoritmeja pelkkaa fault-lukua laajemmin."
+      },
+      {
+        "title": "Harjoittele myos Clock-, LFU- ja LIFO-algoritmeja",
+        "body": "Monet esimerkit keskittyvat vain FIFO-, LRU- ja Optimal-algoritmeihin, mutta kayttojarjestelmakursseilla kasitellaan usein myos Second Chance eli Clock, Least Frequently Used ja Last In First Out."
+      }
+    ],
+    "seoHowTo": {
+      "title": "Miten page replacement -algoritmit lasketaan verkossa",
+      "description": "Seuraa naita vaiheita page faultien laskemiseen ja algoritmien vertailuun.",
+      "steps": [
+        {
+          "id": "enter-reference-string",
+          "title": "Syota page reference string",
+          "description": "Liita tai kirjoita sivuviittausten sarja valilyonneilla, pilkuilla tai puolipisteilla erotettuna."
+        },
+        {
+          "id": "choose-frame-count",
+          "title": "Valitse frame-maara",
+          "description": "Maarita kuinka monta muistiframea simuloinnissa on kaytettavissa."
+        },
+        {
+          "id": "select-page-replacement-algorithm",
+          "title": "Valitse algoritmi",
+          "description": "Valitse FIFO, LRU, Optimal, Clock, LFU tai LIFO nahdaksesi vastaavan vaiheittaisen laskennan."
+        },
+        {
+          "id": "compare-page-faults",
+          "title": "Vertaile page faultit ja hit rate",
+          "description": "Vertailutaulukko nayttaa page faultit, hitit, hit rate -arvon ja miss rate -arvon jokaiselle tuetulle algoritmille."
+        }
+      ]
+    },
+    "relatedTitle": "Aiheeseen liittyvat tyokalut",
+    "relatedKmapDescription": "Yksinkertaista Boolen funktioita mintermeilla, don't-care arvoilla, ryhmilla ja SOP-tuloksella.",
+    "relatedTextDescription": "Siivoa kopioidut tehtavatekstit, reference stringit tai muistiinpanot ennen tallentamista.",
+    "relatedBrowseLabel": "Selaa kaikkia tyokaluja",
+    "relatedBrowseDescription": "Katso muut ilmaiset laskurit, muuntimet ja opiskelijoille sopivat apuvalineet."
   },
   "footer": {
     "name": "Manjula",

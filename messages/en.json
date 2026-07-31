@@ -27,7 +27,9 @@
     "safeRouteDailyTitle": "SafeRoute Daily | Outdoor Safety & Weather Comfort Planner",
     "safeRouteDailyDescription": "Find the safest and most comfortable time to go outside today. SafeRoute Daily checks weather, air quality, UV, rain, wind, temperature, humidity, and daylight for walking, cycling, running, travel, and outdoor work.",
     "karnaughMapSolverTitle": "Karnaugh Map Solver",
-    "karnaughMapSolverDescription": "Solve 2, 3, and 4 variable Karnaugh maps online. Enter minterms and don't-cares, click K-map cells, view Gray-code groups, and get a simplified SOP expression."
+    "karnaughMapSolverDescription": "Solve 2, 3, and 4 variable Karnaugh maps online. Enter minterms and don't-cares, click K-map cells, view Gray-code groups, and get a simplified SOP expression.",
+    "pageReplacementCalculatorTitle": "Page Replacement Algorithm Calculator",
+    "pageReplacementCalculatorDescription": "Use a free page replacement algorithm calculator to simulate FIFO, LRU, Optimal, Clock, LFU, and LIFO. Enter a reference string, set frames, compare page faults, and view each step."
   },
   "nav": {
     "projects": "Projects",
@@ -233,6 +235,12 @@
         "name": "Karnaugh Map Solver",
         "description": "Simplify 2, 3, and 4 variable Boolean functions with minterms, don't-cares, visual groups, and SOP output.",
         "href": "/tools/karnaugh-map-solver"
+      },
+      {
+        "id": "page-replacement-algorithm-calculator",
+        "name": "Page Replacement Algorithm Calculator",
+        "description": "Simulate FIFO, LRU, Optimal, Clock, LFU, and LIFO page replacement with page faults, hit rate, and a step-by-step frame table.",
+        "href": "/tools/page-replacement-algorithm-calculator"
       },
       {
         "id": "qr-generator",
@@ -1368,6 +1376,136 @@
     "relatedImageDescription": "Crop diagrams, screenshots, or class notes directly in the browser.",
     "relatedBrowseLabel": "Browse all tools",
     "relatedBrowseDescription": "See the rest of the free utilities and student-friendly web tools."
+  },
+  "pageReplacementCalculator": {
+    "title": "Page Replacement Algorithm Calculator",
+    "subtitle": "Enter a reference string, choose frames, and simulate FIFO, LRU, Optimal, Clock, LFU, or LIFO page replacement step by step.",
+    "heroKicker": "Operating systems calculator",
+    "heroTitle": "Page Replacement Algorithm Calculator for FIFO, LRU, Optimal, and Clock",
+    "introParagraphs": [
+      "Use this page replacement algorithm calculator to solve operating-system memory management problems without drawing every frame by hand. It supports FIFO, LRU, Optimal, Clock, LFU, and LIFO, then shows page faults, hits, hit rate, miss rate, and the full frame table."
+    ],
+    "heroPoints": [
+      "Paste a reference string such as 7 0 1 2 0 3 0 4 and choose the number of frames.",
+      "Compare all algorithms in one table to see which one gives the lowest page fault count.",
+      "Review every step with frames, hit or fault status, evicted page, and the reason for replacement."
+    ],
+    "jumpStart": "Open calculator",
+    "jumpHowTo": "How it works",
+    "jumpFaq": "Read FAQ",
+    "inputTitle": "Calculator input",
+    "referenceLabel": "Page reference string",
+    "referencePlaceholder": "7 0 1 2 0 3 0 4 2 3 0 3 2",
+    "frameLabel": "Number of frames",
+    "referenceCountLabel": "References",
+    "algorithmLabel": "Algorithm",
+    "loadSample": "Load Sample",
+    "copyResult": "Copy Result",
+    "copied": "Copied",
+    "shareLink": "Share Link",
+    "shareCopied": "Link Copied",
+    "summaryTitle": "Result summary",
+    "faultsLabel": "Page Faults",
+    "hitsLabel": "Hits",
+    "hitRateLabel": "Hit Rate",
+    "missRateLabel": "Miss Rate",
+    "summarySentence": "{algorithm} produces {faults} page faults and {hits} hits across {references} references.",
+    "emptySummary": "Enter a valid reference string and frame count to see results.",
+    "compareTitle": "Compare all algorithms",
+    "compareSubtitle": "Lower page faults usually mean better performance for the same reference string and frame count.",
+    "algorithmColumn": "Algorithm",
+    "stepsTitle": "Step-by-step calculation",
+    "stepsSubtitle": "Frame state after each reference using {algorithm}.",
+    "stepColumn": "Step",
+    "pageColumn": "Page",
+    "frameColumn": "Frame {number}",
+    "resultColumn": "Result",
+    "evictedColumn": "Evicted",
+    "reasonColumn": "Reason",
+    "faultLabel": "Fault",
+    "hitLabel": "Hit",
+    "validationReferences": "Enter at least one page reference.",
+    "validationFrames": "Frame count must be a whole number from 1 to 10.",
+    "validationLimit": "Use 80 or fewer references so the step table stays readable.",
+    "faqTitle": "Page Replacement Algorithm Calculator FAQ",
+    "faqSubtitle": "Quick answers about FIFO, LRU, Optimal, Clock, page faults, and hit rate calculations.",
+    "faqItems": [
+      {
+        "question": "What is a page replacement algorithm calculator?",
+        "answer": "It is a tool that simulates how an operating system decides which memory page to evict when a new page is requested and all frames are full."
+      },
+      {
+        "question": "Which page replacement algorithms are supported?",
+        "answer": "This calculator supports FIFO, LRU, Optimal, Clock or Second Chance, LFU, and LIFO."
+      },
+      {
+        "question": "How do I enter the reference string?",
+        "answer": "Type page references separated by spaces, commas, or semicolons, such as 7 0 1 2 0 3 0 4."
+      },
+      {
+        "question": "What is a page fault?",
+        "answer": "A page fault happens when the requested page is not currently loaded in the available frames, so the algorithm must load it and may need to evict another page."
+      },
+      {
+        "question": "Why does Optimal usually have the fewest page faults?",
+        "answer": "Optimal chooses the page that will be used farthest in the future, so it has perfect future knowledge. Real systems cannot normally implement it, but it is useful as a benchmark."
+      },
+      {
+        "question": "Can FIFO have more page faults when frames increase?",
+        "answer": "Yes. FIFO can show Belady's anomaly, where adding more frames causes more page faults for some reference strings."
+      }
+    ],
+    "seoSectionTitle": "Page replacement guide for operating systems students",
+    "seoSectionSubtitle": "Learn how page faults, hits, frames, and replacement rules are calculated for common OS algorithms.",
+    "seoSections": [
+      {
+        "title": "Calculate FIFO, LRU, and Optimal page replacement",
+        "body": "FIFO evicts the oldest loaded page, LRU evicts the page that has not been used for the longest time, and Optimal evicts the page whose next use is farthest in the future. The calculator runs each rule against the same reference string so the page fault counts are easy to compare."
+      },
+      {
+        "title": "Use the step table to check homework answers",
+        "body": "Each row shows the requested page, frame contents after the reference, whether it was a hit or page fault, the evicted page, and the replacement reason. That makes it easier to find exactly where a manual calculation went wrong."
+      },
+      {
+        "title": "Compare hit rate and miss rate",
+        "body": "The hit rate is hits divided by total references, while the miss rate is page faults divided by total references. These metrics help compare algorithms beyond just counting faults."
+      },
+      {
+        "title": "Practice Clock, LFU, and LIFO too",
+        "body": "Many examples focus only on FIFO, LRU, and Optimal, but operating-system classes may also discuss Second Chance or Clock, Least Frequently Used, and Last In First Out. This tool includes those modes for broader practice."
+      }
+    ],
+    "seoHowTo": {
+      "title": "How to calculate page replacement algorithms online",
+      "description": "Follow these steps to calculate page faults and compare page replacement algorithms.",
+      "steps": [
+        {
+          "id": "enter-reference-string",
+          "title": "Enter the page reference string",
+          "description": "Paste or type the sequence of page references separated by spaces, commas, or semicolons."
+        },
+        {
+          "id": "choose-frame-count",
+          "title": "Choose the number of frames",
+          "description": "Set how many memory frames are available for the simulation."
+        },
+        {
+          "id": "select-page-replacement-algorithm",
+          "title": "Select an algorithm",
+          "description": "Choose FIFO, LRU, Optimal, Clock, LFU, or LIFO to see the matching step-by-step calculation."
+        },
+        {
+          "id": "compare-page-faults",
+          "title": "Compare page faults and hit rate",
+          "description": "Use the comparison table to see page faults, hits, hit rate, and miss rate for every supported algorithm."
+        }
+      ]
+    },
+    "relatedTitle": "Related tools",
+    "relatedKmapDescription": "Simplify Boolean functions with minterms, don't-cares, visual groups, and SOP output.",
+    "relatedTextDescription": "Clean copied assignment text, reference strings, or notes before saving them.",
+    "relatedBrowseLabel": "Browse all tools",
+    "relatedBrowseDescription": "See the rest of the free calculators, converters, and student-friendly utilities."
   },
   "footer": {
     "name": "Manjula",
